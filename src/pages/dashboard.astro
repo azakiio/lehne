@@ -1,0 +1,48 @@
+---
+import Events from "~/components/Events.astro";
+import Tasks from "~/components/Tasks.astro";
+import BaseLayout from "~/layouts/BaseLayout.astro";
+
+const title = "Dashboard";
+const description = "Your dashboard";
+const permalink = `${Astro.site?.href}about`;
+
+const { cookies, redirect } = Astro;
+
+// const { data, error } = await Astro.locals.supabse.auth.setSession({
+//   refresh_token: refreshToken.value,
+//   access_token: accessToken.value,
+// });
+
+// if (error) {
+//   cookies.delete("sb-access-token", {
+//     path: "/",
+//   });
+//   cookies.delete("sb-refresh-token", {
+//     path: "/",
+//   });
+
+//   return redirect("/signin");
+// }
+
+// const email = Astro.locals.session?.user?.email;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  permalink={permalink}
+  current="dashboard"
+>
+  <hr class="w-full" />
+  <div class="grid grid-cols-4">
+    <Tasks />
+    <Events />
+    <Events />
+    <Events />
+  </div>
+
+  <form action="/api/auth/signout">
+    <button type="submit">Sign out</button>
+  </form>
+</BaseLayout>

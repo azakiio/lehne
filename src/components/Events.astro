@@ -1,0 +1,199 @@
+---
+import { Icon } from "astro-icon";
+import dayjs from "dayjs";
+import { getClient } from "~/lib/supabase";
+
+const title = "My Astro Blog";
+const description = "The perfect starter for your perfect blog.";
+const permalink = Astro.site?.href;
+const supabase = getClient(Astro.cookies)
+
+
+
+const { data, error } = await supabase.from("tasks").select("*");
+type Task = {
+  description: string;
+  due_date: string;
+  duration: number;
+  start_time: string | undefined;
+  status: string;
+  tags: string[];
+  location: string;
+  created_at: string;
+  user_id: string;
+  title: string;
+  id: 160;
+};
+// console.log(Astro.url.searchParams.get("month"));
+console.log(data);
+
+const tasks = data as Task[] | null;
+
+const formattedTasks = tasks?.flatMap((task) => {
+  let startDate = "";
+  let startTime = "";
+  let endTime = "";
+
+  if (!task.start_time) {
+    return [];
+  }
+
+  if (task.start_time) {
+    startDate = new Date(task.start_time).toLocaleString("de", {
+      dateStyle: "short",
+    });
+
+    startTime = new Date(task.start_time).toLocaleString("de", {
+      timeStyle: "short",
+    });
+
+    endTime = dayjs(task.start_time)
+      .add(task.duration, "m")
+      .toDate()
+      .toLocaleString("de", {
+        timeStyle: "short",
+      });
+  }
+
+  return { ...task, startDate, startTime, endTime };
+});
+---
+
+<div>
+  <h2>Events</h2>
+  <div class="home-container">
+    {
+      formattedTasks?.map(
+        ({
+          title,
+          description,
+          startDate,
+          startTime,
+          endTime,
+          due_date,
+          tags,
+          status,
+          location,
+          id,
+        }) => {
+          return (
+            <div class="card shadow-lg bg-primary">
+              <h3>{title}</h3>
+              <div class="flex flex-col gap-1vmin">
+                {startDate && (
+                  <div>
+                    <Icon name="mdi:calendar" class="w6 h6 inline" />
+                    <span>{startDate}</span>
+                  </div>
+                )}
+                {startTime && (
+                  <div>
+                    <Icon name="mdi:clock" class="w6 h6 inline" />
+                    <span>
+                      {startTime} - {endTime}
+                    </span>
+                  </div>
+                )}
+                {tags && (
+                  <div>
+                    <Icon name="mdi:tag" class="w6 h6 inline" />
+                    <span>
+                      {tags?.map((tag) => (
+                        <div>{tag}</div>
+                      ))}
+                    </span>
+                  </div>
+                )}
+                {location && (
+                  <div>
+                    <Icon name="mdi:location" class="w6 h6 inline" />
+                    <span>{location}</span>
+                  </div>
+                )}
+              </div>
+            </div>
+          );
+        }
+      )
+    }
+  </div>
+</div>
+
+<style>
+  .card {
+    border-radius: 1rem;
+    border: 1rem;
+    padding: 2vmin;
+    width: 100%;
+  }
+
+  .home-container {
+    /* align-items: center; */
+    display: grid;
+    gap: 4vmin;
+    padding: 3vmin;
+    margin: 2em 0;
+    overflow: auto;
+    max-width: 30rem;
+    height: 30rem;
+  }
+
+  .home-copy {
+    flex: 1;
+    padding: 0 1em;
+  }
+
+  .home-copy h1 {
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    line-height: 1.3;
+  }
+
+  .home-copy p {
+    font-size: 1.4em;
+  }
+
+  .hero-image-container {
+    margin: 0 1em;
+    text-align: center;
+  }
+
+  .hero-image-container picture {
+    display: block;
+    min-height: 250px;
+  }
+
+  .caption {
+    font-size: 0.8em;
+    font-style: italic;
+    text-align: left;
+  }
+
+  .hero-image {
+    width: 100%;
+    max-width: 550px;
+    margin-bottom: 1em;
+  }
+
+  @media (max-width: 1200px) {
+    p {
+      font-size: 1.2em;
+    }
+
+    .hero-image {
+      max-width: 400px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .home-container {
+      flex-direction: column;
+    }
+
+    .home-copy {
+      flex: 0;
+      padding-bottom: 2em;
+      text-align: center;
+    }
+  }
+</style>

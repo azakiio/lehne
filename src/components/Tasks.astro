@@ -1,0 +1,287 @@
+---
+import { Icon } from "astro-icon";
+import dayjs from "dayjs";
+import TaskModal from "./TaskModal.astro";
+import { getClient } from "~/lib/supabase";
+
+const supabase = getClient(Astro.cookies);
+const { data, error } = await supabase.from("tasks").select("*");
+
+type Task = {
+  description: string;
+  due_date: string;
+  duration: number;
+  start_time: string | undefined;
+  status: string;
+  tags: string[];
+  location: string;
+  created_at: string;
+  user_id: string;
+  title: string;
+  id: 160;
+};
+
+// console.log(Astro.url.searchParams.get("month"));
+console.log(data);
+
+const tasks = data as Task[] | null;
+
+const formattedTasks = tasks?.flatMap((task) => {
+  let startDate = "";
+  let startTime = "";
+  let endTime = "";
+
+  if (task.start_time) {
+    return [];
+  }
+
+  if (task.start_time) {
+    startDate = new Date(task.start_time).toLocaleString("de", {
+      dateStyle: "short",
+    });
+
+    startTime = new Date(task.start_time).toLocaleString("de", {
+      timeStyle: "short",
+    });
+
+    endTime = dayjs(task.start_time)
+      .add(task.duration, "m")
+      .toDate()
+      .toLocaleString("de", {
+        timeStyle: "short",
+      });
+  }
+
+  return { ...task, startDate, startTime, endTime };
+});
+
+const xTasks = JSON.stringify({ tasks: formattedTasks });
+---
+
+<div x-data=`${xTasks}`>
+  <h2>tasks</h2>
+  <div class="home-container">
+    <template x-for="task in tasks">
+      <div class="card shadow-lg">
+        <TaskModal id="editTask" />
+        <div class="flex items-center gap-2">
+          <button
+            @click=`
+              const formData = new FormData();
+              formData.append("id", task.id);
+              formData.append("status", 'Complete');
+              console.log(task.id, task.status);
+              const response = await fetch("/api/tasks/update", { method: "post", body: formData });
+              task = (await response.json()).at(0)`
+          >
+            <Icon
+              name="line-md:circle"
+              class="w6 h6"
+              x-show="task.status === 'To Do'"
+            />
+            <Icon
+              name="line-md:confirm-circle"
+              class="w6 h6"
+              x-show="task.status=== 'Complete'"
+            />
+          </button>
+
+          <button
+            @click="document.getElementById('editTask').showModal(); console.log('modal ran');"
+          >
+            <h3 class="mb-0" x-text="task.title"></h3>
+          </button>
+        </div>
+        <!-- {
+          startDate && (
+            <div>
+              <Icon name="mdi:calendar" class="w6 h6 inline" />
+              <span>{startDate}</span>
+            </div>
+          )
+        }
+        {
+          startTime && (
+            <div>
+              <Icon name="mdi:clock" class="w6 h6 inline" />
+              <span>
+                {startTime} - {endTime}
+              </span>
+            </div>
+          )
+        }
+        {
+          tags && (
+            <div>
+              <Icon name="mdi:tag" class="w6 h6 inline" />
+              <span>
+                {tags?.map((tag) => (
+                  <div>{tag}</div>
+                ))}
+              </span>
+            </div>
+          )
+        }
+        {
+          location && (
+            <div>
+              <Icon name="mdi:pin" class="w6 h6 inline" />
+              <span>{location}</span>
+            </div>
+          )
+        } -->
+      </div>
+    </template>
+    <!-- {
+      formattedTasks?.map(
+        ({
+          title,
+          description,
+          startDate,
+          startTime,
+          endTime,
+          due_date,
+          tags,
+          status,
+          location,
+          id,
+        }) => {
+          return (
+            <div class="card shadow-lg">
+              <TaskModal id="editTask" />
+              <div class="flex items-center gap-2">
+                <button x-data="{ status: status }">
+                  <div x-text="status" />
+                  <template x-if="status === 'To Do'">
+                    <Icon name="line-md:circle" class="w6 h6" />
+                  </template>
+                  <template x-if="status === 'Complete'">
+                    <Icon name="line-md:confirm-circle" class="w6 h6" />
+                  </template>
+                </button>
+
+                <button
+                  x-data
+                  x-on:click="document.getElementById('editTask').showModal(); console.log('modal ran');"
+                >
+                  <h3 class="mb-0">{title}</h3>
+                  {status}
+                </button>
+              </div>
+              {startDate && (
+                <div>
+                  <Icon name="mdi:calendar" class="w6 h6 inline" />
+                  <span>{startDate}</span>
+                </div>
+              )}
+              {startTime && (
+                <div>
+                  <Icon name="mdi:clock" class="w6 h6 inline" />
+                  <span>
+                    {startTime} - {endTime}
+                  </span>
+                </div>
+              )}
+              {tags && (
+                <div>
+                  <Icon name="mdi:tag" class="w6 h6 inline" />
+                  <span>
+                    {tags?.map((tag) => (
+                      <div>{tag}</div>
+                    ))}
+                  </span>
+                </div>
+              )}
+              {location && (
+                <div>
+                  <Icon name="mdi:pin" class="w6 h6 inline" />
+                  <span>{location}</span>
+                </div>
+              )}
+            </div>
+          );
+        }
+      )
+    } -->
+  </div>
+  <button>+ Add task</button>
+</div>
+
+<style>
+  .card {
+    background-color: skyblue;
+    border-radius: 1rem;
+    border: 1rem;
+    padding: 1rem;
+    width: 100%;
+  }
+  .home-container {
+    /* align-items: center; */
+    display: grid;
+    gap: 4vmin;
+    justify-content: start;
+    margin: 2em 0;
+    overflow: auto;
+    max-width: 30rem;
+    height: 30rem;
+  }
+
+  .home-copy {
+    flex: 1;
+    padding: 0 1em;
+  }
+
+  .home-copy h1 {
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    line-height: 1.3;
+  }
+
+  .home-copy p {
+    font-size: 1.4em;
+  }
+
+  .hero-image-container {
+    margin: 0 1em;
+    text-align: center;
+  }
+
+  .hero-image-container picture {
+    display: block;
+    min-height: 250px;
+  }
+
+  .caption {
+    font-size: 0.8em;
+    font-style: italic;
+    text-align: left;
+  }
+
+  .hero-image {
+    width: 100%;
+    max-width: 550px;
+    margin-bottom: 1em;
+  }
+
+  @media (max-width: 1200px) {
+    p {
+      font-size: 1.2em;
+    }
+
+    .hero-image {
+      max-width: 400px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .home-container {
+      flex-direction: column;
+    }
+
+    .home-copy {
+      flex: 0;
+      padding-bottom: 2em;
+      text-align: center;
+    }
+  }
+</style>

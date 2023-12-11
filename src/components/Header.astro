@@ -1,0 +1,21 @@
+---
+import { Image } from "astro:assets";
+import Logo from "~/lib/Logo.png";
+import Nav from "./Nav.astro";
+
+const { current = "" } = Astro.props;
+---
+
+<style>
+  header {
+    display: flex;
+    margin: 0 auto;
+    padding: 2em;
+    width: 100%;
+  }
+</style>
+
+<header class="flex items-center gap-4 bg-brand">
+  <Image src={Logo} alt="" class='w-10vw' />
+  <Nav current={current} />
+</header>
