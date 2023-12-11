@@ -6,10 +6,14 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "baseUrl": ".",
+    "baseUrl": "/Users/azaki/Desktop/todos",
     "paths": {
-      "~/*": ["src/*"]
-    }
+      "~/*": [
+        "src/*"
+      ]
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
   },
   "extends": "astro/tsconfigs/strict"
 }

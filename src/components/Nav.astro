@@ -1,4 +1,5 @@
 ---
+import DropDown from "./DropDown";
 import ThemeToggleButton from "./ThemeToggleButton.svelte";
 const { current = "" } = Astro.props;
 ---
@@ -57,6 +58,7 @@ const { current = "" } = Astro.props;
 </style>
 
 <nav>
+  <DropDown client:idle />
   <a href="">Expertise</a>
   <a href=""> About us</a>
   <a href="">Career</a>
