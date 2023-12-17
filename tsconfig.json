@@ -6,7 +6,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "baseUrl": "/Users/azaki/Desktop/todos",
+    "baseUrl": ".",
     "paths": {
       "~/*": [
         "src/*"
