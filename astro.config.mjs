@@ -12,19 +12,37 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
+  i18n: {
+    defaultLocale: "en",
+    locales: ["en", "de"],
+    routing: {
+      prefixDefaultLocale: true,
+    },
+  },
   output: "server",
   site: "https://astro-blog-template.netlify.app",
-  integrations: [mdx(), svelte(), alpine(), UnoCSS({
-    injectReset: true // or a path to the reset file
-  }), react()],
+  integrations: [
+    mdx(),
+    svelte(),
+    alpine(),
+    UnoCSS({
+      injectReset: true, // or a path to the reset file
+    }),
+    react(),
+  ],
   markdown: {
     shikiConfig: {
-      theme: "nord"
+      theme: "nord",
     },
     remarkPlugins: [remarkGfm, remarkSmartypants],
-    rehypePlugins: [[rehypeExternalLinks, {
-      target: "_blank"
-    }]]
+    rehypePlugins: [
+      [
+        rehypeExternalLinks,
+        {
+          target: "_blank",
+        },
+      ],
+    ],
   },
-  adapter: vercel()
+  adapter: vercel(),
 });

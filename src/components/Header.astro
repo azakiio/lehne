@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import Logo from "~/lib/Logo.png";
 import Nav from "./Nav.astro";
+import { getRelativeLocaleUrl } from "astro:i18n";
 
 const { current = "" } = Astro.props;
 ---
@@ -15,7 +16,9 @@ const { current = "" } = Astro.props;
   }
 </style>
 
-<header class="flex items-center gap-4 bg-brand">
-  <Image src={Logo} alt="" class='w-10vw' />
+<header class="flex items-center gap-4 bg-primary">
+  <a href={getRelativeLocaleUrl(Astro.currentLocale || "en", "")}>
+    <Image src={Logo} alt="" class="w-10vw" />
+  </a>
   <Nav current={current} />
 </header>

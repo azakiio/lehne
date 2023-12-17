@@ -1,60 +1,28 @@
-import type { MenuProps } from "antd";
 import { Dropdown, Space } from "antd";
+import { getRelativeLocaleUrl } from "astro:i18n";
+import Styles from "./DropDown.module.css";
+import { DownOutlined } from "@ant-design/icons";
 
-const DD = () => {
-  const items: MenuProps["items"] = [
-    {
-      key: "1",
-      label: (
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.antgroup.com"
-        >
-          1st menu item
-        </a>
-      ),
-    },
-    {
-      key: "2",
-      label: (
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.aliyun.com"
-        >
-          2nd menu item (disabled)
-        </a>
-      ),
-      icon: <div />,
-      disabled: true,
-    },
-    {
-      key: "3",
-      label: (
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.luohanacademy.com"
-        >
-          3rd menu item (disabled)
-        </a>
-      ),
-      disabled: true,
-    },
-    {
-      key: "4",
-      danger: true,
-      label: "a danger item",
-    },
-  ];
+interface Props {
+  data: {
+    label: string;
+    url: string;
+    items?: { label: string; url: string }[];
+  };
+}
+
+const DD = ({ data }: Props) => {
+  const items = data.items?.map(({ label, url }, i) => ({
+    key: i,
+    label: <a href={getRelativeLocaleUrl("en", url)}>{label}</a>,
+  }));
 
   return (
     <Dropdown menu={{ items }}>
-      <a onClick={(e) => e.preventDefault()}>
+      <a className={Styles.link} href={getRelativeLocaleUrl("en", data.url)}>
         <Space>
-          Hover me
-          <div>{"->"}</div>
+          {data.label}
+          <DownOutlined />
         </Space>
       </a>
     </Dropdown>

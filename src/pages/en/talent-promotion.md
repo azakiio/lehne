@@ -1,0 +1,30 @@
+---
+layout: "~/layouts/MarkdownLayout.astro"
+title: "Talent Promotion"
+---
+
+# Talent Promotion
+
+At LEHNE ing. we have always cared about promoting
+talent in a professional context or sports. With the Alster right
+outside our offices the connection to water sports and sailing in
+particular has been there ever since.
+
+## Sailing – HEAT Sailing Team
+
+For several years LEHNE ing. has been supporting
+happily the HEAT Sailing team of Max Augustin and his crew. In this
+period the team has achieved lots of good results in the Melges32 class
+competitions around europe. We are happy to continue this partnership
+and we wish them always at least one finger of water under the keel of the boat!
+
+## Football – KickTeam Fortuna
+
+LEHNE ing. also actively engage in the promotion of
+students. This is why the KickTeam Fortuna (KT Fortuna) – our student
+football team – was founded. The team, which consists of mostly
+engineering students, takes part in the yearly university football
+competitions. We wish you much fun and success at the upcoming games
+lads !
+
+--Slider--

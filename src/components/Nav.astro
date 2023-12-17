@@ -1,8 +1,66 @@
 ---
 import DropDown from "./DropDown";
 import ThemeToggleButton from "./ThemeToggleButton.svelte";
-const { current = "" } = Astro.props;
+import "./DropDown.module.css";
+import { getRelativeLocaleUrl } from "astro:i18n";
+
+const expertiseLinks = {
+  label: "Expertise",
+  url: "expertise",
+  items: [
+    { label: "Mobility", url: "mobility" },
+    { label: "Infrastructure", url: "infrastructure" },
+    { label: "Environment", url: "environment" },
+    { label: "Water", url: "water" },
+    { label: "Digitalisation", url: "digitalisation" },
+    { label: "Health and safety", url: "health-and-safety" },
+  ],
+};
+
+const aboutUsLinks = {
+  label: "About us",
+  url: "about-us",
+  items: [
+    { label: "Services", url: "services" },
+    { label: "Team", url: "team" },
+    { label: "Management", url: "management" },
+    { label: "Expert-Network", url: "expert-network" },
+    { label: "History", url: "history" },
+  ],
+};
+const careerLinks = {
+  label: "Career",
+  url: "career",
+  items: [
+    { label: "Working at LEHNE ing.", url: "working-at-lehne-ing" },
+    { label: "Jobs", url: "jobs" },
+    { label: "Talent Promotion", url: "talent-promotion" },
+  ],
+};
 ---
+
+<nav>
+  <DropDown data={expertiseLinks} client:idle />
+  <DropDown data={aboutUsLinks} client:idle />
+  <DropDown data={careerLinks} client:idle />
+  <a
+    class="link"
+    href={getRelativeLocaleUrl(Astro.currentLocale || "en", "projects")}
+    >Projects</a
+  >
+  <a
+    class="link"
+    href={getRelativeLocaleUrl(Astro.currentLocale || "en", "contact")}
+    >Contact</a
+  >
+  <a
+    class="link"
+    href={getRelativeLocaleUrl(Astro.currentLocale || "en", "expert-network")}>VBI</a
+  >
+  <div class="theme-toggle-container">
+    <ThemeToggleButton client:load />
+  </div>
+</nav>
 
 <style>
   nav {
@@ -16,55 +74,7 @@ const { current = "" } = Astro.props;
     color: white;
   }
 
-  a {
-    color: inherit;
-    text-decoration: none;
-    padding: 10px 5px;
-    display: block;
-    position: relative;
-    margin-left: 20px;
-    min-width: 70px;
-    text-align: center;
-  }
-
-  /* a:not(.selected) {
-    opacity: 0.7;
-  } */
-
-  a::before {
-    content: "";
-    position: absolute;
-    transition: transform 0.3s ease;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background: white;
-    transform: scaleX(0);
-  }
-
-  a:hover::before,
-  .selected::before {
-    transform: scaleX(1);
-  }
-
-  .selected::before {
-    background: var(--primary-color);
-  }
-
   .theme-toggle-container {
     width: 75px;
   }
 </style>
-
-<nav>
-  <DropDown client:idle />
-  <a href="">Expertise</a>
-  <a href=""> About us</a>
-  <a href="">Career</a>
-  <a href="">Projects</a>
-  <a href="">Contact</a>
-  <div class="theme-toggle-container">
-    <ThemeToggleButton client:load />
-  </div>
-</nav>

@@ -1,23 +1,27 @@
 <script>
-  const rootEl = typeof document !== 'undefined' ? document.documentElement : null;
-  const themes = ['light', 'dark'];
-  let theme = ''
+  const rootEl =
+    typeof document !== "undefined" ? document.documentElement : null;
+  const themes = ["light", "dark"];
+  let theme = "";
 
-  if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
-    theme = localStorage.getItem('theme');
-  } else if (typeof window !== 'undefined' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    theme = 'dark';
+  if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
+    theme = localStorage.getItem("theme");
+  } else if (
+    typeof window !== "undefined" &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches
+  ) {
+    theme = "dark";
   }
 
   function handleChange(event) {
     theme = event.target.value;
-    localStorage.setItem('theme', theme);
+    localStorage.setItem("theme", theme);
   }
 
-  $: if (rootEl && theme === 'light') {
-    rootEl.classList.remove('theme-dark');
-  } else if (rootEl && theme === 'dark') {
-    rootEl.classList.add('theme-dark');
+  $: if (rootEl && theme === "light") {
+    rootEl.classList.remove("theme-dark");
+  } else if (rootEl && theme === "dark") {
+    rootEl.classList.add("theme-dark");
   }
 
   const icons = [
@@ -46,10 +50,9 @@
   ];
 </script>
 
-
 <div class="theme-toggle">
   {#each themes as t, i}
-    <label class={theme === t ? 'checked' : ''}>
+    <label class={theme === t ? "checked" : ""}>
       {@html icons[i]}
       <input
         type="radio"
@@ -63,3 +66,49 @@
     </label>
   {/each}
 </div>
+
+<style>
+  .theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    padding: 0.33em 0.67em;
+    padding-top: 8px;
+    margin-left: 10px;
+    gap: 0.6em;
+    border-radius: 99em;
+    background-color: var(--theme-code-inline-bg);
+  }
+
+  .theme-toggle > label:focus-within {
+    outline: 2px solid transparent;
+    box-shadow:
+      0 0 0 0.08em var(--theme-accent),
+      0 0 0 0.12em white;
+  }
+
+  .theme-toggle > label {
+    color: var(--theme-code-inline-text);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  .theme-toggle .checked {
+    color: var(--theme-accent);
+    opacity: 1;
+  }
+
+  input[name="theme-toggle"] {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+</style>

@@ -1,0 +1,36 @@
+---
+layout: "~/layouts/MarkdownLayout.astro"
+title: "History"
+---
+
+# History
+
+Since the foundation in 1956 by master builder Ulrich Riebau the
+company has developed to become a highly specialised and recognised
+consulting engineering company. LEHNE ing.’s expertise is well
+acknowledged in Hamburg.
+
+Michael Meyn and Stefan Paul are connected by a drive to provide
+responsibility for the development of urban infrastructure and
+sustainable mobility in our city. What started at colleague level in
+2001 is nowadays a modern consulting company providing all the necessary
+civil engineering services. The medium-sized company offers
+opportunities provided by both family-managed and future-oriented
+company culture.
+
+The business development has been positive for more than 10 years and
+the growth has increased once again over the last few years, and we use
+this growth to incorporate fresh innovations and achieve the full
+potential of our team.
+
+## Milestones
+
+1956 — founding of the company by master builder Urlich Riebau
+
+1970 — takeover by Karl-Friedrich Kröger
+
+1988 — Manfred Lehne is promoted to partner. Renaming to VBI Kröger + Lehne
+
+1995 — Karl-Friedrich Kröger left the company. Rebranding to VBI M. Lehne
+
+2008 — Michael Meyn und Stefan Paul join the management board and take over the company renaming it into _LEHNE Ingenieurgesellschaft mbH für Bauen und Umwelt_ or short LEHNE ing.

@@ -1,12 +1,11 @@
-import { defineConfig, presetUno, transformerDirectives } from "unocss";
+import { defineConfig, presetUno, presetTypography } from "unocss";
 
 export default defineConfig({
-  presets: [presetUno()],
+  presets: [presetUno(), presetTypography()],
   theme: {
     colors: {
       main: "var(--text-main)",
       primary: "var(--primary-color)",
-      brand: "#0061a0",
     },
   },
 });

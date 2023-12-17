@@ -10,7 +10,7 @@
     "pulldb": "npx supabase gen types typescript --project-id bbeypvpofsobljpdtjqp --schema public > types/supabase.ts"
   },
   "dependencies": {
-    "@ant-design/icons": "^5.2.6",
+    "@ant-design/icons": "~5.1.0",
     "@astrojs/alpinejs": "^0.3.1",
     "@astrojs/check": "^0.3.1",
     "@astrojs/mdx": "^2.0.0",

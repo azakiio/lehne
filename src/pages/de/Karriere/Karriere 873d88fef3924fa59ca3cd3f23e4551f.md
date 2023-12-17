@@ -1,0 +1,71 @@
+# Karriere
+
+Wir arbeiten aktiv für eine lebenswerte und nachhaltige Umgebung in unserer 
+Region. Mit guten Ideen lösen wir die Probleme unserer Kunden und setzen
+diese um. Hierzu sind wir immer auf der Suche nach ideenreichen und 
+neugierigen Menschen, die uns bei unseren Vorhaben unterstützen. Der 
+Einstieg bei LEHNE ing. ist in allen Erfahrungsstufen – von Studierenden
+ bis berufserfahrenen Professionals – möglich:
+
+![https://lehne-ing.de/wp-content/uploads/2021/09/Professional-scaled.jpg](https://lehne-ing.de/wp-content/uploads/2021/09/Professional-scaled.jpg)
+
+# Professionals
+
+Bei LEHNE ing. können Sie vom ersten Tag an in das Projektgeschäft 
+einsteigen. Expertise, Management und Teamfähigkeit sind bei uns sehr 
+wichtig. Wir suchen Profis, die für ihre Ideen brennen, Innovationen 
+vorantreiben und gerne im Team arbeiten. 
+Bringen Sie Ihr Fachwissen ein in der Planung von Velorouten, 
+Verkehrswegen, Leitungstrassen, Oberflächenentwässerungen, Erschließung 
+neuer baulicher Räume, Instandsetzung und vielem mehr.
+[Unsere Arbeitswelt](https://lehne-ing.de/arbeiten-bei-lehne-ing/)
+ zeichnet sich durch eine abwechslungsreiche Gestaltung von technischen 
+Lösungen in einem dynamischen Projektumfeld aus. Darüber hinaus bieten 
+wir Ihnen die Möglichkeit, Verantwortung zu übernehmen und technische 
+Neuerungen umzusetzen.
+Schauen Sie gerne unsere aktuellen Jobangebote an oder schicken Sie uns eine Initiativbewerbung per [E-Mail](mailto:personal@lehne-ing.de).
+
+![https://lehne-ing.de/wp-content/uploads/2021/06/beginners-karriere.jpg](https://lehne-ing.de/wp-content/uploads/2021/06/beginners-karriere.jpg)
+
+# Beginner
+
+Starten Sie bei uns Ihre Karriere, denn 
+Sie wissen was Sie wollen und wir wissen, wie es geht. Profitieren Sie 
+von unserer Expertise aus über 700 Projekten in den Bereichen 
+Infrastruktur, Mobilität, Umwelttechnik und Wasser. Bei uns arbeiten Sie
+ aktiv an der Zukunft unserer Stadt mit.
+Wir arbeiten in [Teams](https://lehne-ing.de/arbeiten-bei-lehne-ing/)
+ mit verschiedenen Aufgaben und großer Transparenz. Eine gute fachliche 
+Qualifikation setzen wir voraus. Außerdem legen wir Wert auf 
+Persönlichkeit, Kommunikation und Neugierde. 
+Über eine Einarbeitung *on the job* und die Unterstützung mit moderner Technologie fordern und fördern wir Sie individuell.
+Wir sind gespannt auf Ihre Bewerbung!
+
+![https://lehne-ing.de/wp-content/uploads/2023/05/iStock-1443245439-1.jpg](https://lehne-ing.de/wp-content/uploads/2023/05/iStock-1443245439-1.jpg)
+
+# Studierende
+
+Junge Talente fördern wir seit jeher gerne und finden es immer wieder
+ spannend, wie aus Theorie von der Uni bei uns Praxis wird. 
+Bei LEHNE ing. bieten wir daher die 
+Möglichkeit, über Praktika, Abschlussarbeiten oder als Werkstudent einen
+ Einblick in die Berufswelt zu bekommen. Nicht selten ergeben sich 
+daraus Chancen für den Berufseinstieg nach dem Studium.
+Senden Sie uns Ihre Initiativbewerbung gerne per [E-Mail](mailto:personal@lehne-ing.de) oder schauen Sie zuerst bei unseren Stellenangeboten:
+
+![https://lehne-ing.de/wp-content/uploads/2021/06/Schueler.jpg](https://lehne-ing.de/wp-content/uploads/2021/06/Schueler.jpg)
+
+# SchülerInnen
+
+Bei einer ersten Orientierung im 
+Berufsleben sind wir gerne behilflich und freuen uns über neugierige und
+ wissbegierige Schülerinnen und Schüler. Bei uns kannst Du einen 
+„Schnuppertag“ als auch ein Schulpraktikum absolvieren.
+Der Beruf des Ingenieurs oder des technischen Zeichners bringt viele 
+spannende Aspekte mit sich, die wir gerne der kommenden Generation aus 
+erster Hand zeigen.
+Also bewirb Dich gerne per [E-Mail](mailto:personal@lehne-ing.de).
+
+Sie haben Fragen zur Arbeit bei LEHNE ing. oder Interesse an einem Job gewonnen ?
+
+Kontaktieren Sie uns per [E-Mail](mailto:info@lehne-ing.de) oder schauen Sie sich gerne unsere aktuellen Stellenangebote an.
