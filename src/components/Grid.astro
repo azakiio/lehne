@@ -1,0 +1,23 @@
+---
+interface Props {
+  items: { label: string; image: string; url: string }[];
+}
+
+const { items } = Astro.props;
+---
+
+<div class="grid grid-cols-3">
+  {
+    items.map(({ label, url, image }) => (
+      <a href={url} class="card" style={`--bg-image: ${image}`}>
+        <div>{label}</div>
+      </a>
+    ))
+  }
+</div>
+
+<style>
+  .card {
+    background-image: url(var(--bg-image));
+  }
+</style>

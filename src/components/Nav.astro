@@ -1,62 +1,49 @@
 ---
-import DropDown from "./DropDown";
+import DropDown from "./DropDown.astro";
 import ThemeToggleButton from "./ThemeToggleButton.svelte";
-import "./DropDown.module.css";
-import { getRelativeLocaleUrl } from "astro:i18n";
 
 const expertiseLinks = {
   label: "Expertise",
-  url: "expertise",
+  href: "expertise",
   items: [
-    { label: "Mobility", url: "mobility" },
-    { label: "Infrastructure", url: "infrastructure" },
-    { label: "Environment", url: "environment" },
-    { label: "Water", url: "water" },
-    { label: "Digitalisation", url: "digitalisation" },
-    { label: "Health and safety", url: "health-and-safety" },
+    { label: "Mobility", href: "mobility" },
+    { label: "Infrastructure", href: "infrastructure" },
+    { label: "Environment", href: "environment" },
+    { label: "Water", href: "water" },
+    { label: "Digitalisation", href: "digitalisation" },
+    { label: "Health and safety", href: "health-and-safety" },
   ],
 };
 
 const aboutUsLinks = {
   label: "About us",
-  url: "about-us",
+  href: "about-us",
   items: [
-    { label: "Services", url: "services" },
-    { label: "Team", url: "team" },
-    { label: "Management", url: "management" },
-    { label: "Expert-Network", url: "expert-network" },
-    { label: "History", url: "history" },
+    { label: "Services", href: "services" },
+    { label: "Team", href: "team" },
+    { label: "Management", href: "management" },
+    { label: "Expert-Network", href: "expert-network" },
+    { label: "History", href: "history" },
   ],
 };
 const careerLinks = {
   label: "Career",
-  url: "career",
+  href: "career",
   items: [
-    { label: "Working at LEHNE ing.", url: "working-at-lehne-ing" },
-    { label: "Jobs", url: "jobs" },
-    { label: "Talent Promotion", url: "talent-promotion" },
+    { label: "Working at LEHNE ing.", href: "working-at-lehne-ing" },
+    { label: "Jobs", href: "jobs" },
+    { label: "Talent Promotion", href: "talent-promotion" },
   ],
 };
 ---
 
 <nav>
-  <DropDown data={expertiseLinks} client:idle />
-  <DropDown data={aboutUsLinks} client:idle />
-  <DropDown data={careerLinks} client:idle />
-  <a
-    class="link"
-    href={getRelativeLocaleUrl(Astro.currentLocale || "en", "projects")}
-    >Projects</a
-  >
-  <a
-    class="link"
-    href={getRelativeLocaleUrl(Astro.currentLocale || "en", "contact")}
-    >Contact</a
-  >
-  <a
-    class="link"
-    href={getRelativeLocaleUrl(Astro.currentLocale || "en", "expert-network")}>VBI</a
-  >
+  <DropDown {...expertiseLinks} />
+  <DropDown {...aboutUsLinks} />
+  <DropDown {...careerLinks} />
+  <DropDown label="Projects" href="projects" />
+  <DropDown label="Contact" href="contact" />
+  <DropDown label="VBI" href="expert-network" />
   <div class="theme-toggle-container">
     <ThemeToggleButton client:load />
   </div>
@@ -68,10 +55,19 @@ const careerLinks = {
     display: flex;
     flex: 1;
     font-family: var(--font-family-sans);
-    font-weight: 700;
+    /* font-weight: 700; */
     justify-content: flex-end;
-    text-transform: uppercase;
     color: white;
+
+    @media (max-width: 600px) {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: var(--primary-color);
+    }
   }
 
   .theme-toggle-container {
