@@ -3,6 +3,8 @@ layout: "~/layouts/MarkdownLayout.astro"
 title: "About Us"
 ---
 
+import Grid from "~/components/Grid.astro";
+
 # About us
 
 LEHNE Ingenieurgesellschaft has been active in the Hamburg
@@ -25,24 +27,23 @@ We would be extremely pleased if we were able to count you amongst
 our clients. Let our services convince you. After all, success can be
 planned.
 
-![https://lehne-ing.de/wp-content/uploads/2021/10/Leistungen-LEHNE-1-1024x768.jpg](https://lehne-ing.de/wp-content/uploads/2021/10/Leistungen-LEHNE-1-1024x768.jpg)
-
-**[Services](https://lehne-ing.de/en/services/)**
-
----
-
-![https://lehne-ing.de/wp-content/uploads/2021/09/HEAT_EVENT12_selects_highres_FD_0207-1024x683.jpg](https://lehne-ing.de/wp-content/uploads/2021/09/HEAT_EVENT12_selects_highres_FD_0207-1024x683.jpg)
-
-**[Team](https://lehne-ing.de/en/team-en/)**
-
----
-
-![https://lehne-ing.de/wp-content/uploads/2021/06/Lehne-GF-Doppelbild-Farbe-Gross-1024x670.jpg](https://lehne-ing.de/wp-content/uploads/2021/06/Lehne-GF-Doppelbild-Farbe-Gross-1024x670.jpg)
-
-**[Management](https://lehne-ing.de/en/en-management/)**
-
----
-
-![https://lehne-ing.de/wp-content/uploads/2021/06/Hamburg-1956.jpg](https://lehne-ing.de/wp-content/uploads/2021/06/Hamburg-1956.jpg)
-
-**[History](https://lehne-ing.de/en/history/)**
+<Grid
+  items={[
+    {
+      label: "Services",
+      url: "/en/services",
+      image: "/about/services.jpg",
+    },
+    {
+      label: "Team",
+      url: "/en/team",
+      image: "/about/team.jpg",
+    },
+    {
+      label: "Management",
+      url: "/en/management",
+      image: "/about/management.jpg",
+    },
+    { label: "History", url: "/en/history", image: "/about/history.jpg" },
+  ]}
+/>

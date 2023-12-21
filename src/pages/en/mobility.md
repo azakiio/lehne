@@ -3,7 +3,7 @@ layout: "~/layouts/MarkdownLayout.astro"
 title: "Mobility"
 ---
 
-![https://lehne-ing.de/wp-content/uploads/2021/06/Mobilitaet-schema.jpg](https://lehne-ing.de/wp-content/uploads/2021/06/Mobilitaet-schema.jpg)
+![Hero](~/assets/mobility.jpg)
 
 # Mobility
 

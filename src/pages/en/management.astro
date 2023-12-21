@@ -1,0 +1,31 @@
+---
+import Layout from "~/layouts/MarkdownLayout.astro";
+import { managementData } from "~/data/management";
+import { Image } from "astro:assets";
+---
+
+<Layout>
+  <h1>Management</h1>
+  <p>
+    LEHNE ing. has been managed by Managing Partners Michael Meyn and Stefan
+    Paul since 2008. Together they have promoted active growth of the company
+    and secured the future of the company through innovative, sustainable and
+    personnel-oriented management. They continue to be actively involved in
+    management and handling of the projects. In the summer of 2023, the
+    management team was expanded with Jakob Paul as an additional managing
+    partner and Amelie Atassi as an authorized signatory.
+  </p>
+
+  <div class="grid grid-cols-2 gap-4vmin">
+    {
+      managementData.map(({ title, image, name, description }) => (
+        <div class="">
+          <Image src={image} alt={name} />
+          <h2 class="text-center text-primary">{name}</h2>
+          <h3 class="text-center">{title}</h3>
+          <p>{description}</p>
+        </div>
+      ))
+    }
+  </div>
+</Layout>

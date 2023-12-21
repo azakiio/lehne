@@ -1,24 +1,116 @@
 ---
 import { Image } from "astro:assets";
-import Logo from "~/lib/Logo.png";
-import Nav from "./Nav.astro";
 import { getRelativeLocaleUrl } from "astro:i18n";
-
-const { current = "" } = Astro.props;
+import Logo from "~/lib/Logo.png";
+import DropDown from "./DropDown.astro";
+import ThemeToggleButton from "./ThemeToggleButton.svelte";
+import { expertiseLinks, aboutUsLinks, careerLinks } from "~/data/links";
+import Icon from "astro-icon";
 ---
 
+<header
+  x-data="{showMenu: false}"
+  class="flex items-center gap-4 z-10 bg-primary/20 justify-between h-12vmin px-4vmin sticky top-0"
+>
+  <a href={getRelativeLocaleUrl(Astro.currentLocale || "en", "")}>
+    <Image src={Logo} alt="" class="w-15vw" />
+  </a>
+
+  <nav class="nav-desktop">
+    <DropDown {...expertiseLinks} />
+    <DropDown {...aboutUsLinks} />
+    <DropDown {...careerLinks} />
+    <a class="link" href="/en/projects">Projects</a>
+    <a class="link" href="/en/contact">Contact</a>
+    <a class="link" href="/en/expert-network">VBI</a>
+    <div class="theme-toggle-container">
+      <ThemeToggleButton client:load />
+    </div>
+  </nav>
+
+  <button class="hamburger" @click="showMenu = !showMenu">
+    <Icon class="w-8 h-8 c-white" name="mdi:menu" />
+  </button>
+
+  <nav
+    x-cloak
+    x-show="showMenu"
+    x-transition:enter-start="menu-close"
+    x-transition:enter-end="menu-open"
+    x-transition:leave-start="menu-open"
+    x-transition:leave-end="menu-close"
+    class="nav-mobile"
+  >
+    <button class="self-end" @click="showMenu = !showMenu">
+      <Icon class="w-8 h-8 c-white" name="mdi:close" />
+    </button>
+    <DropDown {...expertiseLinks} />
+    <DropDown {...aboutUsLinks} />
+    <DropDown {...careerLinks} />
+    <a class="link" href="/en/projects">Projects</a>
+    <a class="link" href="/en/contact">Contact</a>
+    <a class="link" href="/en/expert-network">VBI</a>
+    <div class="theme-toggle-container">
+      <ThemeToggleButton client:load />
+    </div>
+  </nav>
+</header>
+
 <style>
-  header {
+  .hamburger {
+    @media (min-width: 1024px) {
+      display: none;
+    }
+  }
+
+  .menu-close {
+    translate: 100%;
+  }
+
+  .menu-open {
+    translate: 0%;
+  }
+
+  .line {
+    display: block;
+    border-radius: 1rem;
+    width: 40px;
+    height: 3px;
+    margin-block: 1vmin;
+    background-color: white;
+  }
+
+  .nav-desktop {
     display: flex;
-    margin: 0 auto;
-    padding: 2em;
-    width: 100%;
+    color: white;
+    font-family: var(--font-family-sans);
+    background-color: var(--primary-color);
+    align-items: center;
+    gap: 4vmin;
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  .nav-mobile {
+    display: flex;
+    color: white;
+    font-family: var(--font-family-sans);
+    background-color: var(--primary-color);
+    align-items: center;
+    gap: 4vmin;
+    width: 300px;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: translate 1s;
+    padding: 4vmin;
+  }
+
+  .theme-toggle-container {
+    width: 75px;
   }
 </style>
-
-<header class="flex items-center gap-4 z-10 bg-primary/20">
-  <a href={getRelativeLocaleUrl(Astro.currentLocale || "en", "")}>
-    <Image src={Logo} alt="" class="w-10vw" />
-  </a>
-  <Nav current={current} />
-</header>

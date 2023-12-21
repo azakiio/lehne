@@ -3,7 +3,7 @@ layout: "~/layouts/MarkdownLayout.astro"
 title: "Infrastructure"
 ---
 
-![https://lehne-ing.de/wp-content/uploads/2021/08/Infrastruktur3.jpg](https://lehne-ing.de/wp-content/uploads/2021/08/Infrastruktur3.jpg)
+![hero](~/assets/infrastructure.jpg)
 
 # Infrastructure
 

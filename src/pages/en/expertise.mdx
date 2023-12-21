@@ -1,0 +1,51 @@
+---
+layout: "~/layouts/MarkdownLayout.astro"
+title: "Expertise"
+---
+
+import Grid from "~/components/Grid.astro";
+
+![Hero](~/assets/expertise.jpg)
+
+# Expertise
+
+LEHNE ing. offers a full range of engineering services for building
+projects in the areas of mobility, infrastructure, environment and
+water. In addition health and safety measures (SiGe) are coordinated by
+us. Furthermore we use our expert knowledge to plan and supervise the
+digital infrastructure of businesses and public departments,
+specifically in order to address the latest challenges regarding remote
+working.
+
+Our engineers expertise enables us to handle projects from many areas
+
+<Grid
+  items={[
+    {
+      label: "Mobility",
+      url: "/en/mobility",
+      image: "/expertise/mobility.png",
+    },
+    {
+      label: "Infrastructure",
+      url: "/en/infrastructure",
+      image: "/expertise/health-and-safety.png",
+    },
+    {
+      label: "Environment",
+      url: "/en/environment",
+      image: "/expertise/infrastructure.png",
+    },
+    { label: "Water", url: "/en/water", image: "/expertise/environment.png" },
+    {
+      label: "Health and Safety",
+      url: "/en/health-and-safety",
+      image: "/expertise/digitalisation.png",
+    },
+    {
+      label: "Digitalisation",
+      url: "/en/digitalisation",
+      image: "/expertise/wasser.png",
+    },
+  ]}
+/>

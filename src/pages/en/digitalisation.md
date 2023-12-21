@@ -3,7 +3,7 @@ layout: "~/layouts/MarkdownLayout.astro"
 title: "Digitalisation"
 ---
 
-![https://lehne-ing.de/wp-content/uploads/2021/07/IT-server.jpg](https://lehne-ing.de/wp-content/uploads/2021/07/IT-server.jpg)
+![Hero](~/assets/digitalisation.jpg)
 
 # Digitalisation
 

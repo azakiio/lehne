@@ -1,4 +1,7 @@
-# Sustainability
+---
+layout: "~/layouts/MarkdownLayout.astro"
+title: "Sustainability"
+---
 
 ![https://lehne-ing.de/wp-content/uploads/2021/08/Nachhaltigkeit-Banner.jpg](https://lehne-ing.de/wp-content/uploads/2021/08/Nachhaltigkeit-Banner.jpg)
 

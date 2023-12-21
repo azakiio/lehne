@@ -3,7 +3,7 @@ layout: "~/layouts/MarkdownLayout.astro"
 title: "Environment"
 ---
 
-![Umwelt](~/assets/umweltwasser.jpg)
+![Hero](~/assets/environment.jpg)
 
 # Environment
 

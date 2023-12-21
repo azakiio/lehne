@@ -3,7 +3,7 @@ layout: "~/layouts/MarkdownLayout.astro"
 title: "Health and Safety"
 ---
 
-![https://lehne-ing.de/wp-content/uploads/2021/09/sigeko-banner-.jpg](https://lehne-ing.de/wp-content/uploads/2021/09/sigeko-banner-.jpg)
+![Hero](~/assets/sigeko.jpg)
 
 # Health and safety
 

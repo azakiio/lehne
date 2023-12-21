@@ -3,7 +3,7 @@ layout: "~/layouts/MarkdownLayout.astro"
 title: "Water"
 ---
 
-![https://lehne-ing.de/wp-content/uploads/2021/07/Fleet.jpg](https://lehne-ing.de/wp-content/uploads/2021/07/Fleet.jpg)
+![Hero](~/assets/water.jpg)
 
 # Water
 
