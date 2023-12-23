@@ -3,7 +3,7 @@ layout: "~/layouts/MarkdownLayout.astro"
 title: "Mobility"
 ---
 
-![Hero](~/assets/mobility.jpg)
+![mobility](~/assets/mobility.jpg)
 
 # Mobility
 

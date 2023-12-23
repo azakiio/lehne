@@ -1,7 +1,9 @@
 ---
-import Layout from "~/layouts/MarkdownLayout.astro";
-import { managementData } from "~/data/management";
 import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+import Layout from "~/layouts/MarkdownLayout.astro";
+
+const people = await getCollection("people", ({ id }) => id.startsWith("en/"));
 ---
 
 <Layout>
@@ -18,6 +20,19 @@ import { Image } from "astro:assets";
 
   <div class="grid grid-cols-2 gap-4vmin">
     {
+      people.map(async ({ data, render }) => {
+        const { Content } = await render();
+        return (
+          <div style={`order: ${data.sortOrder};`}>
+            <Image src={data.image} alt="" />
+            <h2 class="text-center text-primary">{data.name}</h2>
+            <h3 class="text-center">{data.position}</h3>
+            <Content />
+          </div>
+        );
+      })
+    }
+    <!-- {
       managementData.map(({ title, image, name, description }) => (
         <div class="">
           <Image src={image} alt={name} />
@@ -26,6 +41,6 @@ import { Image } from "astro:assets";
           <p>{description}</p>
         </div>
       ))
-    }
+    } -->
   </div>
 </Layout>

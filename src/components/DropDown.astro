@@ -18,9 +18,11 @@ const locale = Astro.currentLocale || "en";
   <div class="menu bg-primary">
     {
       items?.map(({ label, href }) => (
-        <a class="m-2 link" href={getRelativeLocaleUrl(locale, href)}>
-          {label}
-        </a>
+        <div>
+          <a class="link" href={getRelativeLocaleUrl(locale, href)}>
+            {label}
+          </a>
+        </div>
       ))
     }
   </div>
@@ -45,6 +47,8 @@ const locale = Astro.currentLocale || "en";
     transform-origin: top;
     opacity: 0;
     scale: 1 0;
+    gap: 2vmin;
+    padding: 2vmin;
   }
 
   .parent:hover .menu {
@@ -52,21 +56,4 @@ const locale = Astro.currentLocale || "en";
     scale: 1;
     /* display: flex; */
   }
-
-  /* look into background-effect kevin powell */
-  
-
-  /* .link::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    transform: scaleX(0);
-  }
-
-  .link:hover::before {
-    transform: scaleX(1);
-  } */
 </style>

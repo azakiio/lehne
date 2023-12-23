@@ -239,7 +239,7 @@ td {
   color: inherit;
   text-decoration: none;
   padding: 10px 5px;
-  display: block;
+  /* display: block; */
   position: relative;
   text-align: center;
 

@@ -13,11 +13,8 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   i18n: {
-    defaultLocale: "en",
+    defaultLocale: "de",
     locales: ["en", "de"],
-    routing: {
-      prefixDefaultLocale: true,
-    },
   },
   output: "server",
   site: "https://astro-blog-template.netlify.app",

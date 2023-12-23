@@ -1,0 +1,28 @@
+---
+import { getEntry } from "astro:content";
+import MarkdownLayout from "~/layouts/MarkdownLayout.astro";
+import { Image } from "astro:assets";
+// 1. Get the slug from the incoming server request
+const { slug } = Astro.params;
+if (slug === undefined) {
+  throw new Error("Slug is required");
+}
+// 2. Query for the entry directly using the request slug
+const entry = await getEntry("projects", slug);
+// 3. Redirect if the entry does not exist
+if (entry === undefined) {
+  return Astro.redirect("/404");
+}
+// 4. (Optional) Render the entry to HTML in the template
+const { Content } = await entry.render();
+---
+
+<MarkdownLayout title={entry.data.title}>
+  <h1>{entry.data.title}</h1>
+  {
+    entry.data.images && (
+      <Image src={entry.data.images[0]} alt={entry.data.title} />
+    )
+  }
+  <Content />
+</MarkdownLayout>

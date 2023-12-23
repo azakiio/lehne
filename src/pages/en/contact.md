@@ -32,7 +32,7 @@ We look forward to hearing from you !
 
 ## Contact form
 
-Contact Form
+<ContactForm />
 
 ---
 
@@ -41,6 +41,8 @@ Contact Form
 LEHNE ing.’s office is in Hamburg’s city center and close to all important authorities and offices.
 
 Car parking spaces are provided for visitors. Please call in advance so that we can reserve a space for you.
+
+<Location />
 
 ### Visiting us by public transportation
 
