@@ -1,49 +1,30 @@
 ---
 layout: "~/layouts/MarkdownLayout.astro"
-title: "About Us"
 ---
 
-import Grid from "~/components/Grid.astro";
+import GridImage from "~/components/GridImage.astro";
+import { aboutUsLinksEn } from "~/data/links";
 
 # About us
 
-LEHNE Ingenieurgesellschaft has been active in the Hamburg
-metropolitan region for over 60 years. More than 700
-successfully-handled projects substantiate our extensive knowledge, and
-we are very pleased to share this with our customers and develop it
-further together. Daily work in a sector which is continually renewing
-itself makes us a qualified and agile partner who can take on new and
-unusual challenges and bring them to success.
+LEHNE Ingenieurgesellschaft has been active in the Hamburg metropolitan
+region for over 60 years. More than 700 successfully-handled projects
+substantiate our extensive knowledge, and we are very pleased to share this
+with our customers and develop it further together. Daily work in a sector
+which is continually renewing itself makes us a qualified and agile partner
+who can take on new and unusual challenges and bring them to success.
 
 As a team, we create top interdisciplinary performances through
-inter-disciplinary exchange of issues. The permanent transfer of
-knowledge between complex planning processes and specific structural
-implementation guarantees targeted and results-oriented implementation.
+inter-disciplinary exchange of issues. The permanent transfer of knowledge
+between complex planning processes and specific structural implementation
+guarantees targeted and results-oriented implementation.
 
 Open dealings with our customers and all others participating in the
 project, both internally and externally, are a matter of course for us.
 
-We would be extremely pleased if we were able to count you amongst
-our clients. Let our services convince you. After all, success can be
-planned.
+We would be extremely pleased if we were able to count you amongst our
+clients. Let our services convince you. After all, success can be planned.
 
-<Grid
-  items={[
-    {
-      label: "Services",
-      url: "/en/services",
-      image: "/about/services.jpg",
-    },
-    {
-      label: "Team",
-      url: "/en/team",
-      image: "/about/team.jpg",
-    },
-    {
-      label: "Management",
-      url: "/en/management",
-      image: "/about/management.jpg",
-    },
-    { label: "History", url: "/en/history", image: "/about/history.jpg" },
-  ]}
-/>
+<div class="grid sm:grid-cols-2 gap-4vmin">
+  <GridImage items={aboutUsLinksEn.items} />
+</div>

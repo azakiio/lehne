@@ -1,0 +1,37 @@
+---
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+import Layout from "~/layouts/MarkdownLayout.astro";
+
+const people = await getCollection("people", ({ id }) => id.startsWith("de/"));
+---
+
+<Layout>
+  <h1>Management</h1>
+  <p>
+    LEHNE ing. wird seit 2008 von den geschäftsführenden Gesellschaftern Michael
+    Meyn und Stefan Paul geführt. Gemeinsam haben sie ein aktives Wachstum des
+    Unternehmens gefördert und über ein innovatives, nachhaltiges sowie
+    personenorientiertes Management die Zukunft des Unternehmens
+    gesichert. Operativ sind sie nach wie vor in der Steuerung und Bearbeitung
+    der Projekte aktiv tätig. Im Sommer 2023 wurde das Führungsteam mit Jakob
+    Paul als weiteren Geschäftsführer und Amelie Atassi als Prokuristin
+    erweitert.
+  </p>
+
+  <div class="grid grid-cols-2 gap-4vmin">
+    {
+      people.map(async ({ data, render }) => {
+        const { Content } = await render();
+        return (
+          <div style={`order: ${data.sortOrder};`}>
+            <Image src={data.image} alt="" />
+            <h2 class="text-center text-primary">{data.name}</h2>
+            <h3 class="text-center">{data.position}</h3>
+            <Content />
+          </div>
+        );
+      })
+    }
+  </div>
+</Layout>

@@ -1,0 +1,25 @@
+---
+import { Image } from "astro:assets";
+interface Props {
+  images?: ImageMetadata[];
+}
+
+const { images } = Astro.props;
+---
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+/>
+<script is:inline src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"
+></script>
+
+<div class="py-4vmin">
+  <div class="main-carousel" data-flickity='{ "wrapAround": true }'>
+    {
+      images?.map((image) => {
+        return <Image src={image} alt="" class="h-70vh object-contain w-full" />;
+      })
+    }
+  </div>
+</div>

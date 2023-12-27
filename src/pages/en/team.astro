@@ -1,0 +1,70 @@
+---
+import { Image } from "astro:assets";
+import MarkdownLayout from "~/layouts/MarkdownLayout.astro";
+import { Icon } from "astro-icon";
+
+const people = [
+  { name: "S. Eikenroth", image: "../team/SEikenroth.jpg" },
+  { name: "M. Himmelreich", image: "../team/MHimmelreich.jpg" },
+  { name: "C. Lips", image: "../team/CLips.jpg" },
+  { name: "O. Paul", image: "../team/OPaul.jpg" },
+  { name: "E. Timmermann", image: "../team/ETimmermann.jpg" },
+  { name: "N. Schieke", image: "../team/NSchieke.jpg" },
+  { name: "F. Hänsch", image: "../team/FHaensch.jpg" },
+  { name: "V. Kolaska", image: "../team/VKolaska.jpg" },
+  { name: "B. Römmer", image: "../team/BRoemmer.jpg" },
+  { name: "N. Goldberg", image: "../team/NGoldberg.jpg" },
+  { name: "C. Grittner", image: "../team/CGrittner.jpg" },
+  { name: "E. Kämper", image: "../team/EKaemper.jpg" },
+  { name: "L. Bentin", image: "../team/LBentin.jpg" },
+  { name: "L. Schneider", image: "../team/LSchneider.jpg" },
+  { name: "S. Mannes", image: "../team/SMannes.jpg" },
+  { name: "T. Armborst", image: "../team/TArmborst.jpg" },
+  { name: "S. Lehmann", image: "../team/SLehmann.jpg" },
+  { name: "N. Brunken", image: "../team/NBrunken.jpg" },
+  { name: "J. Schmidt", image: "../team/JSchmidt.jpg" },
+  { name: "H. Aldag", image: "../team/HAldag.jpg" },
+  { name: "G. Niemann-Hiessl", image: "../team/GNiemann.jpg" },
+  { name: "F. Kohl", image: "../team/FKohl.jpg" },
+  { name: "V. Saini", image: "../team/VSaini.jpg" },
+  { name: "K. Baginski", image: "../team/KBaginski.jpg" },
+  { name: "H. Alsaoud", image: "../team/HAlsaoud.jpg" },
+  { name: "J. Wollatz", image: "../team/JWollatz.jpg" },
+  { name: "T. Oellrich", image: "../team/TOellrich.jpg" },
+];
+
+const images = import.meta.glob<{ default: ImageMetadata }>("../team/*.jpg");
+---
+
+<MarkdownLayout title="Team">
+  <h1>Team</h1>
+  <p>
+    Top-quality expertise can only be properly used in a motivated and versatile
+    team. For this reason LEHNE ing. employs engineers originating from
+    different disciplines ranging from the classical civil engineer through
+    geographers, hydraulic engineers and technical draftsmen.
+  </p>
+  <p>
+    We place great emphasis on innovative personalities who are keen on taking
+    on complex, new challenges.
+  </p>
+
+  <div
+    class="grid sm:grid-cols-2 md:grid-cols-3 gap-4vmin justify-items-center"
+  >
+    {
+      people.map(({ name, image }) => {
+        return (
+          <div class="text-center">
+            {images[image] ? (
+              <Image src={images[image]()} alt={name} />
+            ) : (
+              <Icon name="mdi:portrait" class="opacity-25 w-full" />
+            )}
+            <div class="text-primary">{name}</div>
+          </div>
+        );
+      })
+    }
+  </div>
+</MarkdownLayout>

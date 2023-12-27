@@ -1,0 +1,68 @@
+---
+import { Image } from "astro:assets";
+import MarkdownLayout from "~/layouts/MarkdownLayout.astro";
+import { Icon } from "astro-icon";
+
+const people = [
+  { name: "S. Eikenroth", image: "./SEikenroth.jpg" },
+  { name: "M. Himmelreich", image: "./MHimmelreich.jpg" },
+  { name: "C. Lips", image: "./CLips.jpg" },
+  { name: "O. Paul", image: "./OPaul.jpg" },
+  { name: "E. Timmermann", image: "./ETimmermann.jpg" },
+  { name: "N. Schieke", image: "./NSchieke.jpg" },
+  { name: "F. Hänsch", image: "./FHaensch.jpg" },
+  { name: "V. Kolaska", image: "./VKolaska.jpg" },
+  { name: "B. Römmer", image: "./BRoemmer.jpg" },
+  { name: "N. Goldberg", image: "./NGoldberg.jpg" },
+  { name: "C. Grittner", image: "./CGrittner.jpg" },
+  { name: "E. Kämper", image: "./EKaemper.jpg" },
+  { name: "L. Bentin", image: "./LBentin.jpg" },
+  { name: "L. Schneider", image: "./LSchneider.jpg" },
+  { name: "S. Mannes", image: "./SMannes.jpg" },
+  { name: "T. Armborst", image: "./TArmborst.jpg" },
+  { name: "S. Lehmann", image: "./SLehmann.jpg" },
+  { name: "N. Brunken", image: "./NBrunken.jpg" },
+  { name: "J. Schmidt", image: "./JSchmidt.jpg" },
+  { name: "H. Aldag", image: "./HAldag.jpg" },
+  { name: "G. Niemann-Hiessl", image: "./GNiemann.jpg" },
+  { name: "F. Kohl", image: "./FKohl.jpg" },
+  { name: "V. Saini", image: "./VSaini.jpg" },
+  { name: "K. Baginski", image: "./KBaginski.jpg" },
+  { name: "H. Alsaoud", image: "./HAlsaoud.jpg" },
+  { name: "J. Wollatz", image: "./JWollatz.jpg" },
+  { name: "T. Oellrich", image: "./TOellrich.jpg" },
+];
+
+const images = import.meta.glob<{ default: ImageMetadata }>("./*.jpg");
+---
+
+<MarkdownLayout title="Team">
+  <h1>Team</h1>
+  <p>
+    Erstklassige Kompetenzen können erst in einem motivierten und vielseitigen
+    Team ihren Einsatz finden. Daher beschäftigen wir bei LEHNE ing. Ingenieure
+    und Ingenieurinnen aus unterschiedlichen Disziplinen: Bauingenieure,
+    Geographen, Wasserbauingenieure und technische Bauzeichner. Wir setzen auf
+    innovative Persönlichkeiten die Lust haben, komplexe und neue
+    Herausforderungen anzunehmen.
+  </p>
+
+  <div
+    class="grid sm:grid-cols-2 md:grid-cols-3 gap-4vmin justify-items-center"
+  >
+    {
+      people.map(({ name, image }) => {
+        return (
+          <div class="text-center">
+            {images[image] ? (
+              <Image src={images[image]()} alt={name} />
+            ) : (
+              <Icon name="mdi:portrait" class="opacity-25" />
+            )}
+            <div class="text-primary">{name}</div>
+          </div>
+        );
+      })
+    }
+  </div>
+</MarkdownLayout>

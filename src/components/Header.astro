@@ -4,8 +4,10 @@ import { getRelativeLocaleUrl } from "astro:i18n";
 import Logo from "~/lib/Logo.png";
 import DropDown from "./DropDown.astro";
 import ThemeToggleButton from "./ThemeToggleButton.svelte";
-import { expertiseLinks, aboutUsLinks, careerLinks } from "~/data/links";
+import { links } from "~/data/links";
 import Icon from "astro-icon";
+import { getLangFromUrl } from "~/utils/lang";
+const lang = getLangFromUrl(Astro.url);
 ---
 
 <header
@@ -17,15 +19,24 @@ import Icon from "astro-icon";
   </a>
 
   <nav class="nav-desktop">
-    <DropDown {...expertiseLinks} />
-    <DropDown {...aboutUsLinks} />
-    <DropDown {...careerLinks} />
-    <a class="link" href="/en/projects">Projects</a>
-    <a class="link" href="/en/contact">Contact</a>
-    <a class="link" href="/en/expert-network">VBI</a>
+    {
+      links[lang].map((link) => {
+        if (link.items) {
+          return <DropDown {...link} />;
+        } else {
+          return (
+            <a class="link" href={link.href}>
+              {link.label}
+            </a>
+          );
+        }
+      })
+    }
     <div class="theme-toggle-container">
       <ThemeToggleButton client:load />
     </div>
+    <a href="/en">en</a>
+    <a href="/">de</a>
   </nav>
 
   <button class="hamburger" @click="showMenu = !showMenu">
@@ -44,12 +55,19 @@ import Icon from "astro-icon";
     <button class="self-end" @click="showMenu = !showMenu">
       <Icon class="w-8 h-8 c-white" name="mdi:close" />
     </button>
-    <DropDown {...expertiseLinks} />
-    <DropDown {...aboutUsLinks} />
-    <DropDown {...careerLinks} />
-    <a class="link" href="/en/projects">Projects</a>
-    <a class="link" href="/en/contact">Contact</a>
-    <a class="link" href="/en/expert-network">VBI</a>
+    {
+      links[lang].map((link) => {
+        if (link.items) {
+          return <DropDown {...link} />;
+        } else {
+          return (
+            <a class="link" href={link.href}>
+              {link.label}
+            </a>
+          );
+        }
+      })
+    }
     <div class="theme-toggle-container">
       <ThemeToggleButton client:load />
     </div>

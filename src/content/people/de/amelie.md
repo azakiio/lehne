@@ -1,7 +1,7 @@
 ---
 name: "Amelie Atassi"
 position: "Master of Science"
-image: "../michael.jpg"
+image: "../amelie.jpg"
 sortOrder: 2
 ---
 

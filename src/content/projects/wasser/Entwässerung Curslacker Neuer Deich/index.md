@@ -4,8 +4,6 @@ images:
   - "./cover.jpg"
 ---
 
----
-
 Für eine Gewerbeerschließung von rund 10 ha Erschließungsgebiet im Osten
 Hamburgs wurde die Oberflächenentwässerung von den Straßenflächen und
 Grundstücken geplant. Besonderheit hierbei war der vorhandene

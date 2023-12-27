@@ -1,0 +1,55 @@
+---
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+import MarkdownLayout from "~/layouts/MarkdownLayout.astro";
+const entries = await getCollection("projects", ({ slug }) => {
+  return slug.includes("en/");
+});
+const title = "Projects";
+---
+
+<MarkdownLayout title={title}>
+  <h1>{title}</h1>
+  <p>
+    In the last years and decades LEHNE ing. has succesfully realised projects
+    in the areas mobility, infrastructure, environment, and water. A small
+    selection can be found here.
+  </p>
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4vmin">
+    {
+      entries.map(({ data, slug }) => (
+        <a href={slug} class="card">
+          {data.images?.[0] && (
+            <Image class="background" src={data.images?.[0]} alt="" />
+          )}
+          <div class="text-white text-lg drop-shadow-lg">{data.title}</div>
+        </a>
+      ))
+    }
+  </div>
+</MarkdownLayout>
+<style>
+  .card {
+    position: relative;
+    display: grid;
+    place-content: center;
+    aspect-ratio: 1/1;
+    text-align: center;
+    overflow: clip;
+    background-color: black;
+    padding: 1vmin;
+  }
+
+  .background {
+    opacity: 0.6;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: scale 1s;
+  }
+
+  .card:hover .background {
+    scale: 1.2;
+  }
+</style>

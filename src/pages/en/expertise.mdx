@@ -3,9 +3,10 @@ layout: "~/layouts/MarkdownLayout.astro"
 title: "Expertise"
 ---
 
-import Grid from "~/components/Grid.astro";
+import GridImage from "~/components/GridImage.astro";
+import { expertiseLinksEn } from "~/data/links";
 
-![Hero](~/assets/expertise.jpg)
+![Hero](../expertise/expertise.jpg)
 
 # Expertise
 
@@ -19,33 +20,6 @@ working.
 
 Our engineers expertise enables us to handle projects from many areas
 
-<Grid
-  items={[
-    {
-      label: "Mobility",
-      url: "/en/mobility",
-      image: "/expertise/mobility.png",
-    },
-    {
-      label: "Infrastructure",
-      url: "/en/infrastructure",
-      image: "/expertise/health-and-safety.png",
-    },
-    {
-      label: "Environment",
-      url: "/en/environment",
-      image: "/expertise/infrastructure.png",
-    },
-    { label: "Water", url: "/en/water", image: "/expertise/environment.png" },
-    {
-      label: "Health and Safety",
-      url: "/en/health-and-safety",
-      image: "/expertise/digitalisation.png",
-    },
-    {
-      label: "Digitalisation",
-      url: "/en/digitalisation",
-      image: "/expertise/wasser.png",
-    },
-]}
-/>
+<div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4vmin">
+  <GridImage items={expertiseLinksEn.items} />
+</div>

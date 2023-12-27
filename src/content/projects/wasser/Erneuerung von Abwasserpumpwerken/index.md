@@ -2,8 +2,8 @@
 title: "Erneuerung von Abwasserpumpwerken"
 images:
   - ./slide1.png
-  - ./slide2.png
-  - ./slide3.png
+  - ./slide2.jpg
+  - ./slide3.jpg
 ---
 
 Die Hamburger Hochbahn AG betreibt in den U-Bahnhöfen Pumpwerke für

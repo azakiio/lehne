@@ -1,0 +1,56 @@
+---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+interface Props {
+  items: { label: string; thumbnail?: ImageMetadata; href: string }[];
+}
+
+const { items } = Astro.props;
+---
+
+<>
+  {
+    items.map(({ label, href, thumbnail }) => {
+      if (!thumbnail) {
+        return null;
+      }
+
+      return (
+        <a href={href} class="card">
+          {thumbnail && (
+            <Image class="background" src={thumbnail} alt={label} />
+          )}
+          <div class="text-white text-3vmin font-medium drop-shadow-lg">
+            {label}
+          </div>
+        </a>
+      );
+    })
+  }
+</>
+
+<style>
+  .card {
+    position: relative;
+    display: grid;
+    place-content: center;
+    aspect-ratio: 1/1;
+    text-align: center;
+    overflow: clip;
+    background-color: black;
+    padding: 1vmin;
+  }
+
+  .background {
+    opacity: 0.6;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: scale 1s;
+  }
+
+  .card:hover .background {
+    scale: 1.2;
+  }
+</style>

@@ -3,7 +3,7 @@ layout: "~/layouts/MarkdownLayout.astro"
 title: "Expert Network"
 ---
 
-![menschen](~/assets/Menschengruppe.jpg)
+![menschen](../experten-netzwerk/Menschengruppe.jpg)
 
 # Expert-Network
 
@@ -59,4 +59,4 @@ informs society about important issues through active press work.
 - Since 1998 member of the BWK – Die Umweltingeneure, Landesverband
   Hamburg e.V. (environmental engineer, regional association Hamburg)
 
-![Mittelkalt](~/assets/Mittelkalt.jpg)
+![Mittelkalt](../experten-netzwerk/Mittelkalt.jpg)

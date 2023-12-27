@@ -62,7 +62,7 @@ h1 {
 }
 
 h2 {
-  margin: 1.6em 0 0 0;
+  margin: 1.6em 0 1em 0;
   font-size: 1.8em;
 }
 
@@ -199,6 +199,14 @@ th {
 
 td {
   padding: 0.4em 0.8em;
+}
+
+details > summary {
+  list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
 }
 
 .container {
