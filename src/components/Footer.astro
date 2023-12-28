@@ -1,14 +1,16 @@
 ---
 import Icon from "astro-icon";
+import { getLangFromUrl } from "~/utils/lang";
+const lang = getLangFromUrl(Astro.url);
 ---
 
-<footer class="grid grid-cols-2 p-10vmin bg-neutral">
-  <div class="flex items-center">
+<footer class="flex justify-between p-10vmin bg-primary text-white mta">
+  <div class="flex items-center gap-4">
     <Icon name="mdi:facebook" class="w-6 h-6" />
     <Icon name="mdi:instagram" class="'w6 h6" />
     <Icon name="mdi:email" class="w6 h6" />
   </div>
-  <div class="flex items-center">
+  <div class="flex items-center gap-4">
     <a href="impressum">Impressum</a>
     <a href="/datenschutz">Datenschutz</a>
     <a href="impressum">Impressum</a>

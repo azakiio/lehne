@@ -26,17 +26,28 @@ const lang = getLangFromUrl(Astro.url);
         } else {
           return (
             <a class="link" href={link.href}>
-              {link.label}
+              {link.thumbnail ? (
+                <Image src={link.thumbnail} alt={link.label} class="w-8 h-8" />
+              ) : (
+                link.label
+              )}
             </a>
           );
         }
       })
     }
-    <div class="theme-toggle-container">
-      <ThemeToggleButton client:load />
-    </div>
-    <a href="/en">en</a>
-    <a href="/">de</a>
+    <ThemeToggleButton client:load />
+    {
+      lang === "en" ? (
+        <a href="/" class="text-xl">
+          <Icon name="emojione:flag-for-germany" class="w6 h6" />
+        </a>
+      ) : (
+        <a href="/en" class="text-xl">
+          <Icon name="emojione:flag-for-united-kingdom" class="w6 h6" />
+        </a>
+      )
+    }
   </nav>
 
   <button class="hamburger" @click="showMenu = !showMenu">
@@ -62,15 +73,17 @@ const lang = getLangFromUrl(Astro.url);
         } else {
           return (
             <a class="link" href={link.href}>
-              {link.label}
+              {link.thumbnail ? (
+                <Image src={link.thumbnail} alt={link.label} />
+              ) : (
+                link.label
+              )}
             </a>
           );
         }
       })
     }
-    <div class="theme-toggle-container">
-      <ThemeToggleButton client:load />
-    </div>
+    <ThemeToggleButton client:load />
   </nav>
 </header>
 
@@ -126,9 +139,5 @@ const lang = getLangFromUrl(Astro.url);
     bottom: 0;
     transition: translate 1s;
     padding: 4vmin;
-  }
-
-  .theme-toggle-container {
-    width: 75px;
   }
 </style>

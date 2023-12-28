@@ -3,6 +3,8 @@ layout: "~/layouts/MarkdownLayout.astro"
 title: "Our Values"
 ---
 
+![banner](../unsere-werte/banner.jpg)
+
 # Our Values
 
 Our company philosophy includes long-term perspective cooperation. We
@@ -21,7 +23,7 @@ are always up-to-date.
 
 ---
 
-Our principles:
+## Our principles
 
 - high technical quality
 - awareness for sustainability during our work

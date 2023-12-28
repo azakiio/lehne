@@ -723,6 +723,26 @@ declare module 'astro:content' {
   collection: "jobs";
   data: InferEntrySchema<"jobs">
 };
+"en/architect": {
+	id: "en/architect";
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+};
+"en/engineer": {
+	id: "en/engineer";
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+};
+"en/student1": {
+	id: "en/student1";
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+};
+"en/student2": {
+	id: "en/student2";
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+};
 "engineer": {
 	id: "engineer";
   collection: "jobs";

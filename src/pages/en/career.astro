@@ -1,22 +1,22 @@
 ---
 import Layout from "~/layouts/MarkdownLayout.astro";
-import professionals from "./professional.jpg";
-import beginners from "./beginners.jpg";
-import students from "./students.jpg";
-import interns from "./interns.jpg";
+import professionals from "../karriere/professional.jpg";
+import beginners from "../karriere/beginners.jpg";
+import students from "../karriere/students.jpg";
+import interns from "../karriere/interns.jpg";
 import { Image } from "astro:assets";
 import Collapsible from "~/components/Collapsible.svelte";
 ---
 
 <Layout>
-  <h1>Karriere</h1>
+  <h1>Career</h1>
   <p>
-    Wir arbeiten aktiv für eine lebenswerte und nachhaltige Umgebung in unserer
-    Region. Mit guten Ideen lösen wir die Probleme unserer Kunden und setzen
-    diese um. Hierzu sind wir immer auf der Suche nach ideenreichen und
-    neugierigen Menschen, die uns bei unseren Vorhaben unterstützen. Der
-    Einstieg bei LEHNE ing. ist in allen Erfahrungsstufen - von Studierenden bis
-    berufserfahrenen Professionals - möglich:
+    We provide a worthwhile and sustainable environment in our metropolitan
+    region. We solve our clients’ problems with good ideas and then implement
+    them. For this reason we are always looking for inquisitive people who can
+    support us in our intentions with a wide range of ideas. Joining LEHNE ing.
+    is possible at all experience levels – from students to experienced
+    professionals:
   </p>
 
   <div class="grid grid-cols-2 gap-2vmin">
@@ -26,31 +26,22 @@ import Collapsible from "~/components/Collapsible.svelte";
         <div class="z-10">Professionals</div>
       </div>
       <p>
-        Bei LEHNE ing. können Sie vom ersten Tag an in das Projektgeschäft
-        einsteigen. Expertise, Management und Teamfähigkeit sind bei uns sehr
-        wichtig. Wir suchen Profis, die für ihre Ideen brennen, Innovationen
-        vorantreiben und gerne im Team arbeiten.
+        At LEHNE Ing. you can start in the project business from the first day
+        onwards - we need everything from expertise, management and customer
+        service. We are looking for professionals who are burning with ideas,
+        who drive innovations forward and are happy to work in a team. For
+        example you can incorporate your specialist knowledge in the planning of
+        cycle routes, traffic routes, pipeline routing, surface drainage,
+        development of new areas, maintenance measures and much more. Our
+        working world stands out due to variety during the design of technical
+        solutions in a dynamic project environment. If we have made you curious
+        you can find a brief insight into <a href="/en/working-at-lehne-ing"
+          >our working life</a
+        > at LEHNE Ing. here.
       </p>
       <p>
-        Bringen Sie Ihr Fachwissen ein in der Planung von Velorouten,
-        Verkehrswegen, Leitungstrassen, Oberflächenentwässerungen, Erschließung
-        neuer baulicher Räume, Instandsetzung und vielem mehr.
-      </p>
-      <p>
-        <a href="https://lehne-ing.de/arbeiten-bei-lehne-ing/" target="_blank"
-          >Unsere Arbeitswelt</a
-        >
-         zeichnet sich durch eine abwechslungsreiche Gestaltung von technischen
-        Lösungen in einem dynamischen Projektumfeld aus. Darüber hinaus bieten
-        wir Ihnen die Möglichkeit, Verantwortung zu übernehmen und technische
-        Neuerungen umzusetzen.
-      </p>
-      <p>
-        Schauen Sie gerne unsere aktuellen Jobangebote an oder schicken Sie uns
-        eine Initiativbewerbung per <a
-          href="mailto:personal@lehne-ing.de"
-          target="_blank">E-Mail</a
-        >
+        Furthermore, we can offer you the opportunity to take over
+        responsibility and to implement technical innovations.
       </p>
     </Collapsible>
 
@@ -60,48 +51,48 @@ import Collapsible from "~/components/Collapsible.svelte";
         <div class="z10">Beginners</div>
       </div>
       <p>
-        Starten Sie bei uns Ihre Karriere, denn Sie wissen was Sie wollen und
-        wir wissen, wie es geht. Profitieren Sie von unserer Expertise aus über
-        700 Projekten in den Bereichen Infrastruktur, Mobilität, Umwelttechnik
-        und Wasser. Bei uns arbeiten Sie aktiv an der Zukunft unserer Stadt mit.
+        We can make a direct start-up in your career easy. If you know what you
+        want, we know how to do it. You can profit from our know-how, which we
+        have obtained from over 700 projects in the infrastructure, mobility,
+        environmental engineering and water sectors. You will be actively
+        shaping the future of our city when you work for us.
       </p>
       <p>
-        Wir arbeiten in <a
-          href="https://lehne-ing.de/arbeiten-bei-lehne-ing/"
-          target="_blank">Teams</a
+        We work in teams with various tasks and considerable transparency.
+        Please take the opportunity to read the description of <a
+          href="/en/working-at-lehne-ing"
         >
-         mit verschiedenen Aufgaben und großer Transparenz. Eine gute fachliche
-        Qualifikation setzen wir voraus. Außerdem legen wir Wert auf
-        Persönlichkeit, Kommunikation und Neugierde.
+          our working world.
+        </a>
       </p>
       <p>
-        Über eine Einarbeitung <i>on the job</i> und die Unterstützung mit
-        moderner Technologie fordern und fördern wir Sie individuell.
+        We require good specialist qualifications. Furthermore, we place value
+        on your personality, communication abilities and curiosity for new
+        things. We can provide both support and individual promotion using
+        “on-the-job” induction and the support of the most modern technology
+        available.
       </p>
-      <p>Wir sind gespannt auf Ihre Bewerbung!</p>
+      <p>We are really looking forward to your application.</p>
     </Collapsible>
 
     <Collapsible client:load>
       <div slot="trigger" class="card">
         <Image src={interns} alt="Studierende" class="background" />
-        <div class="z10">Studierende</div>
+        <div class="z10">Students</div>
       </div>
       <p>
-        Junge Talente fördern wir seit jeher gerne und finden es immer wieder
-        spannend, wie aus Theorie von der Uni bei uns Praxis wird.
+        We are happy to promote young talent and always find it exciting to see
+        what practice can make out of theory.
       </p>
       <p>
-        Bei LEHNE ing. bieten wir daher die Möglichkeit, über Praktika,
-        Abschlussarbeiten oder als Werkstudent einen Einblick in die Berufswelt
-        zu bekommen. Nicht selten ergeben sich daraus Chancen für den
-        Berufseinstieg nach dem Studium.
+        LEHNE Ing. offers facilities for obtaining an insight into the working
+        world through internships, degree theses or part-time jobs.
+        Opportunities for a career start after your studies often result from
+        these.
       </p>
       <p>
-        Senden Sie uns Ihre Initiativbewerbung gerne per <a
-          href="mailto:personal@lehne-ing.de"
-          target="_blank">E-Mail</a
-        > oder schauen Sie zuerst bei unseren <a href="/stellenangebote"
-          >Stellenangeboten</a
+        Please send your application to <a href="mailto:personal@lehne-ing.de"
+          >personal@lehne-ing.de</a
         >
       </p>
     </Collapsible>
@@ -109,27 +100,30 @@ import Collapsible from "~/components/Collapsible.svelte";
     <Collapsible client:load>
       <div slot="trigger" class="card">
         <Image src={students} alt="SchülerInnen" class="background" />
-        <div class="z10">SchülerInnen</div>
+        <div class="z10">Pupils</div>
       </div>
       <p>
-        Bei einer ersten Orientierung im Berufsleben sind wir gerne behilflich
-        und freuen uns über neugierige und wissbegierige Schülerinnen und
-        Schüler. Bei uns kannst Du einen „Schnuppertag“ als auch ein
-        Schulpraktikum absolvieren.
+        We will gladly be of help during initial orientation in the working
+        world and are happy to receive curious, knowledge-hungry school pupils.
+        We attempt to integrate both “try-out days” and school internships in
+        our working day. The profession of engineer or draughtsman can provide
+        plenty of exciting aspects which are not always apparent at first
+        glance.
       </p>
       <p>
-        Der Beruf des Ingenieurs oder des technischen Zeichners bringt viele
-        spannende Aspekte mit sich, die wir gerne der kommenden Generation aus
-        erster Hand zeigen.
-      </p>
-      <p>
-        Also bewirb Dich gerne per <a
-          href="mailto:personal@lehne-ing.de"
-          target="_blank">E-Mail</a
+        We would be happy to receive your application at <a
+          href="mailto:personal@lehne-ing.de">personal@lehne-ing.de</a
         >.
       </p>
     </Collapsible>
   </div>
+
+  <hr />
+  <p>
+    You got questions or interested in working with us? Get in touch with us via
+    <a href="info@lehne-ing.de">mail</a> or have a look at our current job
+    openings.
+  </p>
 </Layout>
 
 <style>

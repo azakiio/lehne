@@ -1,0 +1,75 @@
+---
+import Collapsible from "~/components/Collapsible.svelte";
+import type { CollectionEntry } from "astro:content";
+interface Props {
+  job: CollectionEntry<"jobs">;
+}
+
+const { job } = Astro.props;
+
+const { title, description, aufgaben, profil, angebot } = job.data;
+---
+
+<Collapsible client:load>
+  <div
+    slot="trigger"
+    class="border-2 border-black p-2 font-bold text-primary text-xl"
+  >
+    {title}
+  </div>
+
+  <p>To strengthen our team, we are looking for you as soon as possible:</p>
+
+  <h3 class="text-primary text-center">{title}</h3>
+
+  <p>
+    {description}
+  </p>
+
+  <p>
+    <b>Your tasks:</b>
+  </p>
+
+  <ul>
+    {aufgaben.map((item) => <li>{item}</li>)}
+  </ul>
+
+  <p>
+    <b>Your profile:</b>
+  </p>
+
+  <ul>
+    <ul>
+      {profil.map((item) => <li>{item}</li>)}
+    </ul>
+  </ul>
+
+  <p>
+    <b>What we are offering:</b>
+  </p>
+
+  <ul>
+    <ul>
+      {angebot.map((item) => <li>{item}</li>)}
+    </ul>
+  </ul>
+
+  <p>
+    Are you interested? Then we look forward to receiving your application,
+    preferably by e-mail to the
+  </p>
+
+  <div class="text-center">
+    <p>LEHNE Ingenieurgesellschaft mbH für Bauen und Umwelt</p>
+    <p>
+      Danziger Str. 35a, 20099 Hamburg, <a href="mailto:personal@lehne-ing.de"
+        >E-Mail</a
+      >
+    </p>
+  </div>
+
+  <p>
+    If you have any questions, feel free to get in touch with Jakob Paul (040 /
+    284 99 16-29).
+  </p>
+</Collapsible>

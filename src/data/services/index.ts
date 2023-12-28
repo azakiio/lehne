@@ -77,3 +77,68 @@ export const bauleitung = [
     thumbnail: bauueberwachungImage,
   },
 ];
+
+export const planning = [
+  {
+    label: "Roads",
+    href: "/en/mobility",
+    thumbnail: strassenImage,
+  },
+  {
+    label: "Traffic",
+    href: "/en/mobility",
+    thumbnail: verkehrImage,
+  },
+  {
+    label: "Infrastructure",
+    href: "/en/infrastructure/",
+    thumbnail: infrastrukturImage,
+  },
+  { label: "Environment", href: "/en/environment", thumbnail: umweltImage },
+  {
+    label: "Development",
+    href: "/en/infrastructure",
+    thumbnail: erschliessungImage,
+  },
+  {
+    label: "Drainage",
+    href: "/en/water",
+    thumbnail: entwaesserungImage,
+  },
+];
+
+export const consulting = [
+  {
+    label: "Consultation and expertise",
+    href: "/en/expertise",
+    thumbnail: beratungExpertiseImage,
+  },
+  {
+    label: "Digitization and IT administration",
+    href: "/en/digitalisation",
+    thumbnail: digitalisierungImage,
+  },
+  {
+    label: "Safety and health protection",
+    href: "/en/health-and-safety/",
+    thumbnail: sigeKoImage,
+  },
+];
+
+export const construction = [
+  {
+    label: "Preparation",
+    href: "/en/expertise",
+    thumbnail: vorbereitungImage,
+  },
+  {
+    label: "Coordination",
+    href: "/en/expertise",
+    thumbnail: koordinierungImage,
+  },
+  {
+    label: "Local Monitoring",
+    href: "/en/expertise",
+    thumbnail: bauueberwachungImage,
+  },
+];

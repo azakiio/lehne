@@ -1,3 +1,8 @@
+---
+layout: "~/layouts/MarkdownLayout.astro"
+title: "Imprint"
+---
+
 # Imprint
 
 ## LEHNE Ingenieurgesellschaft mbH für Bauen und Umwelt

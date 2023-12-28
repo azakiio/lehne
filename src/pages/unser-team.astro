@@ -1,0 +1,37 @@
+---
+import { Image } from "astro:assets";
+import MarkdownLayout from "~/layouts/MarkdownLayout.astro";
+import { Icon } from "astro-icon";
+import { people } from "~/data/team";
+---
+
+<MarkdownLayout title="Team">
+  <h1>Team</h1>
+  <p>
+    Erstklassige Kompetenzen können erst in einem motivierten und vielseitigen
+    Team ihren Einsatz finden. Daher beschäftigen wir bei LEHNE ing. Ingenieure
+    und Ingenieurinnen aus unterschiedlichen Disziplinen: Bauingenieure,
+    Geographen, Wasserbauingenieure und technische Bauzeichner. Wir setzen auf
+    innovative Persönlichkeiten die Lust haben, komplexe und neue
+    Herausforderungen anzunehmen.
+  </p>
+
+  <div
+    class="grid sm:grid-cols-2 md:grid-cols-3 gap-4vmin justify-items-center"
+  >
+    {
+      people.map(({ name, image }) => {
+        return (
+          <div class="text-center">
+            {image ? (
+              <Image src={image} alt={name} class="rounded-lg" />
+            ) : (
+              <Icon name="mdi:portrait" class="opacity-25" />
+            )}
+            <div class="text-primary font-xl font-semibold mt-1">{name}</div>
+          </div>
+        );
+      })
+    }
+  </div>
+</MarkdownLayout>

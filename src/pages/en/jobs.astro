@@ -1,0 +1,21 @@
+---
+import { getCollection } from "astro:content";
+import JobTemplateEN from "~/components/JobTemplateEN.astro";
+import MarkdownLayout from "~/layouts/MarkdownLayout.astro";
+const title = "Jobs";
+
+const jobs = await getCollection("jobs", ({ id }) => id.startsWith("en/"));
+---
+
+<MarkdownLayout title={title}>
+  <h1>{title}</h1>
+  <p>
+    You are looking for a new challenge? Would you like to further yourself both
+    professionally and personally? You can apply on one of our current job
+    openings or send us a general application. We look forward to hearing from
+    you!
+  </p>
+  <div class="grid gap-4">
+    {jobs.map((job) => <JobTemplateEN job={job} />)}
+  </div>
+</MarkdownLayout>

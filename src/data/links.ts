@@ -10,6 +10,8 @@ import Management from "./about/management.jpg";
 import Services from "./about/services.jpg";
 import Team from "./about/team.jpg";
 
+import VBI from "~/assets/vbi.jpg";
+
 export const expertiseLinksEn = {
   label: "Expertise",
   href: "/en/expertise",
@@ -110,7 +112,7 @@ const linksEn: Links[] = [
   careerLinksEn,
   { label: "Projects", href: "/en/projects" },
   { label: "Contact", href: "/en/contact" },
-  { label: "VBI", href: "/en/expert-network" },
+  { label: "VBI", href: "/en/expert-network", thumbnail: VBI },
 ];
 
 const linksDe: Links[] = [
@@ -119,7 +121,7 @@ const linksDe: Links[] = [
   careerLinksDe,
   { label: "Projekte", href: "/projekte" },
   { label: "Kontakt", href: "/kontakt" },
-  { label: "VBI", href: "/experten-netzwerk" },
+  { label: "VBI", href: "/experten-netzwerk", thumbnail: VBI },
 ];
 
 export const links = { en: linksEn, de: linksDe };
@@ -127,5 +129,6 @@ export const links = { en: linksEn, de: linksDe };
 interface Links {
   label: string;
   href: string;
+  thumbnail?: ImageMetadata;
   items?: { label: string; href: string }[];
 }
