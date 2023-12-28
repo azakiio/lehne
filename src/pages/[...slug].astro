@@ -1,8 +1,7 @@
 ---
 import { getEntry } from "astro:content";
-import MarkdownLayout from "~/layouts/MarkdownLayout.astro";
-import { Image } from "astro:assets";
 import Slider from "~/components/Slider.astro";
+import MarkdownLayout from "~/layouts/MarkdownLayout.astro";
 // 1. Get the slug from the incoming server request
 const { slug } = Astro.params;
 if (slug === undefined) {

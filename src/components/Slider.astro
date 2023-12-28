@@ -7,7 +7,7 @@ interface Props {
 const { images } = Astro.props;
 ---
 
-<script>
+<script is:inline>
   document.addEventListener("astro:page-load", () => {
     new Flickity(".main-carousel", { wrapAround: true });
   });

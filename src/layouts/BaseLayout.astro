@@ -15,10 +15,16 @@ const { title, description, permalink, current } = Astro.props;
 <html lang="en">
   <head>
     <BaseHead title={title} description={description} permalink={permalink} />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
     <script
       src="https://unpkg.com/htmx.org@1.9.9"
       integrity="sha384-QFjmbokDn2DjBjq+fM+8LUIVrAgqcNW2s0PjAxHETgRn9l4fvX31ZxDxvwQnyMOX"
       crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"
+    ></script>
   </head>
   <body>
     <div class="layout">
