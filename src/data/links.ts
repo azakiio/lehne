@@ -12,24 +12,24 @@ import Team from "./about/team.jpg";
 
 export const expertiseLinksEn = {
   label: "Expertise",
-  href: "expertise",
+  href: "/en/expertise",
   items: [
-    { label: "Mobility", href: "/mobility", thumbnail: Mobility },
+    { label: "Mobility", href: "/en/mobility", thumbnail: Mobility },
     {
       label: "Infrastructure",
-      href: "/infrastructure",
+      href: "/en/infrastructure",
       thumbnail: Infrastructure,
     },
-    { label: "Environment", href: "/environment", thumbnail: Environment },
-    { label: "Water", href: "/water", thumbnail: Water },
+    { label: "Environment", href: "/en/environment", thumbnail: Environment },
+    { label: "Water", href: "/en/water", thumbnail: Water },
     {
       label: "Digitalisation",
-      href: "/digitalisation",
+      href: "/en/digitalisation",
       thumbnail: Digitalisation,
     },
     {
       label: "Health and safety",
-      href: "/health-and-safety",
+      href: "/en/health-and-safety",
       thumbnail: HealthAndSafety,
     },
   ],
@@ -37,23 +37,23 @@ export const expertiseLinksEn = {
 
 export const aboutUsLinksEn = {
   label: "About us",
-  href: "about-us",
+  href: "/en/about-us",
   items: [
-    { label: "Services", href: "/services", thumbnail: Services },
-    { label: "Team", href: "/team", thumbnail: Team },
-    { label: "Management", href: "/management", thumbnail: Management },
-    { label: "Expert-Network", href: "/expert-network" },
-    { label: "History", href: "/history", thumbnail: History },
+    { label: "Services", href: "/en/services", thumbnail: Services },
+    { label: "Team", href: "/en/team", thumbnail: Team },
+    { label: "Management", href: "/en/management", thumbnail: Management },
+    { label: "Expert-Network", href: "/en/expert-network" },
+    { label: "History", href: "/en//history", thumbnail: History },
   ],
 };
 
 const careerLinksEn = {
   label: "Career",
-  href: "career",
+  href: "/en/career",
   items: [
-    { label: "Working at LEHNE ing.", href: "/working-at-lehne-ing" },
-    { label: "Jobs", href: "/jobs" },
-    { label: "Talent Promotion", href: "/talent-promotion" },
+    { label: "Working at LEHNE ing.", href: "/en/working-at-lehne-ing" },
+    { label: "Jobs", href: "/en/jobs" },
+    { label: "Talent Promotion", href: "/en/talent-promotion" },
   ],
 };
 

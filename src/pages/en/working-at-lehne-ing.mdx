@@ -3,7 +3,10 @@ layout: "~/layouts/MarkdownLayout.astro"
 title: "Working at LEHNE ing."
 ---
 
-![https://lehne-ing.de/wp-content/uploads/2021/07/Pflanzenwand-Bannerbild.jpg](https://lehne-ing.de/wp-content/uploads/2021/07/Pflanzenwand-Bannerbild.jpg)
+import Slider from "~/components/Slider.astro";
+import { images } from "~/data/working-at-lehne";
+
+![cover](../arbeiten-bei-lehne-ing/cover.jpg)
 
 # Working at LEHNE ing.
 
@@ -25,6 +28,8 @@ in summer – our bikes to move around the city. Often on routes we
 planned ourselves. Our office provides a newly-designed environment
 which supports team work, communication, recreational areas and flat
 hierarchies.
+
+<Slider id="office" images={images} />
 
 ---
 

@@ -1,20 +1,21 @@
 ---
 import { Image } from "astro:assets";
 interface Props {
+  id: string;
   images?: ImageMetadata[];
 }
 
-const { images } = Astro.props;
+const { id, images } = Astro.props;
 ---
 
-<script is:inline>
+<script define:vars={{ id }}>
   document.addEventListener("astro:page-load", () => {
-    new Flickity(".main-carousel", { wrapAround: true });
+    new Flickity(`#${id}`, { wrapAround: true });
   });
 </script>
 
 <div class="py-4vmin">
-  <div class="main-carousel w-4/5 mx-auto">
+  <div class="w-4/5 mx-auto" id={id}>
     {
       images?.map((image) => {
         return (

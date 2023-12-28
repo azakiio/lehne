@@ -3,7 +3,7 @@ layout: "~/layouts/MarkdownLayout.astro"
 title: "Sustainability"
 ---
 
-![https://lehne-ing.de/wp-content/uploads/2021/08/Nachhaltigkeit-Banner.jpg](https://lehne-ing.de/wp-content/uploads/2021/08/Nachhaltigkeit-Banner.jpg)
+![banner](../nachhaltigkeit/banner.jpg)
 
 ---
 
@@ -68,7 +68,7 @@ connection to rural areas and makes cities internationally competitive.
 
 ## Goals for sustainable building
 
-![https://lehne-ing.de/wp-content/uploads/2021/08/leitfaden-nachhaltiges-bauen_1.png](https://lehne-ing.de/wp-content/uploads/2021/08/leitfaden-nachhaltiges-bauen_1.png)
+![banner](../nachhaltigkeit/leitfaden.png.jpg)
 
 ## Our contribution at LEHNE ing.
 

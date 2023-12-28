@@ -1,24 +1,17 @@
 ---
+import Video from "~/assets/bgVideo.mp4";
 import BaseLayout from "~/layouts/BaseLayout.astro";
-import Video from "~/lib/bgVideo.mp4";
-import GridPhoto from "~/lib/gridPhoto.png";
-import { Image } from "astro:assets";
 
-const title = "My Astro Blog";
-const description = "The perfect starter for your perfect blog.";
+const title = "LEHNE Ing - Planung Beratung Bauleitung";
+const description =
+  "LEHNE ing. ist Ihr Partner für Planung, Beratung und Bauleitung in den Bereichen Verkehr, Infrastruktur, Umwelt, Wasser und Digitalisierung.";
 const permalink = Astro.site?.href;
 
-const cards = [
-  { title: "Sustainability", image: GridPhoto },
-  { title: "Sustainability", image: GridPhoto },
-  { title: "Sustainability", image: GridPhoto },
-  { title: "Sustainability", image: GridPhoto },
-  { title: "Sustainability", image: GridPhoto },
-  { title: "Sustainability", image: GridPhoto },
-  { title: "Sustainability", image: GridPhoto },
-  { title: "Sustainability", image: GridPhoto },
-  { title: "Sustainability", image: GridPhoto },
-];
+import GridImage from "~/components/GridImage.astro";
+import {
+aboutUsLinksEn,
+expertiseLinksEn
+} from "~/data/links";
 ---
 
 <BaseLayout title={title} description={description} permalink={permalink}>
@@ -26,82 +19,10 @@ const cards = [
   ></video>
 
   <div class="grid grid-cols-3 p-10vmin gap-4vmin">
-    {
-      cards.map(({ image }) => (
-        <div>
-          <Image src={image} alt="" />
-        </div>
-      ))
-    }
+    <GridImage items={expertiseLinksEn.items} />
+    <GridImage items={aboutUsLinksEn.items} />
+    <GridImage items={expertiseLinksEn.items} />
   </div>
 </BaseLayout>
 
-<style>
-  .home-container {
-    align-items: center;
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    margin: 2em 0;
-    min-height: 400px;
-  }
-
-  .home-copy {
-    flex: 1;
-    padding: 0 1em;
-  }
-
-  .home-copy h1 {
-    font-weight: 700;
-    margin-bottom: 0.5em;
-    line-height: 1.3;
-  }
-
-  .home-copy p {
-    font-size: 1.4em;
-  }
-
-  .hero-image-container {
-    margin: 0 1em;
-    text-align: center;
-  }
-
-  .hero-image-container picture {
-    display: block;
-    min-height: 250px;
-  }
-
-  .caption {
-    font-size: 0.8em;
-    font-style: italic;
-    text-align: left;
-  }
-
-  .hero-image {
-    width: 100%;
-    max-width: 550px;
-    margin-bottom: 1em;
-  }
-
-  @media (max-width: 1200px) {
-    p {
-      font-size: 1.2em;
-    }
-
-    .hero-image {
-      max-width: 400px;
-    }
-  }
-
-  @media (max-width: 800px) {
-    .home-container {
-      flex-direction: column;
-    }
-
-    .home-copy {
-      flex: 0;
-      padding-bottom: 2em;
-      text-align: center;
-    }
-  }
-</style>
+<style></style>

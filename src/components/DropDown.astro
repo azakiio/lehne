@@ -1,5 +1,4 @@
 ---
-import { getRelativeLocaleUrl } from "astro:i18n";
 import { Icon } from "astro-icon";
 
 interface Props {
@@ -9,17 +8,16 @@ interface Props {
 }
 
 const { label, href, items } = Astro.props;
-const locale = Astro.currentLocale || "en";
 ---
 
 <div class="relative parent flex items-center">
-  <a class="link" href={getRelativeLocaleUrl(locale, href)}>{label}</a>
+  <a class="link" href={href}>{label}</a>
   <Icon name="mdi:chevron-down" class="w6 h6" />
   <div class="menu bg-primary">
     {
       items?.map(({ label, href }) => (
         <div>
-          <a class="link" href={getRelativeLocaleUrl(locale, href)}>
+          <a class="link" href={href}>
             {label}
           </a>
         </div>

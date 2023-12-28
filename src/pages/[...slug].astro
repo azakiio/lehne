@@ -19,7 +19,7 @@ const { Content } = await entry.render();
 
 <MarkdownLayout title={entry.data.title}>
   <h1>{entry.data.title}</h1>
-  <Slider images={entry.data.images} />
+  <Slider id="slider" images={entry.data.images} />
   <!-- {
     entry.data.images && (
       <Image src={entry.data.images[0]} alt={entry.data.title} />

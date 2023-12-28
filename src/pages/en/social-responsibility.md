@@ -3,7 +3,7 @@ layout: "~/layouts/MarkdownLayout.astro"
 title: "Social responsibility"
 ---
 
-![https://lehne-ing.de/wp-content/uploads/2021/08/pexels-pixabay-209728-Benutzerdefiniert.jpg](https://lehne-ing.de/wp-content/uploads/2021/08/pexels-pixabay-209728-Benutzerdefiniert.jpg)
+![Social responsibility](../soziale-verantwortung/banner.jpg)
 
 # Social responsibility
 
