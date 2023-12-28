@@ -7,18 +7,19 @@ interface Props {
 const { images } = Astro.props;
 ---
 
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/flickity@2/dist/flickity.min.css"
-/>
-<script is:inline src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"
-></script>
+<script>
+  document.addEventListener("astro:page-load", () => {
+    new Flickity(".main-carousel", { wrapAround: true });
+  });
+</script>
 
 <div class="py-4vmin">
-  <div class="main-carousel" data-flickity='{ "wrapAround": true }'>
+  <div class="main-carousel w-4/5 mx-auto">
     {
       images?.map((image) => {
-        return <Image src={image} alt="" class="h-70vh object-contain w-full" />;
+        return (
+          <Image src={image} alt="" class="h-70vh object-contain w-full" />
+        );
       })
     }
   </div>

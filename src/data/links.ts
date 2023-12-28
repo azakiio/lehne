@@ -63,8 +63,8 @@ export const expertiseLinksDe = {
   items: [
     { label: "Mobilität", href: "/mobilitaet", thumbnail: Mobility },
     {
-      label: "Infrastrukture",
-      href: "/infrastruckture",
+      label: "Infrastruktur",
+      href: "/infrastruktur",
       thumbnail: Infrastructure,
     },
     { label: "Umwelt", href: "/umwelt", thumbnail: Environment },

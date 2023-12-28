@@ -22,18 +22,20 @@ const projects = defineCollection({
     }),
 });
 
-const pages = defineCollection({
-  type: "content",
-  schema: ({ image }) =>
-    z.object({
-      title: z.string(),
-      images: z.array(image()).optional(),
-    }),
+const jobs = defineCollection({
+  type: "data",
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    aufgaben: z.array(z.string()),
+    profil: z.array(z.string()),
+    angebot: z.array(z.string()),
+  }),
 });
 
 // 3. Export a single `collections` object to register your collection(s)
 export const collections = {
   people,
   projects,
-  pages
+  jobs,
 };

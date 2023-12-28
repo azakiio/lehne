@@ -5,6 +5,7 @@ import beginners from "./beginners.jpg";
 import students from "./students.jpg";
 import interns from "./interns.jpg";
 import { Image } from "astro:assets";
+import Collapsible from "~/components/Collapsible.svelte";
 ---
 
 <Layout>
@@ -18,69 +19,143 @@ import { Image } from "astro:assets";
     berufserfahrenen Professionals - möglich:
   </p>
 
-  <div class="grid grid-cols-2 content-center">
-    <details>
-      <summary class="text-center">
-        <Image src={professionals} alt="professionals" />
-        <h2>Professionals</h2>
-      </summary>
+  <div class="grid grid-cols-2 gap-2vmin">
+    <Collapsible client:load>
+      <div slot="trigger" class="card">
+        <Image src={professionals} alt="Professionals" class="background" />
+        <div class="z-10">Professionals</div>
+      </div>
+      <p>
+        Bei LEHNE ing. können Sie vom ersten Tag an in das Projektgeschäft
+        einsteigen. Expertise, Management und Teamfähigkeit sind bei uns sehr
+        wichtig. Wir suchen Profis, die für ihre Ideen brennen, Innovationen
+        vorantreiben und gerne im Team arbeiten.
+      </p>
+      <p>
+        Bringen Sie Ihr Fachwissen ein in der Planung von Velorouten,
+        Verkehrswegen, Leitungstrassen, Oberflächenentwässerungen, Erschließung
+        neuer baulicher Räume, Instandsetzung und vielem mehr.
+      </p>
+      <p>
+        <a href="https://lehne-ing.de/arbeiten-bei-lehne-ing/" target="_blank"
+          >Unsere Arbeitswelt</a
+        >
+         zeichnet sich durch eine abwechslungsreiche Gestaltung von technischen
+        Lösungen in einem dynamischen Projektumfeld aus. Darüber hinaus bieten
+        wir Ihnen die Möglichkeit, Verantwortung zu übernehmen und technische
+        Neuerungen umzusetzen.
+      </p>
+      <p>
+        Schauen Sie gerne unsere aktuellen Jobangebote an oder schicken Sie uns
+        eine Initiativbewerbung per <a
+          href="mailto:personal@lehne-ing.de"
+          target="_blank">E-Mail</a
+        >
+      </p>
+    </Collapsible>
 
-       Bei LEHNE ing. können Sie vom ersten Tag an in das Projektgeschäft einsteigen.
-      Expertise, Management und Teamfähigkeit sind bei uns sehr wichtig. Wir suchen
-      Profis, die für ihre Ideen brennen, Innovationen vorantreiben und gerne im
-      Team arbeiten. Bringen Sie Ihr Fachwissen ein in der Planung von Velorouten,
-      Verkehrswegen, Leitungstrassen, Oberflächenentwässerungen, Erschließung neuer
-      baulicher Räume, Instandsetzung und vielem mehr. [Unsere Arbeitswelt](https://lehne-ing.de/arbeiten-bei-lehne-ing/)
-      zeichnet sich durch eine abwechslungsreiche Gestaltung von technischen Lösungen
-      in einem dynamischen Projektumfeld aus. Darüber hinaus bieten wir Ihnen die
-      Möglichkeit, Verantwortung zu übernehmen und technische Neuerungen umzusetzen.
-      Schauen Sie gerne unsere aktuellen Jobangebote an oder schicken Sie uns eine
-      Initiativbewerbung per [E-Mail](mailto:personal@lehne-ing.de).
-    </details>
+    <Collapsible client:load>
+      <div slot="trigger" class="card">
+        <Image src={beginners} alt="Beginners" class="background" />
+        <div class="z10">Beginners</div>
+      </div>
+      <p>
+        Starten Sie bei uns Ihre Karriere, denn Sie wissen was Sie wollen und
+        wir wissen, wie es geht. Profitieren Sie von unserer Expertise aus über
+        700 Projekten in den Bereichen Infrastruktur, Mobilität, Umwelttechnik
+        und Wasser. Bei uns arbeiten Sie aktiv an der Zukunft unserer Stadt mit.
+      </p>
+      <p>
+        Wir arbeiten in <a
+          href="https://lehne-ing.de/arbeiten-bei-lehne-ing/"
+          target="_blank">Teams</a
+        >
+         mit verschiedenen Aufgaben und großer Transparenz. Eine gute fachliche
+        Qualifikation setzen wir voraus. Außerdem legen wir Wert auf
+        Persönlichkeit, Kommunikation und Neugierde.
+      </p>
+      <p>
+        Über eine Einarbeitung <i>on the job</i> und die Unterstützung mit
+        moderner Technologie fordern und fördern wir Sie individuell.
+      </p>
+      <p>Wir sind gespannt auf Ihre Bewerbung!</p>
+    </Collapsible>
 
-    <details>
-      <summary> ![beginners](./beginners.jpg) ## Beginner</summary>
+    <Collapsible client:load>
+      <div slot="trigger" class="card">
+        <Image src={interns} alt="Studierende" class="background" />
+        <div class="z10">Studierende</div>
+      </div>
+      <p>
+        Junge Talente fördern wir seit jeher gerne und finden es immer wieder
+        spannend, wie aus Theorie von der Uni bei uns Praxis wird.
+      </p>
+      <p>
+        Bei LEHNE ing. bieten wir daher die Möglichkeit, über Praktika,
+        Abschlussarbeiten oder als Werkstudent einen Einblick in die Berufswelt
+        zu bekommen. Nicht selten ergeben sich daraus Chancen für den
+        Berufseinstieg nach dem Studium.
+      </p>
+      <p>
+        Senden Sie uns Ihre Initiativbewerbung gerne per <a
+          href="mailto:personal@lehne-ing.de"
+          target="_blank">E-Mail</a
+        > oder schauen Sie zuerst bei unseren <a href="/stellenangebote"
+          >Stellenangeboten</a
+        >
+      </p>
+    </Collapsible>
 
-       Starten Sie bei uns Ihre Karriere, denn Sie wissen was Sie wollen und wir
-      wissen, wie es geht. Profitieren Sie von unserer Expertise aus über 700 Projekten
-      in den Bereichen Infrastruktur, Mobilität, Umwelttechnik und Wasser. Bei uns
-      arbeiten Sie aktiv an der Zukunft unserer Stadt mit. Wir arbeiten in [Teams](https://lehne-ing.de/arbeiten-bei-lehne-ing/)
-      mit verschiedenen Aufgaben und großer Transparenz. Eine gute fachliche Qualifikation
-      setzen wir voraus. Außerdem legen wir Wert auf Persönlichkeit, Kommunikation
-      und Neugierde. Über eine Einarbeitung _on the job_ und die Unterstützung mit
-      moderner Technologie fordern und fördern wir Sie individuell. Wir sind gespannt
-      auf Ihre Bewerbung!
-    </details>
-
-    <details>
-      ![https://lehne-ing.de/wp-content/uploads/2023/05/iStock-1443245439-1.jpg](https://lehne-ing.de/wp-content/uploads/2023/05/iStock-1443245439-1.jpg)
-
-
-      <summary> ## Studierende</summary>
-
-       Junge Talente fördern wir seit jeher gerne und finden es immer wieder spannend,
-      wie aus Theorie von der Uni bei uns Praxis wird. Bei LEHNE ing. bieten wir
-      daher die Möglichkeit, über Praktika, Abschlussarbeiten oder als Werkstudent
-      einen Einblick in die Berufswelt zu bekommen. Nicht selten ergeben sich daraus
-      Chancen für den Berufseinstieg nach dem Studium. Senden Sie uns Ihre Initiativbewerbung
-      gerne per [E-Mail](mailto:personal@lehne-ing.de) oder schauen Sie zuerst bei
-      unseren Stellenangeboten:
-    </details>
-
-    <details>
-      <summary> ## SchülerInnen</summary>
-       ![https://lehne-ing.de/wp-content/uploads/2021/06/Schueler.jpg](https://lehne-ing.de/wp-content/uploads/2021/06/Schueler.jpg)
-      Bei einer ersten Orientierung im Berufsleben sind wir gerne behilflich und
-      freuen uns über neugierige und wissbegierige Schülerinnen und Schüler. Bei
-      uns kannst Du einen „Schnuppertag“ als auch ein Schulpraktikum
-      absolvieren. Der Beruf des Ingenieurs oder des technischen Zeichners
-      bringt viele spannende Aspekte mit sich, die wir gerne der kommenden
-      Generation aus erster Hand zeigen. Also bewirb Dich gerne per
-      [E-Mail](mailto:personal@lehne-ing.de).
-    </details>
+    <Collapsible client:load>
+      <div slot="trigger" class="card">
+        <Image src={students} alt="SchülerInnen" class="background" />
+        <div class="z10">SchülerInnen</div>
+      </div>
+      <p>
+        Bei einer ersten Orientierung im Berufsleben sind wir gerne behilflich
+        und freuen uns über neugierige und wissbegierige Schülerinnen und
+        Schüler. Bei uns kannst Du einen „Schnuppertag“ als auch ein
+        Schulpraktikum absolvieren.
+      </p>
+      <p>
+        Der Beruf des Ingenieurs oder des technischen Zeichners bringt viele
+        spannende Aspekte mit sich, die wir gerne der kommenden Generation aus
+        erster Hand zeigen.
+      </p>
+      <p>
+        Also bewirb Dich gerne per <a
+          href="mailto:personal@lehne-ing.de"
+          target="_blank">E-Mail</a
+        >.
+      </p>
+    </Collapsible>
   </div>
-
-   --- Sie haben Fragen zur Arbeit bei LEHNE ing. oder Interesse an einem Job gewonnen?
-  Kontaktieren Sie uns per [E-Mail](mailto:info@lehne-ing.de) oder schauen Sie sich
-  gerne unsere aktuellen Stellenangebote an.
 </Layout>
+
+<style>
+  .card {
+    position: relative;
+    display: grid;
+    place-content: center;
+    aspect-ratio: 1/1;
+    text-align: center;
+    overflow: clip;
+    background-color: black;
+    color: white;
+    padding: 1vmin;
+    font-size: 4vmin;
+  }
+
+  .background {
+    opacity: 0.6;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: scale 1s;
+  }
+
+  .card:hover .background {
+    scale: 1.2;
+  }
+</style>

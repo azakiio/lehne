@@ -184,51 +184,7 @@ declare module 'astro:content' {
 	>;
 
 	type ContentEntryMap = {
-		"pages": {
-"Digitalisierung/Digitalisierung 9acabdabf0fb4d4d91c9e80a49c484fd.md": {
-	id: "Digitalisierung/Digitalisierung 9acabdabf0fb4d4d91c9e80a49c484fd.md";
-  slug: "digitalisierung/digitalisierung-9acabdabf0fb4d4d91c9e80a49c484fd";
-  body: string;
-  collection: "pages";
-  data: InferEntrySchema<"pages">
-} & { render(): Render[".md"] };
-"Infrastruktur/Infrastruktur 28044772c7604d17a8b23a6e0e9ca277.md": {
-	id: "Infrastruktur/Infrastruktur 28044772c7604d17a8b23a6e0e9ca277.md";
-  slug: "infrastruktur/infrastruktur-28044772c7604d17a8b23a6e0e9ca277";
-  body: string;
-  collection: "pages";
-  data: InferEntrySchema<"pages">
-} & { render(): Render[".md"] };
-"Umwelt/Umwelt .md": {
-	id: "Umwelt/Umwelt .md";
-  slug: "umwelt/umwelt-";
-  body: string;
-  collection: "pages";
-  data: InferEntrySchema<"pages">
-} & { render(): Render[".md"] };
-"Unsere Werte/Unsere Werte .md": {
-	id: "Unsere Werte/Unsere Werte .md";
-  slug: "unsere-werte/unsere-werte-";
-  body: string;
-  collection: "pages";
-  data: InferEntrySchema<"pages">
-} & { render(): Render[".md"] };
-"mobilitaet/Mobilität .md": {
-	id: "mobilitaet/Mobilität .md";
-  slug: "mobilitaet/mobilität-";
-  body: string;
-  collection: "pages";
-  data: InferEntrySchema<"pages">
-} & { render(): Render[".md"] };
-"mobilitaet/Mobilität fc42f3c4ce5c439b8000a93e6f5fc053.md": {
-	id: "mobilitaet/Mobilität fc42f3c4ce5c439b8000a93e6f5fc053.md";
-  slug: "mobilitaet/mobilität-fc42f3c4ce5c439b8000a93e6f5fc053";
-  body: string;
-  collection: "pages";
-  data: InferEntrySchema<"pages">
-} & { render(): Render[".md"] };
-};
-"people": {
+		"people": {
 "de/amelie.md": {
 	id: "de/amelie.md";
   slug: "de/amelie";
@@ -756,26 +712,34 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"wasser/index.md": {
-	id: "wasser/index.md";
-  slug: "wasser";
-  body: string;
-  collection: "projects";
-  data: InferEntrySchema<"projects">
-} & { render(): Render[".md"] };
-"wasser/water.md": {
-	id: "wasser/water.md";
-  slug: "en/water";
-  body: string;
-  collection: "projects";
-  data: InferEntrySchema<"projects">
-} & { render(): Render[".md"] };
 };
 
 	};
 
 	type DataEntryMap = {
-		
+		"jobs": {
+"architekt": {
+	id: "architekt";
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+};
+"engineer": {
+	id: "engineer";
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+};
+"werkstudent": {
+	id: "werkstudent";
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+};
+"werkstudent2": {
+	id: "werkstudent2";
+  collection: "jobs";
+  data: InferEntrySchema<"jobs">
+};
+};
+
 	};
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;

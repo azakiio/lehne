@@ -246,7 +246,7 @@ details > summary::-webkit-details-marker {
 .link {
   color: inherit;
   text-decoration: none;
-  padding: 10px 5px;
+  padding-block: 0.5em;
   /* display: block; */
   position: relative;
   text-align: center;
@@ -264,4 +264,10 @@ details > summary::-webkit-details-marker {
 
 [x-cloak] {
   display: none !important;
+}
+.flickity-prev-next-button.previous {
+  left: -64px;
+}
+.flickity-prev-next-button.next {
+  right: -64px;
 }

@@ -55,11 +55,11 @@ const images = import.meta.glob<{ default: ImageMetadata }>("./*.jpg");
         return (
           <div class="text-center">
             {images[image] ? (
-              <Image src={images[image]()} alt={name} />
+              <Image src={images[image]()} alt={name} class="rounded-lg" />
             ) : (
               <Icon name="mdi:portrait" class="opacity-25" />
             )}
-            <div class="text-primary">{name}</div>
+            <div class="text-primary font-xl font-semibold mt-1">{name}</div>
           </div>
         );
       })

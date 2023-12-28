@@ -17,9 +17,7 @@ const { items } = Astro.props;
 
       return (
         <a href={href} class="card">
-          {thumbnail && (
-            <Image class="background" src={thumbnail} alt={label} />
-          )}
+          <Image class="background" src={thumbnail} alt={label} />
           <div class="text-white text-3vmin font-medium drop-shadow-lg">
             {label}
           </div>
