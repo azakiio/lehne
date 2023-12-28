@@ -68,7 +68,7 @@ connection to rural areas and makes cities internationally competitive.
 
 ## Goals for sustainable building
 
-![banner](../nachhaltigkeit/leitfaden.png.jpg)
+![banner](../nachhaltigkeit/leitfaden.png)
 
 ## Our contribution at LEHNE ing.
 
