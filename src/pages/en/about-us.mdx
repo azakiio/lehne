@@ -2,7 +2,7 @@
 layout: "~/layouts/MarkdownLayout.astro"
 ---
 
-import GridImage from "~/components/GridImage.astro";
+import Grid from "~/components/Grid.astro";
 import { aboutUsLinksEn } from "~/data/links";
 
 # About us
@@ -26,5 +26,5 @@ We would be extremely pleased if we were able to count you amongst our
 clients. Let our services convince you. After all, success can be planned.
 
 <div class="grid sm:grid-cols-2 gap-4vmin">
-  <GridImage items={aboutUsLinksEn.items} />
+  <Grid items={aboutUsLinksEn.items} />
 </div>

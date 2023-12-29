@@ -3,7 +3,7 @@ layout: "~/layouts/MarkdownLayout.astro"
 title: "Leistungen"
 ---
 
-import GridImage from "~/components/GridImage.astro";
+import Grid from "~/components/Grid.astro";
 import { planung, beratung, bauleitung } from "~/data/services";
 
 # Leistungen
@@ -39,7 +39,7 @@ Unsere Maxime: Stets eine termingerechte, wirtschaftliche und qualitativ hochwer
 # Planung
 
 <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4vmin">
-  <GridImage items={planung} />
+  <Grid items={planung} />
 </div>
 
 ---
@@ -47,7 +47,7 @@ Unsere Maxime: Stets eine termingerechte, wirtschaftliche und qualitativ hochwer
 # Beratung
 
 <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4vmin">
-  <GridImage items={beratung} />
+  <Grid items={beratung} />
 </div>
 
 ---
@@ -55,7 +55,7 @@ Unsere Maxime: Stets eine termingerechte, wirtschaftliche und qualitativ hochwer
 # Bauleitung
 
 <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4vmin">
-  <GridImage items={bauleitung} />
+  <Grid items={bauleitung} />
 </div>
 
 ---

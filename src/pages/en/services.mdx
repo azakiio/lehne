@@ -3,7 +3,7 @@ layout: "~/layouts/MarkdownLayout.astro"
 title: "Services"
 ---
 
-import GridImage from "~/components/GridImage.astro";
+import Grid from "~/components/Grid.astro";
 import { planning, consulting, construction } from "~/data/services";
 
 # Services
@@ -37,7 +37,7 @@ landscape planning and architecture.
 # Planning
 
 <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4vmin">
-  <GridImage items={planning} />
+  <Grid items={planning} />
 </div>
 
 ---
@@ -45,7 +45,7 @@ landscape planning and architecture.
 # Consulting
 
 <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4vmin">
-  <GridImage items={consulting} />
+  <Grid items={consulting} />
 </div>
 
 ---
@@ -53,7 +53,7 @@ landscape planning and architecture.
 # Construction Management
 
 <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4vmin">
-  <GridImage items={construction} />
+  <Grid items={construction} />
 </div>
 
 ---

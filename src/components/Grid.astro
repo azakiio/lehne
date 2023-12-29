@@ -1,23 +1,31 @@
 ---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
 interface Props {
-  items: { label: string; image?: string; url: string }[];
+  items: { label: string; thumbnail?: ImageMetadata; href: string }[];
 }
 
 const { items } = Astro.props;
 ---
 
-<div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4vmin">
+<>
   {
-    items.map(({ label, url, image }) => (
-      <a href={url} class="card">
-        <div style={`background-image: url(${image})`} class="background" />
-        <div class="text-white text-3vmin font-medium drop-shadow-lg">
-          {label}
-        </div>
-      </a>
-    ))
+    items.map(({ label, href, thumbnail }) => {
+      if (!thumbnail) {
+        return null;
+      }
+
+      return (
+        <a href={href} class="card">
+          <Image class="background" src={thumbnail} alt={label} />
+          <div class="text-white text-3vmin font-medium drop-shadow-lg">
+            {label}
+          </div>
+        </a>
+      );
+    })
   }
-</div>
+</>
 
 <style>
   .card {
@@ -28,6 +36,7 @@ const { items } = Astro.props;
     text-align: center;
     overflow: clip;
     background-color: black;
+    padding: 1vmin;
   }
 
   .background {
@@ -35,8 +44,7 @@ const { items } = Astro.props;
     position: absolute;
     height: 100%;
     width: 100%;
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
     transition: scale 1s;
   }
 

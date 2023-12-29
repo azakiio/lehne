@@ -1,0 +1,119 @@
+---
+const errors = {
+  anrede: "",
+  firma: "",
+  vorname: "",
+  name: "",
+  telefon: "",
+  email: "",
+  nachricht: "",
+};
+
+if (Astro.request.method === "POST") {
+  try {
+    const data = await Astro.request.formData();
+    const anrede = data.get("anrede");
+    const firma = data.get("firma");
+    const vorname = data.get("vorname");
+    const name = data.get("name");
+    const telefon = data.get("telefon");
+    const email = data.get("email");
+    const nachricht = data.get("nachricht");
+
+    const hasErrors = Object.values(errors).some((msg) => msg);
+
+    console.log(data);
+    return Astro.redirect("/en/success");
+
+  } catch (error) {
+    if (error instanceof Error) {
+      console.error(error.message);
+    }
+  }
+}
+---
+
+<form method="POST" class="grid grid-cols-2 gap-4vmin">
+  <label>
+    <div>
+      Title <span class="text-red">*</span>
+    </div>
+    <select name="anrede" required>
+      <option disabled value="" selected>Please Select</option>
+      <option>Mr.</option>
+      <option>Ms.</option>
+    </select>
+  </label>
+
+  <label>
+    Company
+    <input type="text" name="firma" />
+  </label>
+  {errors.firma && <p>{errors.firma}</p>}
+
+  <label>
+    <div>
+      First name <span class="text-red">*</span>
+    </div>
+    <input type="text" name="vorname" required />
+  </label>
+  {errors.vorname && <p>{errors.vorname}</p>}
+
+  <label>
+    <div>
+      Last name <span class="text-red">*</span>
+    </div>
+    <input type="text" name="name" required />
+  </label>
+  {errors.name && <p>{errors.name}</p>}
+
+  <label>
+    <div>
+      Phone <span class="text-red">*</span>
+    </div>
+    <input type="text" name="telefon" />
+  </label>
+  {errors.telefon && <p>{errors.telefon}</p>}
+
+  <label>
+    <div>
+      E-mail <span class="text-red">*</span>
+    </div>
+    <input type="email" name="email" required />
+  </label>
+  {errors.email && <p>{errors.email}</p>}
+
+  <label class="col-span-full">
+    <div>
+      Your message <span class="text-red">*</span>
+    </div>
+    <textarea name="nachricht" required></textarea>
+  </label>
+  {errors.nachricht && <p>{errors.nachricht}</p>}
+
+  <button class="btn col-span-full mx-a">Send</button>
+</form>
+
+<style>
+  label {
+    display: grid;
+    font-weight: 600;
+  }
+
+  input,
+  textarea,
+  select {
+    border: 2px solid currentColor;
+    padding: 0.5rem;
+    font-weight: normal;
+    background-color: transparent;
+
+  }
+
+  .btn {
+    border: 2px solid currentColor;
+    padding: 1rem;
+    width: fit-content;
+    font-weight: bold;
+  }
+</style>

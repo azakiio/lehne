@@ -3,7 +3,7 @@ layout: "~/layouts/MarkdownLayout.astro"
 title: "Expertise"
 ---
 
-import GridImage from "~/components/GridImage.astro";
+import Grid from "~/components/Grid.astro";
 import { expertiseLinksEn } from "~/data/links";
 
 ![Hero](../expertise/expertise.jpg)
@@ -21,5 +21,5 @@ working.
 Our engineers expertise enables us to handle projects from many areas
 
 <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4vmin">
-  <GridImage items={expertiseLinksEn.items} />
+  <Grid items={expertiseLinksEn.items} />
 </div>

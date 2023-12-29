@@ -4,7 +4,7 @@ import JobTemplate from "~/components/JobTemplate.astro";
 import MarkdownLayout from "~/layouts/MarkdownLayout.astro";
 const title = "Stellenangebote";
 
-const jobs = await getCollection("jobs");
+const jobs = await getCollection("jobs", ({ id }) => !id.startsWith("en/"));
 ---
 
 <MarkdownLayout title={title}>
@@ -15,7 +15,6 @@ const jobs = await getCollection("jobs");
     kennenzulernen!
   </p>
   <div class="grid gap-4">
-
     {jobs.map((job) => <JobTemplate job={job} />)}
   </div>
-  </MarkdownLayout>
+</MarkdownLayout>

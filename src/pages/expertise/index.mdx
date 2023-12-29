@@ -3,7 +3,7 @@ layout: "~/layouts/MarkdownLayout.astro"
 title: "Expertise"
 ---
 
-import GridImage from "~/components/GridImage.astro";
+import Grid from "~/components/Grid.astro";
 import { expertiseLinksDe } from "~/data/links";
 
 ![Expertise](./expertise.jpg)
@@ -20,7 +20,7 @@ Digitale Infrastruktur von Unternehmen und Verwaltung zu planen und zu
 betreuen.
 
 <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4vmin">
-  <GridImage items={expertiseLinksDe.items} />
+  <Grid items={expertiseLinksDe.items} />
 </div>
 ---
 

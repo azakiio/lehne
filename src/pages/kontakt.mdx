@@ -3,6 +3,9 @@ layout: "~/layouts/MarkdownLayout.astro"
 title: "Kontakt"
 ---
 
+import { Icon } from "astro-icon";
+import ContactForm from "~/components/ContactForm.astro";
+
 # Kontakt
 
 LEHNE Ingenieurgesellschaft für Bauen und Umwelt mbH
@@ -28,15 +31,24 @@ Schreiben Sie uns gerne eine E-Mail, rufen Sie uns an oder verwenden Sie unser K
 
 Besuchen Sie uns auch auf Facebook und Instagram.
 
-- [Facebook](http://www.facebook.com/lehne.ing)
-- [Instagram](http://www.instagram.com/lehne.ing/)
-- [E-Mail](mailto:info@lehne-ing.de)
+<div class="flex items-center gap-4 justify-center text-primary">
+
+<a href="https://de-de.facebook.com/lehne.ing/">
+<Icon name="mdi:facebook" class="w-8 h-8" />
+</a>
+<a href="https://www.instagram.com/lehne.ing/">
+<Icon name="mdi:instagram" class="w-8 h-8" />
+</a>
+<a href="info@lehne-ing.de">
+<Icon name="mdi:email" class="w-8 h-8" />
+</a>
+</div>
 
 ---
 
 ## Kontaktformular
 
-{/* <ContactForm /> */}
+<ContactForm />
 
 ---
 

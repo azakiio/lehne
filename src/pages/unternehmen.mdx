@@ -3,7 +3,7 @@ layout: "~/layouts/MarkdownLayout.astro"
 title: "Unternehmen"
 ---
 
-import GridImage from "~/components/GridImage.astro";
+import Grid from "~/components/Grid.astro";
 import { aboutUsLinksDe } from "~/data/links";
 
 # Unternehmen
@@ -27,5 +27,5 @@ selbst­ver­ständ­lich.
 Lassen Sie sich von unseren Leistungen über­zeu­gen. Denn Erfolg ist planbar.
 
 <div class="grid sm:grid-cols-2 gap-4vmin">
-  <GridImage items={aboutUsLinksDe.items} />
+  <Grid items={aboutUsLinksDe.items} />
 </div>

@@ -1,25 +1,86 @@
 ---
 import Video from "~/assets/bgVideo.mp4";
 import BaseLayout from "~/layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
 
 const title = "LEHNE Ing - Planung Beratung Bauleitung";
 const description =
   "LEHNE ing. ist Ihr Partner für Planung, Beratung und Bauleitung in den Bereichen Verkehr, Infrastruktur, Umwelt, Wasser und Digitalisierung.";
 const permalink = Astro.site?.href;
 
-import GridImage from "~/components/GridImage.astro";
-import { aboutUsLinksDe, expertiseLinksDe } from "~/data/links";
+import Grid from "~/components/Grid.astro";
+import { homeLinksDE } from "~/data/home";
 ---
 
 <BaseLayout title={title} description={description} permalink={permalink}>
   <video src={Video} class="h-screen w-screen object-cover" autoplay muted loop
   ></video>
 
-  <div class="grid grid-cols-3 p-10vmin gap-4vmin">
-    <GridImage items={expertiseLinksDe.items} />
-    <GridImage items={aboutUsLinksDe.items} />
-    <GridImage items={expertiseLinksDe.items} />
+  <div
+    class="grid sm:grid-cols-2 md:grid-cols-3 p-5vmin gap-4vmin max-w-256 mx-auto w-full"
+  >
+    <>
+      {
+        homeLinksDE.map(({ label, href, thumbnail, subtitle }) => {
+          if (!thumbnail) {
+            return null;
+          }
+
+          return (
+            <a href={href} class="card">
+              <Image class="background" src={thumbnail} alt={label} />
+              <div class="label">{label}</div>
+              <div class="subtitle">{subtitle}</div>
+            </a>
+          );
+        })
+      }
+    </>
   </div>
 </BaseLayout>
 
-<style></style>
+<style>
+  .label {
+    @apply text-white font-medium drop-shadow-lg;
+    font-size: max(1.5rem, 3vmin);
+  }
+
+  .subtitle {
+    translate: -40%;
+    opacity: 0;
+    transition: 1s;
+    color: white;
+    margin-top: 0.5rem;
+  }
+
+  .card {
+    position: relative;
+    display: grid;
+    place-content: center;
+    aspect-ratio: 1/1;
+    text-align: center;
+    overflow: clip;
+    background-color: black;
+    padding: 1vmin;
+    border-radius: 1rem;
+    @apply shadow-lg;
+  }
+
+  .background {
+    opacity: 0.6;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: scale 1s;
+  }
+
+  .card:hover .background {
+    scale: 1.2;
+  }
+
+  .card:hover .subtitle {
+    translate: 0%;
+    opacity: 1;
+  }
+</style>
