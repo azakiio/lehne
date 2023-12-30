@@ -40,7 +40,7 @@ const tabs = [
   },
   {
     label: "Sicherheit & Gesundheit",
-    href: "/projekte/sicherheit-gesundheitsschutz",
+    href: "/projekte/sicherheit-gesundheit",
   },
 ];
 ---
@@ -54,7 +54,7 @@ const tabs = [
   </p>
   <div class="flex gap-2 my-8 items-center justify-center">
     {
-      tabs.map(({ label, items, href }) => (
+      tabs.map(({ label, href }) => (
         <a
           href={href}
           class:list={[

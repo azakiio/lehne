@@ -160,9 +160,9 @@ export const homeLinksDE = [
     thumbnail: Digitalisation,
   },
   {
-    label: "Sicherheit und Gesundheitsschutz",
+    label: "Sicherheit & Gesundheit",
     subtitle: "hat beim Bauen Vorrang.",
-    href: "/sicherheit-gesundheitsschutz",
+    href: "/sicherheit-gesundheit",
     thumbnail: HealthAndSafety,
   },
   {

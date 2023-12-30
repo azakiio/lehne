@@ -55,7 +55,7 @@ export const beratung = [
   },
   {
     label: "SiGeKo",
-    href: "/sicherheit-gesundheitsschutz",
+    href: "/sicherheit-gesundheit",
     thumbnail: sigeKoImage,
   },
 ];

@@ -509,30 +509,30 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"sicherheit-gesundheitsschutz/sicherheits-und-gesundheitsschutzkoordination-landungsbruecken/SiGe coordination Landungsbrücken.md": {
-	id: "sicherheit-gesundheitsschutz/sicherheits-und-gesundheitsschutzkoordination-landungsbruecken/SiGe coordination Landungsbrücken.md";
+"sicherheit-gesundheit/sicherheits-und-gesundheitsschutzkoordination-landungsbruecken/SiGe coordination Landungsbrücken.md": {
+	id: "sicherheit-gesundheit/sicherheits-und-gesundheitsschutzkoordination-landungsbruecken/SiGe coordination Landungsbrücken.md";
   slug: "en/sige/SiGe coordination Landungsbrücken";
   body: string;
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"sicherheit-gesundheitsschutz/sicherheits-und-gesundheitsschutzkoordination-landungsbruecken/index.md": {
-	id: "sicherheit-gesundheitsschutz/sicherheits-und-gesundheitsschutzkoordination-landungsbruecken/index.md";
-  slug: "sicherheit-gesundheitsschutz/sicherheits-und-gesundheitsschutzkoordination-landungsbruecken";
+"sicherheit-gesundheit/sicherheits-und-gesundheitsschutzkoordination-landungsbruecken/index.md": {
+	id: "sicherheit-gesundheit/sicherheits-und-gesundheitsschutzkoordination-landungsbruecken/index.md";
+  slug: "sicherheit-gesundheit/sicherheits-und-gesundheitsschutzkoordination-landungsbruecken";
   body: string;
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"sicherheit-gesundheitsschutz/sicherheits-und-gesundheitsschutzkoordination-martkanal/SiGe coordination Marktkanal 6585d38fb3214c21bdb8f4f970140189.md": {
-	id: "sicherheit-gesundheitsschutz/sicherheits-und-gesundheitsschutzkoordination-martkanal/SiGe coordination Marktkanal 6585d38fb3214c21bdb8f4f970140189.md";
+"sicherheit-gesundheit/sicherheits-und-gesundheitsschutzkoordination-martkanal/SiGe coordination Marktkanal 6585d38fb3214c21bdb8f4f970140189.md": {
+	id: "sicherheit-gesundheit/sicherheits-und-gesundheitsschutzkoordination-martkanal/SiGe coordination Marktkanal 6585d38fb3214c21bdb8f4f970140189.md";
   slug: "en/sige/SiGe coordination Marktkanal";
   body: string;
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"sicherheit-gesundheitsschutz/sicherheits-und-gesundheitsschutzkoordination-martkanal/index.md": {
-	id: "sicherheit-gesundheitsschutz/sicherheits-und-gesundheitsschutzkoordination-martkanal/index.md";
-  slug: "sicherheit-gesundheitsschutz/sicherheits-und-gesundheitsschutzkoordination-martkanal";
+"sicherheit-gesundheit/sicherheits-und-gesundheitsschutzkoordination-martkanal/index.md": {
+	id: "sicherheit-gesundheit/sicherheits-und-gesundheitsschutzkoordination-martkanal/index.md";
+  slug: "sicherheit-gesundheit/sicherheits-und-gesundheitsschutzkoordination-martkanal";
   body: string;
   collection: "projects";
   data: InferEntrySchema<"projects">

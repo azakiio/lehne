@@ -77,8 +77,8 @@ export const expertiseLinksDe = {
       thumbnail: Digitalisation,
     },
     {
-      label: "Sicherheit und Gesundheitsschutz",
-      href: "/sicherheit-gesundheitsschutz",
+      label: "Sicherheit & Gesundheit",
+      href: "/sicherheit-gesundheit",
       thumbnail: HealthAndSafety,
     },
   ],
