@@ -1,14 +1,13 @@
 ---
+import { Image } from "astro:assets";
 import Video from "~/assets/bgVideo.mp4";
 import BaseLayout from "~/layouts/BaseLayout.astro";
-import { Image } from "astro:assets";
 
 const title = "LEHNE Ing - Planung Beratung Bauleitung";
 const description =
   "LEHNE ing. ist Ihr Partner für Planung, Beratung und Bauleitung in den Bereichen Verkehr, Infrastruktur, Umwelt, Wasser und Digitalisierung.";
 const permalink = Astro.site?.href;
 
-import Grid from "~/components/Grid.astro";
 import { homeLinksDE } from "~/data/home";
 ---
 
@@ -42,7 +41,7 @@ import { homeLinksDE } from "~/data/home";
 <style>
   .label {
     @apply text-white font-medium drop-shadow-lg;
-    font-size: max(1.5rem, 3vmin);
+    font-size: 3vmin;
   }
 
   .subtitle {
