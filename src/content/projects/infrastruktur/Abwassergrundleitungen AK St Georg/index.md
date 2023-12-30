@@ -2,6 +2,8 @@
 title: "Abwassergrundleitungen AK St. Georg"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
 ---
 
 Das Gelände der Asklepios Klinik St. Georg wurde komplett saniert. Hierzu

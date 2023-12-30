@@ -3,6 +3,9 @@ title: "Modernisation A7-highway"
 slug: "en/mobility/Modernisation A7-highway"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
+  - "./slide3.jpg"
 ---
 
 Even national motorways require rebuilding and must be brought

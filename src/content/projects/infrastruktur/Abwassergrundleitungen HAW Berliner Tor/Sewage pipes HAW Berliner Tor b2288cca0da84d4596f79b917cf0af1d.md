@@ -3,6 +3,8 @@ title: "Sewage pipes HAW Berliner Tor"
 slug: "en/infrastructure/Sewage pipes HAW Berliner Tor"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
 ---
 
 During the course of building works, all underground drainage systems

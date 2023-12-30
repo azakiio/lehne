@@ -2,6 +2,8 @@
 title: "Sielanlagen Neugraben-Fischbek"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
 ---
 
 Das neue Wohngebiet Vogelkamp in Neugraben Fischbek bietet auf einer Fläche

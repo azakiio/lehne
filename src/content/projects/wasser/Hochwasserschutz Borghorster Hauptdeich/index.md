@@ -2,6 +2,9 @@
 title: "Hochwasserschutz Borghorster Hauptdeich"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
+  - "./slide3.jpg"
 ---
 
 Das Hochwasserschutzprogramm der Freien und Hansestadt Hamburg sieht vor,

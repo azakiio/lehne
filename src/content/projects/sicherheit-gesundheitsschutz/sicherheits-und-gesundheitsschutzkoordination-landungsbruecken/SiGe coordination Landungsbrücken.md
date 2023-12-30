@@ -3,6 +3,8 @@ title: "SiGe coordination Landungsbrücken"
 slug: "en/sige/SiGe coordination Landungsbrücken"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
 ---
 
 The health and safety of all these participating in implementation

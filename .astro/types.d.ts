@@ -411,8 +411,8 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"mobilitaet/Bike+Ride Kellinghusenstraße/Bike+Ride Kellinghusenstraße 73d1e50bcc444608988512dda549f011.md": {
-	id: "mobilitaet/Bike+Ride Kellinghusenstraße/Bike+Ride Kellinghusenstraße 73d1e50bcc444608988512dda549f011.md";
+"mobilitaet/Bike+Ride Kellinghusenstraße/Bike+Ride Kellinghusenstraße.md": {
+	id: "mobilitaet/Bike+Ride Kellinghusenstraße/Bike+Ride Kellinghusenstraße.md";
   slug: "en/mobility/Bike+Ride Kellinghusenstraße";
   body: string;
   collection: "projects";
@@ -467,8 +467,8 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"mobilitaet/Grundinstandsetzung Moorfleeter Straße/Rebuilding and Overhaul Moorfleeter Straße 21406433820d4b51b00c9fa2edd5f9a7.md": {
-	id: "mobilitaet/Grundinstandsetzung Moorfleeter Straße/Rebuilding and Overhaul Moorfleeter Straße 21406433820d4b51b00c9fa2edd5f9a7.md";
+"mobilitaet/Grundinstandsetzung Moorfleeter Straße/Rebuilding and Overhaul Moorfleeter Straße.md": {
+	id: "mobilitaet/Grundinstandsetzung Moorfleeter Straße/Rebuilding and Overhaul Moorfleeter Straße.md";
   slug: "en/mobility/Rebuilding and Overhaul Moorfleeter Straße";
   body: string;
   collection: "projects";
@@ -481,8 +481,8 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"mobilitaet/Modernisierung Autobahn A7/Modernisation A7-highway 3d731fc2c79541c6a304670bf8936d7e.md": {
-	id: "mobilitaet/Modernisierung Autobahn A7/Modernisation A7-highway 3d731fc2c79541c6a304670bf8936d7e.md";
+"mobilitaet/Modernisierung Autobahn A7/Modernisation A7-highway.md": {
+	id: "mobilitaet/Modernisierung Autobahn A7/Modernisation A7-highway.md";
   slug: "en/mobility/Modernisation A7-highway";
   body: string;
   collection: "projects";
@@ -495,8 +495,8 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"mobilitaet/Veloroute Tornquiststraße/Veloroute Tornquiststraße d658552d89284e8eb693be0178429c34.md": {
-	id: "mobilitaet/Veloroute Tornquiststraße/Veloroute Tornquiststraße d658552d89284e8eb693be0178429c34.md";
+"mobilitaet/Veloroute Tornquiststraße/Veloroute Tornquiststraße.md": {
+	id: "mobilitaet/Veloroute Tornquiststraße/Veloroute Tornquiststraße.md";
   slug: "en/mobility/Veloroute Tornquiststraße";
   body: string;
   collection: "projects";
@@ -509,8 +509,8 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"sicherheit-gesundheitsschutz/sicherheits-und-gesundheitsschutzkoordination-landungsbruecken/SiGe coordination Landungsbrücken d5c512357bab464a97d01817c905622a.md": {
-	id: "sicherheit-gesundheitsschutz/sicherheits-und-gesundheitsschutzkoordination-landungsbruecken/SiGe coordination Landungsbrücken d5c512357bab464a97d01817c905622a.md";
+"sicherheit-gesundheitsschutz/sicherheits-und-gesundheitsschutzkoordination-landungsbruecken/SiGe coordination Landungsbrücken.md": {
+	id: "sicherheit-gesundheitsschutz/sicherheits-und-gesundheitsschutzkoordination-landungsbruecken/SiGe coordination Landungsbrücken.md";
   slug: "en/sige/SiGe coordination Landungsbrücken";
   body: string;
   collection: "projects";
@@ -551,8 +551,8 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"umwelt/Fettabscheideranlage HAW Berliner Tor/Fat separation facility HAW Berliner Tor 0888440286db40fca9699bb034395e36.md": {
-	id: "umwelt/Fettabscheideranlage HAW Berliner Tor/Fat separation facility HAW Berliner Tor 0888440286db40fca9699bb034395e36.md";
+"umwelt/Fettabscheideranlage HAW Berliner Tor/Fat separation facility HAW Berliner Tor.md": {
+	id: "umwelt/Fettabscheideranlage HAW Berliner Tor/Fat separation facility HAW Berliner Tor.md";
   slug: "en/environment/Fat separation facility HAW Berliner Tor";
   body: string;
   collection: "projects";
@@ -565,8 +565,8 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"umwelt/Regenversickerung Kita Bundesstraße/Rainwater seepage Kindergarten Bundesstraße 5c4f630d57da490cbebe196f2f0c61cc.md": {
-	id: "umwelt/Regenversickerung Kita Bundesstraße/Rainwater seepage Kindergarten Bundesstraße 5c4f630d57da490cbebe196f2f0c61cc.md";
+"umwelt/Regenversickerung Kita Bundesstraße/Rainwater seepage Kindergarten Bundesstraße.md": {
+	id: "umwelt/Regenversickerung Kita Bundesstraße/Rainwater seepage Kindergarten Bundesstraße.md";
   slug: "en/environment/Rainwater seepage Kindergarten Bundesstraße";
   body: string;
   collection: "projects";
@@ -684,8 +684,8 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"wasser/Stützwand Horster Damm/Retaining wall Horster Damm c6584b30dbc44e14b6c3bc85aa6de5ad.md": {
-	id: "wasser/Stützwand Horster Damm/Retaining wall Horster Damm c6584b30dbc44e14b6c3bc85aa6de5ad.md";
+"wasser/Stützwand Horster Damm/Retaining wall Horster Damm.md": {
+	id: "wasser/Stützwand Horster Damm/Retaining wall Horster Damm.md";
   slug: "en/water/Retaining wall Horster Damm";
   body: string;
   collection: "projects";
@@ -698,8 +698,8 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"wasser/Technische Beratung Durchlass Rahlau/Passage Rahlau 8a44a754b9c84da483ec36fd17429c04.md": {
-	id: "wasser/Technische Beratung Durchlass Rahlau/Passage Rahlau 8a44a754b9c84da483ec36fd17429c04.md";
+"wasser/Technische Beratung Durchlass Rahlau/Passage Rahlau.md": {
+	id: "wasser/Technische Beratung Durchlass Rahlau/Passage Rahlau.md";
   slug: "en/water/Passage Rahlau";
   body: string;
   collection: "projects";

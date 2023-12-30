@@ -3,6 +3,8 @@ title: "Extension of retirement complex"
 slug: "en/infrastructure/Extension of retirement complex"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
 ---
 
 In the course of extensions to a retirement home complex in Hamburg,

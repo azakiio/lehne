@@ -3,6 +3,8 @@ title: "Bike+Ride Kellinghusenstraße"
 slug: "en/mobility/Bike+Ride Kellinghusenstraße"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
 ---
 
 It is important to link different means of transport together to

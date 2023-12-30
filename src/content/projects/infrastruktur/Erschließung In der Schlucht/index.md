@@ -2,6 +2,10 @@
 title: "Erschließung In der Schluch"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
+  - "./slide3.png"
+  - "./slide4.jpg"
 ---
 
 Im Rahmen der Liegenschaftserschließung der Fläche einer ehemaligen

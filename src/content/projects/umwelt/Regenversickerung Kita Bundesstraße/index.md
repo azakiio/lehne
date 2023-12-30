@@ -2,6 +2,8 @@
 title: "Regenversickerung Kita Bundesstraße"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.png"
 ---
 
 Im Hamburger Stadtteil Eimsbüttel wurde 2005 eine öffentliche

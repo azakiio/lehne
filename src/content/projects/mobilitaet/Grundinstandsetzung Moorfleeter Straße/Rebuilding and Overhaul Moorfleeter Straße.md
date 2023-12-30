@@ -3,6 +3,9 @@ title: "Rebuilding and Overhaul Moorfleeter Straße"
 slug: "en/mobility/Rebuilding and Overhaul Moorfleeter Straße"
 images:
   - "./cover.png"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
+  - "./slide3.png"
 ---
 
 The measure was based on existing old plans, which had to be updated with regard to current technical requirements.

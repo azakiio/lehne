@@ -2,6 +2,12 @@
 title: "Leitungen Neubau Waltershofer Brücken"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
+  - "./slide3.jpg"
+  - "./slide4.jpg"
+  - "./slide5.jpg"
+  - "./slide6.jpg"
 ---
 
 Die Hamburg Port Authority (HPA) beabsichtigte über den Neubau der

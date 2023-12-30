@@ -2,6 +2,9 @@
 title: "Grundinstandsetzung Borsigstraße"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
+  - "./slide3.png"
 ---
 
 Die Borsigstraße im Industrie- und Gewerbegebiet Billbrook wurde

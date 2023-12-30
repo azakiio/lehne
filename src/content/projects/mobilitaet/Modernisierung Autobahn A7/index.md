@@ -2,6 +2,9 @@
 title: "Modernisierung Autobahn A7"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
+  - "./slide3.jpg"
 ---
 
 Durch die hohen Anforderungen an eine moderne Infrastruktur sind auch die

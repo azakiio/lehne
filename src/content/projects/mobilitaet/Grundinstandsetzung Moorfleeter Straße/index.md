@@ -2,6 +2,9 @@
 title: "Grundinstandsetzung Moorfleeter Straße"
 images:
   - "./cover.png"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
+  - "./slide3.png"
 ---
 
 Die Maßnahme basierte auf bestehenden Altplanungen, die im Hinblick

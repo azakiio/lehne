@@ -2,6 +2,10 @@
 title: "Erneuerung Trinkwasserleitung"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.png"
+  - "./slide3.jpg"
+  - "./slide4.jpg"
 ---
 
 Als gemeinschaftliche Baumaßnahme der Gemeinde Alveslohe, des Kreises

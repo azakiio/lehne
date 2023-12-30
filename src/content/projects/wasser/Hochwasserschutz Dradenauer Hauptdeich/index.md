@@ -2,6 +2,9 @@
 title: "Hochwasserschutz Dradenauer Hauptdeich"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
+  - "./slide3.jpg"
 ---
 
 

@@ -2,6 +2,8 @@
 title: "Entwässerung Curslacker Neuer Deich"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
 ---
 
 Für eine Gewerbeerschließung von rund 10 ha Erschließungsgebiet im Osten

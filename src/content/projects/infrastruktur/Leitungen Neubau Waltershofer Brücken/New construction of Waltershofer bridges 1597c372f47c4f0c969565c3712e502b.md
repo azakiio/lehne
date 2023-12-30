@@ -3,6 +3,12 @@ title: "New construction of Waltershofer bridges"
 slug: "en/infrastructure/New construction of Waltershofer bridges"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
+  - "./slide3.jpg"
+  - "./slide4.jpg"
+  - "./slide5.jpg"
+  - "./slide6.jpg"
 ---
 
 The Hamburg Port Authority (HPA) intended to improve the logistics at

@@ -3,6 +3,8 @@ title: "Sewage pipes AK St. Georg"
 slug: "en/infrastructure/Sewage pipes AK St. Georg"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
 ---
 
 The side of the Asklepios St. Georg hospital was completely

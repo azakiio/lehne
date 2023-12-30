@@ -1,5 +1,6 @@
 ---
 import { getEntry } from "astro:content";
+import { Image } from "astro:assets";
 import Slider from "~/components/Slider.astro";
 import MarkdownLayout from "~/layouts/MarkdownLayout.astro";
 // 1. Get the slug from the incoming server request
@@ -19,7 +20,14 @@ const { Content } = await entry.render();
 
 <MarkdownLayout title={entry.data.title}>
   <h1>{entry.data.title}</h1>
-  <Slider id="slider" images={entry.data.images} />
+
+  {
+    entry.data.images && entry.data.images?.length > 1 ? (
+      <Slider id="slider" images={entry.data.images} />
+    ) : (
+      <Image src={entry.data.images?.[0]!} alt="" />
+    )
+  }
   <!-- {
     entry.data.images && (
       <Image src={entry.data.images[0]} alt={entry.data.title} />

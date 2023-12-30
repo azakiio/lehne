@@ -2,6 +2,8 @@
 title: "4K-Luftaufnahmen mit Drohne"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
 ---
 
 Für professionelle Medieninhalte wird oft auf Luftbilder von Drohnen zurückgegriffen. Sei es für die Bild- und Video-Inhalte einer Website oder für kurze Werbefilme, ein Blick von oben wirkt ansprechend und verschafft einen Überblick.

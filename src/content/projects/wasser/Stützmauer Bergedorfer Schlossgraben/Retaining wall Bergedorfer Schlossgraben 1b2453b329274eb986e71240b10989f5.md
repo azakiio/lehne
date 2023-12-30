@@ -3,6 +3,10 @@ title: "Retaining wall Bergedorfer Schlossgraben"
 slug: "en/water/Retaining wall Bergedorfer Schlossgraben"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
+  - "./slide3.jpg"
+  - "./slide4.jpg"
 ---
 
 The Bergedorfer Schloßstraße is located in the area of Bergedorf,

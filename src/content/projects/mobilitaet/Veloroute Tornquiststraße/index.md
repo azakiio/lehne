@@ -2,6 +2,8 @@
 title: "Veloroute Tornquiststraße"
 images:
   - "./cover.png"
+  - "./slide1.png"
+  - "./slide2.png"
 ---
 
 Die urbane Infrastruktur wird in Hamburg über sogenannte Velorouten als Teil

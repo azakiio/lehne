@@ -2,6 +2,10 @@
 title: "Stützmauer Bergedorfer Schlossgraben"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
+  - "./slide3.jpg"
+  - "./slide4.jpg"
 ---
 
 

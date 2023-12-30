@@ -3,6 +3,10 @@ title: "Settlement In der Schlucht"
 slug: "en/infrastructure/Settlement In der Schlucht"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
+  - "./slide3.png"
+  - "./slide4.jpg"
 ---
 
 As part of the real estate development of the area of a former

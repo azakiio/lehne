@@ -2,6 +2,9 @@
 title: "Erschließung Harburger Brücken"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
+  - "./slide3.jpg"
 ---
 
 Im aufstrebenden Hamburger Stadtteil Harburg südlich der Elbe entsteht ein

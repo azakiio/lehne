@@ -2,6 +2,8 @@
 title: "Busbeschleunigung Lange Reihe"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.png"
 ---
 
 Die Lange Reihe liegt direkt vor unserer Haustür im Stadtteil St.

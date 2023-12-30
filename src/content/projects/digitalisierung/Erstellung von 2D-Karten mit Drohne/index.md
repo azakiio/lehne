@@ -2,6 +2,8 @@
 title: "Erstellung von 2D-Karten mit Drohne"
 images:
   - "./cover.png"
+  - "./slide1.jpg"
+  - "./slide2.png"
 ---
 
 Zu Beginn jeder Planung ist eine präzise Bestandsaufnahme 

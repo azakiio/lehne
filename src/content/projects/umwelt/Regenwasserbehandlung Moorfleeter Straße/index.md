@@ -2,6 +2,8 @@
 title: "Regenwasserbehandlung Moorfleeter Straße"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
 ---
 
 Das Entwässerungssystem der Moorfleeter Straße wurde im Rahmen der Modernisierung auf den

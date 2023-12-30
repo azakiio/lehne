@@ -2,6 +2,8 @@
 title: "Stützwand Horster Damm"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
 ---
 
 An der Straße Horster Damm in Hamburgs Osten musste die Böschung zum

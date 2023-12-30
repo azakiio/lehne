@@ -3,6 +3,8 @@ title: "Rainwater seepage Kindergarten Bundesstraße"
 slug: "en/environment/Rainwater seepage Kindergarten Bundesstraße"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.png"
 ---
 
 A public kindergarten was converted and rebuilt during ongoing

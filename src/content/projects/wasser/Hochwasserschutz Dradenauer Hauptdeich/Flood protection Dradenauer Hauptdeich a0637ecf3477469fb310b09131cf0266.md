@@ -3,6 +3,9 @@ title: "Flood protection Dradenauer Hauptdeich"
 slug: "en/water/Flood protection Dradenauer Hauptdeich"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
+  - "./slide3.jpg"
 ---
 
 The flood protection system in the south of Hamburg was toughened up

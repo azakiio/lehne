@@ -3,6 +3,8 @@ title: "Veloroute Tornquiststraße"
 slug: "en/mobility/Veloroute Tornquiststraße"
 images:
   - "./cover.png"
+  - "./slide1.png"
+  - "./slide2.png"
 ---
 
 The urban infrastructure in Hamburg is being continuously extended

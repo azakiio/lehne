@@ -3,6 +3,9 @@ title: "Flood protection Borghorster Hauptdeich"
 slug: "en/water/Flood protection Borghorster Hauptdeich"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
+  - "./slide3.jpg"
 ---
 
 The flood protection program for the Free and Hanseatic City of

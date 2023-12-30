@@ -2,6 +2,8 @@
 title: "Grundinstandsetzung Halenreie"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
 ---
 
 Der Umbau und die Grundinstandsetzung der Halenreie umfasste einen rund 730 m

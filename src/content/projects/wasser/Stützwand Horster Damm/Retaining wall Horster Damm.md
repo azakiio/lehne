@@ -3,6 +3,8 @@ title: "Retaining wall Horster Damm"
 slug: "en/water/Retaining wall Horster Damm"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
 ---
 
 The Horster Damm road, in the East of Hamburg, required technical

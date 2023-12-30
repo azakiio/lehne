@@ -3,6 +3,12 @@ title: "Passage Rahlau"
 slug: "en/water/Passage Rahlau"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
+  - "./slide3.jpg"
+  - "./slide4.jpg"
+  - "./slide5.jpg"
+  - "./slide6.jpg"
 ---
 
 In connection with the lane extension of an inner-city main road in

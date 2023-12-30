@@ -2,6 +2,8 @@
 title: "Abwassergrundleitungen HAW Berliner Tor"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
 ---
 
 Im Rahmen der Baumaßnahme waren auf dem Campus Berliner Tor (HAW) sämtliche

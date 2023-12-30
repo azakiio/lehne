@@ -3,6 +3,8 @@ title: "Settlement Neugraben-Fischbek"
 slug: "en/infrastructure/Settlement Neugraben-Fischbek"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
 ---
 
 The new Vogelkamp residential area in Neugraben Fischbek provides

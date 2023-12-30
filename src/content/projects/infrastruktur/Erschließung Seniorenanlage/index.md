@@ -2,6 +2,8 @@
 title: "Erschließung Seniorenanlage"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
 ---
 
 Im Zuge der Erweiterung einer Seniorenwohnanlage in Hamburg wurden

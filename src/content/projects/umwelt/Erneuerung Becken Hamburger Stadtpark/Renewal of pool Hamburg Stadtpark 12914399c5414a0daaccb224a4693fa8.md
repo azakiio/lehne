@@ -3,6 +3,8 @@ title: "Renewal of pool Hamburg Stadtpark"
 slug: "en/environment/Renewal of pool Hamburg Stadtpark"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
 ---
 
 The Free and Hanseatic City of Hamburg renewed the 3000 m² “paddling

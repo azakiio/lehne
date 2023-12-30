@@ -3,6 +3,8 @@ title: "Bus acceleration lane Lange Reih"
 slug: "en/mobility/Bus acceleration lane Lange Reih"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.png"
 ---
 
 The Lange Reihe is right outside our office door in the suburb of St.

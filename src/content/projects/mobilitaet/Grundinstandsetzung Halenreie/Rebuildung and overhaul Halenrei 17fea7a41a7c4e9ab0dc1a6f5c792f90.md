@@ -3,6 +3,8 @@ title: "Rebuildung and overhaul Halenrei"
 slug: "en/mobility/Rebuildung and overhaul Halenrei"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
 ---
 
 The rebuilding and complete overhaul of the Halenreie comprised a

@@ -3,6 +3,8 @@ title: "Rainwater treatment Moorfleeter Straße"
 slug: "en/environment/Rainwater treatment Moorfleeter Straße"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
 ---
 
 The drainage system in the Moorfleeter Straße was checked to ensure that it conforms with the currently applicable water conservation laws during the course of modernisation. Investigations were made into whether drainage of the rainwater sewer with an outlet in the Billbrook canal require adaptation for reasons of water conservation requirements. The high levels of traffic along the Moorfleeter Straße cause increased pollution of the surface water which meant that water treatment facilities in acc. w. DWA – M153 were urgently required after investigation of the water pollution levels.

@@ -3,6 +3,9 @@ title: "Rebuildung and Overhaul Borsigstraße"
 slug: "en/mobility/Rebuildung and Overhaul Borsigstraße"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
+  - "./slide3.png"
 ---
 
 Borsigstraße, in the Billbrook industrial and commercial estate,

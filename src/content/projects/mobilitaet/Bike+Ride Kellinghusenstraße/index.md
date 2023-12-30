@@ -2,6 +2,8 @@
 title: "Bike+Ride Kellinghusenstraße"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
 ---
 
 Für eine nachhaltige und zukunftsfähige Mobilität in Hamburg ist es wichtig, einzelne Verkehrsmittel miteinander zu verknüpfen. Als Bindeglied zwischen dem Radverkehr und dem Öffentlichen Personennahverkehr (ÖPNV) dienen Bike+Ride-Standorte (B+R), an denen das Fahrrad abgestellt wird, um die Fahrt mit dem ÖPNV fortzusetzen.

@@ -3,6 +3,8 @@ title: "Drainage Curslacker Neuer Deich"
 slug: "en/water/Drainage Curslacker Neuer Deich"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
 ---
 
 The surface drainage of roads and properties was planned for an

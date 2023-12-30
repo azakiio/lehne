@@ -3,6 +3,8 @@ title: "Creation of 2D map with a drone"
 slug: "en/digitalisation/Creation of 2D map with a drone"
 images:
   - "./cover.png"
+  - "./slide1.jpg"
+  - "./slide2.png"
 ---
 
 At the beginning of any planning, a precise inventory is essential. Especially in the case of large areas, this can become confusing on site. At LEHNE ing. that’s why we rely on the creation of a 2D map from image material from our drone and suitable rendering software. This means that current inventories are available for preliminary planning.

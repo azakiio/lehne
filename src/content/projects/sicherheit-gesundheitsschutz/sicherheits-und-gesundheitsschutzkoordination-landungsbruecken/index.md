@@ -2,6 +2,8 @@
 title: "Sicherheits- und Gesundheitsschutzkoordination – Landungsbrücken"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
 ---
 
 Im Zuge der hochwasserschutztechnischen Ertüchtigung der St. Pauli

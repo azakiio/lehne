@@ -3,6 +3,9 @@ title: "Development of Harburg Brücken"
 slug: "en/infrastructure/Development of Harburg Brücken"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
+  - "./slide3.jpg"
 ---
 
 A new residential and business district is being built in the

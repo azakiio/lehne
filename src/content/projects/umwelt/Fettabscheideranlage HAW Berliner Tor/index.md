@@ -2,6 +2,9 @@
 title: "Fettabscheideranlage HAW Berliner Tor"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
+  - "./slide3.jpg"
 ---
 
 Auf dem Campus Berliner Tor (HAW) mussten die undichte und veraltete

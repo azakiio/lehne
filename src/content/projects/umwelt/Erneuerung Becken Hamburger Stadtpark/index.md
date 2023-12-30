@@ -2,6 +2,8 @@
 title: "Erneuerung Becken Hamburger Stadtpark"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
 ---
 
 Die Freie und Hansestadt Hamburg hat das 3000 m² große „Planschbecken“ auf

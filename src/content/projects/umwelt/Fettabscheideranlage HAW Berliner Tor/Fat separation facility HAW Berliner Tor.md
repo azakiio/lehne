@@ -3,6 +3,9 @@ title: "Fat separation facility HAW Berliner Tor"
 slug: "en/environment/Fat separation facility HAW Berliner Tor"
 images:
   - "./cover.jpg"
+  - "./slide1.jpg"
+  - "./slide2.jpg"
+  - "./slide3.jpg"
 ---
 
 The leaking and aged fat separation facility and its connecting
