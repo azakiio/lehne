@@ -17,7 +17,7 @@ export default defineConfig({
     locales: ["en", "de"],
   },
   output: "server",
-  site: "https://astro-blog-template.netlify.app",
+  site: "https://lehne-ing.vercel.app/",
   integrations: [
     mdx(),
     svelte(),
