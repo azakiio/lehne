@@ -60,7 +60,6 @@
   .theme-toggle {
     display: inline-flex;
     align-items: center;
-    height: 100%;
     border-radius: 99em;
     background-color: var(--theme-code-inline-bg);
   }
