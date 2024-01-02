@@ -1,5 +1,5 @@
 ---
-title: "Sicherheits- und Gesundheitsschutzkoordination Marktkanal"
+title: "Sicherheits- und Gesundheits­schutz­koordination Marktkanal"
 images:
   - "./cover.jpg"
   - "./slide1.jpg"

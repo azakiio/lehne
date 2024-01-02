@@ -1,5 +1,5 @@
 ---
-title: "Sicherheits- und Gesundheitsschutzkoordination – Landungsbrücken"
+title: "Sicherheits- und Gesundheits­­­­­schutzkoordination – Landungsbrücken"
 images:
   - "./cover.jpg"
   - "./slide1.jpg"
