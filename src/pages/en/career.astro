@@ -8,7 +8,7 @@ import { Image } from "astro:assets";
 import Collapsible from "~/components/Collapsible.svelte";
 ---
 
-<Layout>
+<Layout title="Career">
   <h1>Career</h1>
   <p>
     We provide a worthwhile and sustainable environment in our metropolitan
@@ -121,8 +121,7 @@ import Collapsible from "~/components/Collapsible.svelte";
   <hr />
   <p>
     You got questions or interested in working with us? Get in touch with us via
-    <a href="info@lehne-ing.de">mail</a> or have a look at our current job
-    openings.
+    <a href="info@lehne-ing.de">mail</a> or have a look at our current job openings.
   </p>
 </Layout>
 
@@ -138,6 +137,8 @@ import Collapsible from "~/components/Collapsible.svelte";
     color: white;
     padding: 1vmin;
     font-size: 4vmin;
+    border-radius: 1rem;
+    @apply shadow-lg;
   }
 
   .background {

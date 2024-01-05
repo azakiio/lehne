@@ -8,7 +8,7 @@ import { Image } from "astro:assets";
 import Collapsible from "~/components/Collapsible.svelte";
 ---
 
-<Layout>
+<Layout title="Karriere">
   <h1>Karriere</h1>
   <p>
     Wir arbeiten aktiv für eine lebenswerte und nachhaltige Umgebung in unserer
@@ -40,10 +40,9 @@ import Collapsible from "~/components/Collapsible.svelte";
         <a href="https://lehne-ing.de/arbeiten-bei-lehne-ing/" target="_blank"
           >Unsere Arbeitswelt</a
         >
-         zeichnet sich durch eine abwechslungsreiche Gestaltung von technischen
-        Lösungen in einem dynamischen Projektumfeld aus. Darüber hinaus bieten
-        wir Ihnen die Möglichkeit, Verantwortung zu übernehmen und technische
-        Neuerungen umzusetzen.
+        zeichnet sich durch eine abwechslungsreiche Gestaltung von technischen Lösungen
+        in einem dynamischen Projektumfeld aus. Darüber hinaus bieten wir Ihnen die
+        Möglichkeit, Verantwortung zu übernehmen und technische Neuerungen umzusetzen.
       </p>
       <p>
         Schauen Sie gerne unsere aktuellen Jobangebote an oder schicken Sie uns
@@ -70,13 +69,13 @@ import Collapsible from "~/components/Collapsible.svelte";
           href="https://lehne-ing.de/arbeiten-bei-lehne-ing/"
           target="_blank">Teams</a
         >
-         mit verschiedenen Aufgaben und großer Transparenz. Eine gute fachliche
-        Qualifikation setzen wir voraus. Außerdem legen wir Wert auf
-        Persönlichkeit, Kommunikation und Neugierde.
+        mit verschiedenen Aufgaben und großer Transparenz. Eine gute fachliche Qualifikation
+        setzen wir voraus. Außerdem legen wir Wert auf Persönlichkeit, Kommunikation
+        und Neugierde.
       </p>
       <p>
-        Über eine Einarbeitung <i>on the job</i> und die Unterstützung mit
-        moderner Technologie fordern und fördern wir Sie individuell.
+        Über eine Einarbeitung <i>on the job</i> und die Unterstützung mit moderner
+        Technologie fordern und fördern wir Sie individuell.
       </p>
       <p>Wir sind gespannt auf Ihre Bewerbung!</p>
     </Collapsible>
@@ -144,6 +143,8 @@ import Collapsible from "~/components/Collapsible.svelte";
     color: white;
     padding: 1vmin;
     font-size: 4vmin;
+    border-radius: 1rem;
+    @apply shadow-lg;
   }
 
   .background {
