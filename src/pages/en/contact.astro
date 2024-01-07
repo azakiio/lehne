@@ -1,0 +1,89 @@
+---
+import MarkdownLayout from "~/layouts/MarkdownLayout.astro";
+
+import { Icon } from "astro-icon";
+import ContactForm from "~/components/ContactForm.astro";
+---
+
+<MarkdownLayout title="Contact">
+  <h1>Contact</h1>
+  <div class="text-center text-primary text-1.3rem">
+    <div>LEHNE Ingenieurgesellschaft für Bauen und Umwelt mbH</div>
+
+    <div>Danziger Straße 35a</div>
+    <div>20099 Hamburg</div>
+
+    <div class="my-8">
+      <div>Phone: +49 40 284 99 16 - 0</div>
+      <div>Fax: +49 40 284 99 16 - 11</div>
+    </div>
+
+    <div class="my-8">
+      <div>info@lehne-ing.de</div>
+      <div>www.lehne-ing.de</div>
+    </div>
+  </div>
+
+  <hr />
+
+  <p>
+    You have a construction project that you would like an evaluation of one of
+    our experienced engineers on? Are you interested in working with us? Or you
+    simply are interested in our work at LEHNE ing.?
+  </p>
+  <p>
+    Get in touch with us via mail, phone or the contact form. Check out our
+    facebook or instagram channel.
+  </p>
+  <p>We look forward to hearing from you !</p>
+  <div class="flex items-center gap-4 justify-center text-primary">
+    <a href="https://de-de.facebook.com/lehne.ing/" target="_blank">
+      <Icon name="mdi:facebook" class="w-10 h-10" />
+    </a>
+    <a href="https://www.instagram.com/lehne.ing/" target="_blank">
+      <Icon name="mdi:instagram" class="w-10 h-10" />
+    </a>
+    <a href="info@lehne-ing.de" target="_blank">
+      <Icon name="mdi:email" class="w-10 h-10" />
+    </a>
+  </div>
+
+  <h2>Contact Form</h2>
+
+  <ContactForm />
+
+  <h2>Location</h2>
+
+  <p>
+    LEHNE ing.'s office is in Hamburg's city center and close to all important
+    authorities and offices.
+  </p>
+
+  <p>
+    Car parking spaces are provided for visitors. Please call in advance so that
+    we can reserve a space for you.
+  </p>
+
+  <div class="w-700px h-500px overflow-hidden mx-auto my-16">
+    <div style="height:100%; width:100%;max-width:100%;">
+      <iframe
+        style="height:100%;width:100%;border:0;"
+        frameborder="0"
+        src="https://www.google.com/maps/embed/v1/place?q=Danziger+Straße+35A,+Hamburg,+Germany&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+      ></iframe>
+    </div>
+  </div>
+
+  <h3>Visiting us by public transportation</h3>
+
+  <ul>
+    <li>10 minute walk from Hamburger Hauptbahnhof.</li>
+    <li>5 minute walk from subway stop, U1 Lohmühlenstraße</li>
+    <li>1 minute walk from bus stop, line 6 Gurlittstraße/Lange Reihe.</li>
+  </ul>
+
+  <p>
+    For detailed departure and arrival times, please see the website of the
+    <a href="http://www.hvv.de/en/">Hamburger Verkehrsverbundes</a>
+  </p>
+</MarkdownLayout>

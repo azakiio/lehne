@@ -36,7 +36,7 @@ const items = projects.flatMap(({ data, slug }) => {
   <div class="main-carousel w-4/5 mx-auto">
     {
       items.map(({ label, href, thumbnail }) => (
-        <a {href} class="card">
+        <a {href} class="projectCard">
           <img class="background" src={thumbnail.src} alt={label} />
           <div class="text-white text-3vmin font-medium drop-shadow-lg">
             {label}
@@ -48,7 +48,7 @@ const items = projects.flatMap(({ data, slug }) => {
 </div>
 
 <style>
-  .card {
+  .projectCard {
     position: relative;
     display: grid;
     place-content: center;

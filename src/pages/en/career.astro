@@ -23,7 +23,7 @@ import Collapsible from "~/components/Collapsible.svelte";
     <Collapsible client:load>
       <div slot="trigger" class="card">
         <Image src={professionals} alt="Professionals" class="background" />
-        <div class="z-10">Professionals</div>
+        <div class="z-10 text-3xl">Professionals</div>
       </div>
       <p>
         At LEHNE Ing. you can start in the project business from the first day
@@ -48,7 +48,7 @@ import Collapsible from "~/components/Collapsible.svelte";
     <Collapsible client:load>
       <div slot="trigger" class="card">
         <Image src={beginners} alt="Beginners" class="background" />
-        <div class="z10">Beginners</div>
+        <div class="z10 text-3xl">Beginners</div>
       </div>
       <p>
         We can make a direct start-up in your career easy. If you know what you
@@ -78,7 +78,7 @@ import Collapsible from "~/components/Collapsible.svelte";
     <Collapsible client:load>
       <div slot="trigger" class="card">
         <Image src={interns} alt="Studierende" class="background" />
-        <div class="z10">Students</div>
+        <div class="z10 text-3xl">Students</div>
       </div>
       <p>
         We are happy to promote young talent and always find it exciting to see
@@ -100,7 +100,7 @@ import Collapsible from "~/components/Collapsible.svelte";
     <Collapsible client:load>
       <div slot="trigger" class="card">
         <Image src={students} alt="SchülerInnen" class="background" />
-        <div class="z10">Pupils</div>
+        <div class="z10 text-3xl">Pupils</div>
       </div>
       <p>
         We will gladly be of help during initial orientation in the working
@@ -124,33 +124,3 @@ import Collapsible from "~/components/Collapsible.svelte";
     <a href="info@lehne-ing.de">mail</a> or have a look at our current job openings.
   </p>
 </Layout>
-
-<style>
-  .card {
-    position: relative;
-    display: grid;
-    place-content: center;
-    aspect-ratio: 1/1;
-    text-align: center;
-    overflow: clip;
-    background-color: black;
-    color: white;
-    padding: 1vmin;
-    font-size: 4vmin;
-    border-radius: 1rem;
-    @apply shadow-lg;
-  }
-
-  .background {
-    opacity: 0.6;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    transition: scale 1s;
-  }
-
-  .card:hover .background {
-    scale: 1.2;
-  }
-</style>

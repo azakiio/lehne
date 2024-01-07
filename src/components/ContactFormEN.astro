@@ -1,4 +1,7 @@
 ---
+import nodemailer from "nodemailer";
+import { stripIndents } from "common-tags";
+
 const errors = {
   anrede: "",
   firma: "",
@@ -9,90 +12,121 @@ const errors = {
   nachricht: "",
 };
 
+const formSubmitted = Astro.request.method === "POST";
+
 if (Astro.request.method === "POST") {
+  const data = await Astro.request.formData();
+
+  const anrede = data.get("anrede");
+  const firma = data.get("firma");
+  const vorname = data.get("vorname");
+  const name = data.get("name");
+  const telefon = data.get("telefon");
+  const email = data.get("email");
+  const nachricht = data.get("nachricht");
+
+  const hasErrors = Object.values(errors).some((msg) => msg);
+
+  const transporter = nodemailer.createTransport({
+    host: "smtp.gmail.com",
+    port: 587,
+    auth: {
+      user: "lehne.kontakt@gmail.com",
+      pass: "gygx emfp wgrf sqms",
+    },
+  });
+
   try {
-    const data = await Astro.request.formData();
-    const anrede = data.get("anrede");
-    const firma = data.get("firma");
-    const vorname = data.get("vorname");
-    const name = data.get("name");
-    const telefon = data.get("telefon");
-    const email = data.get("email");
-    const nachricht = data.get("nachricht");
+    await transporter.sendMail({
+      from: "lehne.kontakt@gmail.com",
+      to: `azakica@gmail.com`,
+      subject: `Nachricht von ${anrede} ${vorname} ${name}`,
+      text: stripIndents`
+      Von: ${anrede} ${vorname} ${name}
+      Email: ${email}
+      Firma: ${firma}
+      Telefon: ${telefon}
 
-    const hasErrors = Object.values(errors).some((msg) => msg);
+      (über die englische Seite gesendet)
 
-    console.log(data);
-    return Astro.redirect("/en/success");
-
-  } catch (error) {
-    if (error instanceof Error) {
-      console.error(error.message);
-    }
+      Nachricht:
+      ${nachricht}`,
+    });
+  } catch (e) {
+    console.log(e);
+    return { message: e };
   }
 }
 ---
 
-<form method="POST" class="grid grid-cols-2 gap-4vmin">
-  <label>
-    <div>
-      Title <span class="text-red">*</span>
-    </div>
-    <select name="anrede" required>
-      <option disabled value="" selected>Please Select</option>
-      <option>Mr.</option>
-      <option>Ms.</option>
-    </select>
-  </label>
+{
+  formSubmitted ? (
+    <div>Your message was delivered!</div>
+  ) : (
+    <form method="POST" class="grid grid-cols-2 gap-4vmin">
+      <label>
+        <div>
+          Title <span class="text-red">*</span>
+        </div>
+        <select name="anrede" required>
+          <option disabled value="" selected>
+            Please Select
+          </option>
+          <option>Mr.</option>
+          <option>Ms.</option>
+        </select>
+      </label>
 
-  <label>
-    Company
-    <input type="text" name="firma" />
-  </label>
-  {errors.firma && <p>{errors.firma}</p>}
+      <label>
+        Company
+        <input type="text" name="firma" />
+      </label>
+      {errors.firma && <p>{errors.firma}</p>}
 
-  <label>
-    <div>
-      First name <span class="text-red">*</span>
-    </div>
-    <input type="text" name="vorname" required />
-  </label>
-  {errors.vorname && <p>{errors.vorname}</p>}
+      <label>
+        <div>
+          First name <span class="text-red">*</span>
+        </div>
+        <input type="text" name="vorname" required />
+      </label>
+      {errors.vorname && <p>{errors.vorname}</p>}
 
-  <label>
-    <div>
-      Last name <span class="text-red">*</span>
-    </div>
-    <input type="text" name="name" required />
-  </label>
-  {errors.name && <p>{errors.name}</p>}
+      <label>
+        <div>
+          Last name <span class="text-red">*</span>
+        </div>
+        <input type="text" name="name" required />
+      </label>
+      {errors.name && <p>{errors.name}</p>}
 
-  <label>
-    <div>
-      Phone <span class="text-red">*</span>
-    </div>
-    <input type="text" name="telefon" />
-  </label>
-  {errors.telefon && <p>{errors.telefon}</p>}
+      <label>
+        <div>
+          Phone <span class="text-red">*</span>
+        </div>
+        <input type="text" name="telefon" />
+      </label>
+      {errors.telefon && <p>{errors.telefon}</p>}
 
-  <label>
-    <div>
-      E-mail <span class="text-red">*</span>
-    </div>
-    <input type="email" name="email" required />
-  </label>
-  {errors.email && <p>{errors.email}</p>}
+      <label>
+        <div>
+          E-mail <span class="text-red">*</span>
+        </div>
+        <input type="email" name="email" required />
+      </label>
+      {errors.email && <p>{errors.email}</p>}
 
-  <label class="col-span-full">
-    <div>
-      Your message <span class="text-red">*</span>
-    </div>
-    <textarea name="nachricht" required></textarea>
-  </label>
-  {errors.nachricht && <p>{errors.nachricht}</p>}
+      <label class="col-span-full">
+        <div>
+          Your message <span class="text-red">*</span>
+        </div>
+        <textarea name="nachricht" required />
+      </label>
+      {errors.nachricht && <p>{errors.nachricht}</p>}
 
-  <button class="btn col-span-full mx-a">Send</button>
-</form>
+      <button class="btn col-span-full mx-a">Send</button>
+    </form>
+  )
+}
 
 <style>
   label {
@@ -107,7 +141,6 @@ if (Astro.request.method === "POST") {
     padding: 0.5rem;
     font-weight: normal;
     background-color: transparent;
-
   }
 
   .btn {

@@ -1,4 +1,6 @@
 ---
+import nodemailer from "nodemailer";
+import { stripIndents } from "common-tags";
 const errors = {
   anrede: "",
   firma: "",
@@ -9,8 +11,11 @@ const errors = {
   nachricht: "",
 };
 
+const formSubmitted = Astro.request.method === "POST";
+
 if (Astro.request.method === "POST") {
   const data = await Astro.request.formData();
+
   const anrede = data.get("anrede");
   const firma = data.get("firma");
   const vorname = data.get("vorname");
@@ -21,70 +26,104 @@ if (Astro.request.method === "POST") {
 
   const hasErrors = Object.values(errors).some((msg) => msg);
 
-  console.log(data);
+  const transporter = nodemailer.createTransport({
+    host: "smtp.gmail.com",
+    port: 587,
+    auth: {
+      user: "lehne.kontakt@gmail.com",
+      pass: "gygx emfp wgrf sqms",
+    },
+  });
+
+  try {
+    await transporter.sendMail({
+      from: "lehne.kontakt@gmail.com",
+      to: `info@lehne-ing.de`,
+      subject: `Nachricht von ${anrede} ${vorname} ${name}`,
+      text: stripIndents`
+      Von: ${anrede} ${vorname} ${name}
+      Email: ${email}
+      Firma: ${firma}
+      Telefon: ${telefon}
+
+      Nachricht:
+      ${nachricht}`,
+    });
+  } catch (e) {
+    console.log(e);
+    return { message: e };
+  }
 }
 ---
 
-<form method="POST" class="grid grid-cols-2 gap-4vmin">
-  <label>
-    <div>
-      Anrede <span class="text-red">*</span>
-    </div>
-    <select name="anrede" required>
-      <option disabled value="" selected>Bitte Wählen</option>
-      <option>Herr</option>
-      <option>Frau</option>
-    </select>
-  </label>
+{
+  formSubmitted ? (
+    <div>Ihre Nachricht wurde übermittelt!</div>
+  ) : (
+    <form method="POST" class="grid grid-cols-2 gap-4vmin">
+      <label>
+        <div>
+          Anrede <span class="text-red">*</span>
+        </div>
+        <select name="anrede" required>
+          <option disabled value="" selected>
+            Bitte Wählen
+          </option>
+          <option>Herr</option>
+          <option>Frau</option>
+        </select>
+      </label>
 
-  <label>
-    Firma
-    <input type="text" name="firma" />
-  </label>
-  {errors.firma && <p>{errors.firma}</p>}
+      <label>
+        Firma
+        <input type="text" name="firma" />
+      </label>
+      {errors.firma && <p>{errors.firma}</p>}
 
-  <label>
-    <div>
-      Vorname <span class="text-red">*</span>
-    </div>
-    <input type="text" name="vorname" required />
-  </label>
-  {errors.vorname && <p>{errors.vorname}</p>}
+      <label>
+        <div>
+          Vorname <span class="text-red">*</span>
+        </div>
+        <input type="text" name="vorname" required />
+      </label>
+      {errors.vorname && <p>{errors.vorname}</p>}
 
-  <label>
-    <div>
-      Name <span class="text-red">*</span>
-    </div>
-    <input type="text" name="name" required />
-  </label>
-  {errors.name && <p>{errors.name}</p>}
+      <label>
+        <div>
+          Name <span class="text-red">*</span>
+        </div>
+        <input type="text" name="name" required />
+      </label>
+      {errors.name && <p>{errors.name}</p>}
 
-  <label>
-    <div>
-      Telefon <span class="text-red">*</span>
-    </div>
-    <input type="text" name="telefon" />
-  </label>
-  {errors.telefon && <p>{errors.telefon}</p>}
+      <label>
+        <div>
+          Telefon <span class="text-red">*</span>
+        </div>
+        <input type="text" name="telefon" />
+      </label>
+      {errors.telefon && <p>{errors.telefon}</p>}
 
-  <label>
-    <div>
-      Email <span class="text-red">*</span>
-    </div>
-    <input type="email" name="email" required />
-  </label>
-  {errors.email && <p>{errors.email}</p>}
+      <label>
+        <div>
+          Email <span class="text-red">*</span>
+        </div>
+        <input type="email" name="email" required />
+      </label>
+      {errors.email && <p>{errors.email}</p>}
 
-  <label class="col-span-full">
-    <div>
-      Nachricht <span class="text-red">*</span>
-    </div>
-    <textarea name="nachricht" required></textarea>
-  </label>
-  {errors.nachricht && <p>{errors.nachricht}</p>}
+      <label class="col-span-full">
+        <div>
+          Nachricht <span class="text-red">*</span>
+        </div>
+        <textarea name="nachricht" required />
+      </label>
+      {errors.nachricht && <p>{errors.nachricht}</p>}
 
-  <button class="btn col-span-full mx-a">Absenden</button>
-</form>
+      <button class="btn col-span-full mx-a">Absenden</button>
+    </form>
+  )
+}
 
 <style>
   label {

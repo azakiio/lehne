@@ -26,31 +26,3 @@ const { items } = Astro.props;
     })
   }
 </>
-
-<style>
-  .card {
-    position: relative;
-    display: grid;
-    place-content: center;
-    aspect-ratio: 1/1;
-    text-align: center;
-    overflow: clip;
-    background-color: black;
-    padding: 1vmin;
-    border-radius: 1rem;
-    @apply shadow-lg;
-  }
-
-  .background {
-    opacity: 0.6;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    transition: scale 1s;
-  }
-
-  .card:hover .background {
-    scale: 1.2;
-  }
-</style>
