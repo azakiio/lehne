@@ -425,9 +425,9 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"mobilitaet/Busbeschleunigung Lange Reihe /Bus acceleration lane Lange Reih.md": {
-	id: "mobilitaet/Busbeschleunigung Lange Reihe /Bus acceleration lane Lange Reih.md";
-  slug: "en/mobility/Bus acceleration lane Lange Reih";
+"mobilitaet/Busbeschleunigung Lange Reihe /en.md": {
+	id: "mobilitaet/Busbeschleunigung Lange Reihe /en.md";
+  slug: "en/mobility/Bus acceleration lane Lange Reihe";
   body: string;
   collection: "projects";
   data: InferEntrySchema<"projects">
@@ -453,9 +453,9 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"mobilitaet/Grundinstandsetzung Halenreie/Rebuildung and overhaul Halenrei 17fea7a41a7c4e9ab0dc1a6f5c792f90.md": {
-	id: "mobilitaet/Grundinstandsetzung Halenreie/Rebuildung and overhaul Halenrei 17fea7a41a7c4e9ab0dc1a6f5c792f90.md";
-  slug: "en/mobility/Rebuildung and overhaul Halenrei";
+"mobilitaet/Grundinstandsetzung Halenreie/en.md": {
+	id: "mobilitaet/Grundinstandsetzung Halenreie/en.md";
+  slug: "en/mobility/Rebuildung and overhaul Halenreie";
   body: string;
   collection: "projects";
   data: InferEntrySchema<"projects">

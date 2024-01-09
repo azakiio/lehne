@@ -1,6 +1,6 @@
 ---
-title: "Bus acceleration lane Lange Reih"
-slug: "en/mobility/Bus acceleration lane Lange Reih"
+title: "Bus acceleration lane Lange Reihe"
+slug: "en/mobility/Bus acceleration lane Lange Reihe"
 images:
   - "./cover.jpg"
   - "./slide1.jpg"

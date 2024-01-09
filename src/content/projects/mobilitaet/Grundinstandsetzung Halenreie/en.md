@@ -1,6 +1,6 @@
 ---
-title: "Rebuildung and overhaul Halenrei"
-slug: "en/mobility/Rebuildung and overhaul Halenrei"
+title: "Rebuildung and overhaul Halenreie"
+slug: "en/mobility/Rebuildung and overhaul Halenreie"
 images:
   - "./cover.jpg"
   - "./slide1.jpg"

@@ -15,7 +15,7 @@ const lang = getLangFromUrl(Astro.url);
   class="flex items-center gap-4 z-10 bg-primary/20 justify-between h-12vmin px-4vmin sticky top-0"
 >
   <a href={getRelativeLocaleUrl(Astro.currentLocale || "en", "")}>
-    <Image src={Logo} alt="" class="w-15vw" />
+    <Image src={Logo} alt="" class="w-15vw rounded-none" />
   </a>
 
   <nav class="nav-desktop">
@@ -27,7 +27,11 @@ const lang = getLangFromUrl(Astro.url);
           return (
             <a class="link" href={link.href}>
               {link.thumbnail ? (
-                <Image src={link.thumbnail} alt={link.label} class="w-8 h-8" />
+                <Image
+                  src={link.thumbnail}
+                  alt={link.label}
+                  class="w-8 h-8 rounded-none"
+                />
               ) : (
                 link.label
               )}
