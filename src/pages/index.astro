@@ -15,9 +15,8 @@ import { homeLinksDE } from "~/data/home";
   <video src={Video} class="w-screen object-cover" autoplay muted loop></video>
 
   <div
-    class="grid sm:grid-cols-2 md:grid-cols-3 p-5vmin gap-4vmin max-w-1024px mx-auto w-full"
+    class="grid grid-cols-2 md:grid-cols-3 p-5vmin gap-4vmin max-w-1024px mx-auto w-full"
   >
-    <>
       {
         homeLinksDE.map(({ label, href, thumbnail, subtitle }) => {
           if (!thumbnail) {
@@ -33,7 +32,6 @@ import { homeLinksDE } from "~/data/home";
           );
         })
       }
-    </>
   </div>
 </BaseLayout>
 

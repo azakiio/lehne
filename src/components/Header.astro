@@ -15,7 +15,7 @@ const lang = getLangFromUrl(Astro.url);
   class="flex items-center gap-4 z-10 bg-primary/20 justify-between h-12vmin px-4vmin sticky top-0"
 >
   <a href={getRelativeLocaleUrl(Astro.currentLocale || "en", "")}>
-    <Image src={Logo} alt="" class="w-15vw rounded-none" />
+    <Image src={Logo} alt="" class="w-15vmax rounded-none" />
   </a>
 
   <nav class="nav-desktop">
@@ -148,7 +148,8 @@ const lang = getLangFromUrl(Astro.url);
     background-color: var(--primary-color);
     align-items: center;
     gap: 4vmin;
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
     flex-direction: column;
     position: fixed;
     right: 0;
