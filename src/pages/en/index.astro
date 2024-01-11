@@ -12,7 +12,14 @@ import { homeLinksEN } from "~/data/home";
 ---
 
 <BaseLayout title={title} description={description} permalink={permalink}>
-  <video src={Video} class="w-screen object-cover" autoplay muted loop></video>
+  <video
+    src={Video}
+    class="w-screen object-cover"
+    autoplay
+    muted
+    loop
+    webkit-playsinline
+    playsinline></video>
 
   <div
     class="grid grid-cols-2 md:grid-cols-3 p-5vmin gap-4vmin max-w-1024px mx-auto w-full"
