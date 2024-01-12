@@ -243,8 +243,8 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "projects": {
-"digitalisierung/4K-Luftaufnahmen mit Drohne/4K aerial shots with a drone.md": {
-	id: "digitalisierung/4K-Luftaufnahmen mit Drohne/4K aerial shots with a drone.md";
+"digitalisierung/4K-Luftaufnahmen mit Drohne/en.md": {
+	id: "digitalisierung/4K-Luftaufnahmen mit Drohne/en.md";
   slug: "en/digitalisation/4K aerial shots with a drone";
   body: string;
   collection: "projects";
@@ -257,8 +257,8 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"digitalisierung/Erstellung von 2D-Karten mit Drohne/Creation of 2D map with a drone c3aec6936fd047318028c06aee98fa9c.md": {
-	id: "digitalisierung/Erstellung von 2D-Karten mit Drohne/Creation of 2D map with a drone c3aec6936fd047318028c06aee98fa9c.md";
+"digitalisierung/Erstellung von 2D-Karten mit Drohne/en.md": {
+	id: "digitalisierung/Erstellung von 2D-Karten mit Drohne/en.md";
   slug: "en/digitalisation/Creation of 2D map with a drone";
   body: string;
   collection: "projects";
@@ -271,8 +271,8 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"digitalisierung/Migration On-Premise zu Office-Cloud/Migration On-Premise zu Microsoft 365.md": {
-	id: "digitalisierung/Migration On-Premise zu Office-Cloud/Migration On-Premise zu Microsoft 365.md";
+"digitalisierung/Migration On-Premise zu Office-Cloud/en.md": {
+	id: "digitalisierung/Migration On-Premise zu Office-Cloud/en.md";
   slug: "en/digitalisation/Migration On-Premise zu Microsoft 365";
   body: string;
   collection: "projects";
@@ -285,8 +285,8 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"digitalisierung/Modernisierung Unternehmens-Website/Modernisation company website 608146c9e65e479c8753d76f8c9fae84.md": {
-	id: "digitalisierung/Modernisierung Unternehmens-Website/Modernisation company website 608146c9e65e479c8753d76f8c9fae84.md";
+"digitalisierung/Modernisierung Unternehmens-Website/en.md": {
+	id: "digitalisierung/Modernisierung Unternehmens-Website/en.md";
   slug: "en/digitalisation/Modernisation company website";
   body: string;
   collection: "projects";
@@ -299,8 +299,8 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"digitalisierung/Remote Office Administration/Remote office administration a8e7e01e5f534804a7b078892f088785.md": {
-	id: "digitalisierung/Remote Office Administration/Remote office administration a8e7e01e5f534804a7b078892f088785.md";
+"digitalisierung/Remote Office Administration/en.md": {
+	id: "digitalisierung/Remote Office Administration/en.md";
   slug: "en/digitalisation/Remote Office Administration";
   body: string;
   collection: "projects";
@@ -313,8 +313,8 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"infrastruktur/Abwassergrundleitungen AK St Georg/Sewage pipes AK St Georg 175b5b94e8c547319cce109dde1362cf.md": {
-	id: "infrastruktur/Abwassergrundleitungen AK St Georg/Sewage pipes AK St Georg 175b5b94e8c547319cce109dde1362cf.md";
+"infrastruktur/Abwassergrundleitungen AK St Georg/en.md": {
+	id: "infrastruktur/Abwassergrundleitungen AK St Georg/en.md";
   slug: "en/infrastructure/Sewage pipes AK St. Georg";
   body: string;
   collection: "projects";
@@ -327,8 +327,8 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"infrastruktur/Abwassergrundleitungen HAW Berliner Tor/Sewage pipes HAW Berliner Tor b2288cca0da84d4596f79b917cf0af1d.md": {
-	id: "infrastruktur/Abwassergrundleitungen HAW Berliner Tor/Sewage pipes HAW Berliner Tor b2288cca0da84d4596f79b917cf0af1d.md";
+"infrastruktur/Abwassergrundleitungen HAW Berliner Tor/en.md": {
+	id: "infrastruktur/Abwassergrundleitungen HAW Berliner Tor/en.md";
   slug: "en/infrastructure/Sewage pipes HAW Berliner Tor";
   body: string;
   collection: "projects";
@@ -341,8 +341,8 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"infrastruktur/Erschließung Harburger Brücken/Development of Harburg Brücken cc24681d3f0b4589b52d008bea2e4db9.md": {
-	id: "infrastruktur/Erschließung Harburger Brücken/Development of Harburg Brücken cc24681d3f0b4589b52d008bea2e4db9.md";
+"infrastruktur/Erschließung Harburger Brücken/en.md": {
+	id: "infrastruktur/Erschließung Harburger Brücken/en.md";
   slug: "en/infrastructure/Development of Harburg Brücken";
   body: string;
   collection: "projects";
@@ -355,8 +355,8 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"infrastruktur/Erschließung In der Schlucht/Settlement In der Schlucht f3aa216da8ca4635901540606336a1e6.md": {
-	id: "infrastruktur/Erschließung In der Schlucht/Settlement In der Schlucht f3aa216da8ca4635901540606336a1e6.md";
+"infrastruktur/Erschließung In der Schlucht/en.md": {
+	id: "infrastruktur/Erschließung In der Schlucht/en.md";
   slug: "en/infrastructure/Settlement In der Schlucht";
   body: string;
   collection: "projects";
@@ -369,8 +369,8 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"infrastruktur/Erschließung Seniorenanlage/Extension of retirement comple.md": {
-	id: "infrastruktur/Erschließung Seniorenanlage/Extension of retirement comple.md";
+"infrastruktur/Erschließung Seniorenanlage/en.md": {
+	id: "infrastruktur/Erschließung Seniorenanlage/en.md";
   slug: "en/infrastructure/Extension of retirement complex";
   body: string;
   collection: "projects";
@@ -383,8 +383,8 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"infrastruktur/Leitungen Neubau Waltershofer Brücken/New construction of Waltershofer bridges 1597c372f47c4f0c969565c3712e502b.md": {
-	id: "infrastruktur/Leitungen Neubau Waltershofer Brücken/New construction of Waltershofer bridges 1597c372f47c4f0c969565c3712e502b.md";
+"infrastruktur/Leitungen Neubau Waltershofer Brücken/en.md": {
+	id: "infrastruktur/Leitungen Neubau Waltershofer Brücken/en.md";
   slug: "en/infrastructure/New construction of Waltershofer bridges";
   body: string;
   collection: "projects";
@@ -397,8 +397,8 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"infrastruktur/Sielanlagen Neugraben-Fischbek /Settlement Neugraben-Fischbek eaf870633dec45a480bb3a2674129c22.md": {
-	id: "infrastruktur/Sielanlagen Neugraben-Fischbek /Settlement Neugraben-Fischbek eaf870633dec45a480bb3a2674129c22.md";
+"infrastruktur/Sielanlagen Neugraben-Fischbek /en.md": {
+	id: "infrastruktur/Sielanlagen Neugraben-Fischbek /en.md";
   slug: "en/infrastructure/Settlement Neugraben-Fischbek";
   body: string;
   collection: "projects";
@@ -411,8 +411,8 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"mobilitaet/Bike+Ride Kellinghusenstraße/Bike+Ride Kellinghusenstraße.md": {
-	id: "mobilitaet/Bike+Ride Kellinghusenstraße/Bike+Ride Kellinghusenstraße.md";
+"mobilitaet/Bike+Ride Kellinghusenstraße/en.md": {
+	id: "mobilitaet/Bike+Ride Kellinghusenstraße/en.md";
   slug: "en/mobility/Bike+Ride Kellinghusenstraße";
   body: string;
   collection: "projects";
@@ -439,8 +439,8 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"mobilitaet/Grundinstandsetzung Borsigstraße/Rebuildung and Overhaul Borsigstraße 768781971354429f90b03c30fe50de2e.md": {
-	id: "mobilitaet/Grundinstandsetzung Borsigstraße/Rebuildung and Overhaul Borsigstraße 768781971354429f90b03c30fe50de2e.md";
+"mobilitaet/Grundinstandsetzung Borsigstraße/en.md": {
+	id: "mobilitaet/Grundinstandsetzung Borsigstraße/en.md";
   slug: "en/mobility/Rebuildung and Overhaul Borsigstraße";
   body: string;
   collection: "projects";
@@ -467,8 +467,8 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"mobilitaet/Grundinstandsetzung Moorfleeter Straße/Rebuilding and Overhaul Moorfleeter Straße.md": {
-	id: "mobilitaet/Grundinstandsetzung Moorfleeter Straße/Rebuilding and Overhaul Moorfleeter Straße.md";
+"mobilitaet/Grundinstandsetzung Moorfleeter Straße/en.md": {
+	id: "mobilitaet/Grundinstandsetzung Moorfleeter Straße/en.md";
   slug: "en/mobility/Rebuilding and Overhaul Moorfleeter Straße";
   body: string;
   collection: "projects";
@@ -481,8 +481,8 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"mobilitaet/Modernisierung Autobahn A7/Modernisation A7-highway.md": {
-	id: "mobilitaet/Modernisierung Autobahn A7/Modernisation A7-highway.md";
+"mobilitaet/Modernisierung Autobahn A7/en.md": {
+	id: "mobilitaet/Modernisierung Autobahn A7/en.md";
   slug: "en/mobility/Modernisation A7-highway";
   body: string;
   collection: "projects";
@@ -495,8 +495,8 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"mobilitaet/Veloroute Tornquiststraße/Veloroute Tornquiststraße.md": {
-	id: "mobilitaet/Veloroute Tornquiststraße/Veloroute Tornquiststraße.md";
+"mobilitaet/Veloroute Tornquiststraße/en.md": {
+	id: "mobilitaet/Veloroute Tornquiststraße/en.md";
   slug: "en/mobility/Veloroute Tornquiststraße";
   body: string;
   collection: "projects";
@@ -509,8 +509,8 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"sicherheit-gesundheit/sicherheits-und-gesundheitsschutzkoordination-landungsbruecken/SiGe coordination Landungsbrücken.md": {
-	id: "sicherheit-gesundheit/sicherheits-und-gesundheitsschutzkoordination-landungsbruecken/SiGe coordination Landungsbrücken.md";
+"sicherheit-gesundheit/sicherheits-und-gesundheitsschutzkoordination-landungsbruecken/en.md": {
+	id: "sicherheit-gesundheit/sicherheits-und-gesundheitsschutzkoordination-landungsbruecken/en.md";
   slug: "en/sige/SiGe coordination Landungsbrücken";
   body: string;
   collection: "projects";
@@ -523,8 +523,8 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"sicherheit-gesundheit/sicherheits-und-gesundheitsschutzkoordination-martkanal/SiGe coordination Marktkanal 6585d38fb3214c21bdb8f4f970140189.md": {
-	id: "sicherheit-gesundheit/sicherheits-und-gesundheitsschutzkoordination-martkanal/SiGe coordination Marktkanal 6585d38fb3214c21bdb8f4f970140189.md";
+"sicherheit-gesundheit/sicherheits-und-gesundheitsschutzkoordination-martkanal/en.md": {
+	id: "sicherheit-gesundheit/sicherheits-und-gesundheitsschutzkoordination-martkanal/en.md";
   slug: "en/sige/SiGe coordination Marktkanal";
   body: string;
   collection: "projects";
@@ -537,8 +537,8 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"umwelt/Erneuerung Becken Hamburger Stadtpark/Renewal of pool Hamburg Stadtpark 12914399c5414a0daaccb224a4693fa8.md": {
-	id: "umwelt/Erneuerung Becken Hamburger Stadtpark/Renewal of pool Hamburg Stadtpark 12914399c5414a0daaccb224a4693fa8.md";
+"umwelt/Erneuerung Becken Hamburger Stadtpark/en.md": {
+	id: "umwelt/Erneuerung Becken Hamburger Stadtpark/en.md";
   slug: "en/environment/Renewal of pool Hamburg Stadtpark";
   body: string;
   collection: "projects";
@@ -551,8 +551,8 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"umwelt/Fettabscheideranlage HAW Berliner Tor/Fat separation facility HAW Berliner Tor.md": {
-	id: "umwelt/Fettabscheideranlage HAW Berliner Tor/Fat separation facility HAW Berliner Tor.md";
+"umwelt/Fettabscheideranlage HAW Berliner Tor/en.md": {
+	id: "umwelt/Fettabscheideranlage HAW Berliner Tor/en.md";
   slug: "en/environment/Fat separation facility HAW Berliner Tor";
   body: string;
   collection: "projects";
@@ -565,8 +565,8 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"umwelt/Regenversickerung Kita Bundesstraße/Rainwater seepage Kindergarten Bundesstraße.md": {
-	id: "umwelt/Regenversickerung Kita Bundesstraße/Rainwater seepage Kindergarten Bundesstraße.md";
+"umwelt/Regenversickerung Kita Bundesstraße/en.md": {
+	id: "umwelt/Regenversickerung Kita Bundesstraße/en.md";
   slug: "en/environment/Rainwater seepage Kindergarten Bundesstraße";
   body: string;
   collection: "projects";
@@ -593,8 +593,8 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"umwelt/Sanierung Entwässerungsanlagen/Renovation of drainage facilities.md": {
-	id: "umwelt/Sanierung Entwässerungsanlagen/Renovation of drainage facilities.md";
+"umwelt/Sanierung Entwässerungsanlagen/en.md": {
+	id: "umwelt/Sanierung Entwässerungsanlagen/en.md";
   slug: "en/environment/Renovation of drainage facilities";
   body: string;
   collection: "projects";
@@ -607,8 +607,8 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"wasser/Entwässerung Curslacker Neuer Deich/Drainage Curslacker Neuer Deich 44d91306b8a34faab3739de8f899a601.md": {
-	id: "wasser/Entwässerung Curslacker Neuer Deich/Drainage Curslacker Neuer Deich 44d91306b8a34faab3739de8f899a601.md";
+"wasser/Entwässerung Curslacker Neuer Deich/en.md": {
+	id: "wasser/Entwässerung Curslacker Neuer Deich/en.md";
   slug: "en/water/Drainage Curslacker Neuer Deich";
   body: string;
   collection: "projects";
@@ -628,8 +628,8 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"wasser/Erneuerung von Abwasserpumpwerken/Renewal of sewage pumping stations 99890ffb45574175b488d82de2688437.md": {
-	id: "wasser/Erneuerung von Abwasserpumpwerken/Renewal of sewage pumping stations 99890ffb45574175b488d82de2688437.md";
+"wasser/Erneuerung von Abwasserpumpwerken/en.md": {
+	id: "wasser/Erneuerung von Abwasserpumpwerken/en.md";
   slug: "en/water/Renewal of sewage pumping stations";
   body: string;
   collection: "projects";
@@ -642,8 +642,8 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"wasser/Hochwasserschutz Borghorster Hauptdeich/Flood protection Borghorster Hauptdeich 656d5d928c2f43d69994904366913b55.md": {
-	id: "wasser/Hochwasserschutz Borghorster Hauptdeich/Flood protection Borghorster Hauptdeich 656d5d928c2f43d69994904366913b55.md";
+"wasser/Hochwasserschutz Borghorster Hauptdeich/en.md": {
+	id: "wasser/Hochwasserschutz Borghorster Hauptdeich/en.md";
   slug: "en/water/Flood protection Borghorster Hauptdeich";
   body: string;
   collection: "projects";
@@ -656,8 +656,8 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"wasser/Hochwasserschutz Dradenauer Hauptdeich/Flood protection Dradenauer Hauptdeich a0637ecf3477469fb310b09131cf0266.md": {
-	id: "wasser/Hochwasserschutz Dradenauer Hauptdeich/Flood protection Dradenauer Hauptdeich a0637ecf3477469fb310b09131cf0266.md";
+"wasser/Hochwasserschutz Dradenauer Hauptdeich/en.md": {
+	id: "wasser/Hochwasserschutz Dradenauer Hauptdeich/en.md";
   slug: "en/water/Flood protection Dradenauer Hauptdeich";
   body: string;
   collection: "projects";
@@ -670,8 +670,8 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"wasser/Stützmauer Bergedorfer Schlossgraben/Retaining wall Bergedorfer Schlossgraben 1b2453b329274eb986e71240b10989f5.md": {
-	id: "wasser/Stützmauer Bergedorfer Schlossgraben/Retaining wall Bergedorfer Schlossgraben 1b2453b329274eb986e71240b10989f5.md";
+"wasser/Stützmauer Bergedorfer Schlossgraben/en.md": {
+	id: "wasser/Stützmauer Bergedorfer Schlossgraben/en.md";
   slug: "en/water/Retaining wall Bergedorfer Schlossgraben";
   body: string;
   collection: "projects";
@@ -684,8 +684,8 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"wasser/Stützwand Horster Damm/Retaining wall Horster Damm.md": {
-	id: "wasser/Stützwand Horster Damm/Retaining wall Horster Damm.md";
+"wasser/Stützwand Horster Damm/en.md": {
+	id: "wasser/Stützwand Horster Damm/en.md";
   slug: "en/water/Retaining wall Horster Damm";
   body: string;
   collection: "projects";
@@ -698,8 +698,8 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"wasser/Technische Beratung Durchlass Rahlau/Passage Rahlau.md": {
-	id: "wasser/Technische Beratung Durchlass Rahlau/Passage Rahlau.md";
+"wasser/Technische Beratung Durchlass Rahlau/en.md": {
+	id: "wasser/Technische Beratung Durchlass Rahlau/en.md";
   slug: "en/water/Passage Rahlau";
   body: string;
   collection: "projects";
