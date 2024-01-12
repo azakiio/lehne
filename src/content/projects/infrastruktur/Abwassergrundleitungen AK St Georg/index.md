@@ -1,5 +1,5 @@
 ---
-title: "Abwassergrundleitungen AK St. Georg"
+title: "Abwasser­grundleitungen AK St. Georg"
 images:
   - "./cover.jpg"
   - "./slide1.jpg"
