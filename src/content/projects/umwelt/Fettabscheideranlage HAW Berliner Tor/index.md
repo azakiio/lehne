@@ -1,5 +1,5 @@
 ---
-title: "Fettabscheideranlage HAW Berliner Tor"
+title: "Fettabscheider­anlage HAW Berliner Tor"
 images:
   - "./cover.jpg"
   - "./slide1.jpg"
