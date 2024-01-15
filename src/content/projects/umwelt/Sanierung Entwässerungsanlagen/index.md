@@ -1,5 +1,5 @@
 ---
-title: "Sanierung Entwässerungsanlagen"
+title: "Sanierung Entwässerungs­anlagen"
 images:
   - "./cover.jpg"
 ---
