@@ -1,5 +1,5 @@
 ---
-title: "Grundinstandsetzung Moorfleeter Straße"
+title: "Grundinstand­setzung Moorfleeter Straße"
 images:
   - "./cover.png"
   - "./slide1.jpg"
