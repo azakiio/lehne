@@ -1,5 +1,5 @@
 ---
-title: "Abwassergrundleitungen HAW Berliner Tor"
+title: "Abwassergrund­leitungen HAW Berliner Tor"
 images:
   - "./cover.jpg"
   - "./slide1.jpg"
