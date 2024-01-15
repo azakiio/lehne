@@ -1,5 +1,5 @@
 ---
-title: "Regenversickerung Kita Bundesstraße"
+title: "Regen­versickerung Kita Bundesstraße"
 images:
   - "./cover.jpg"
   - "./slide1.jpg"
