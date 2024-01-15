@@ -1,5 +1,5 @@
 ---
-title: "Regenwasserbehandlung Moorfleeter Straße"
+title: "Regenwasser­behandlung Moorfleeter Straße"
 images:
   - "./cover.jpg"
   - "./slide1.jpg"
