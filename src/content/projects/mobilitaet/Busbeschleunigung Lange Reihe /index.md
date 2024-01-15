@@ -1,5 +1,5 @@
 ---
-title: "Busbeschleunigung Lange Reihe"
+title: "Busbeschleu­nigung Lange Reihe"
 images:
   - "./cover.jpg"
   - "./slide1.jpg"
