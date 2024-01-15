@@ -1,5 +1,5 @@
 ---
-title: "Grundinstandsetzung Borsigstraße"
+title: "Grundinstand­setzung Borsigstraße"
 images:
   - "./cover.jpg"
   - "./slide1.jpg"
