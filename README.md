@@ -10,5 +10,5 @@ https://www.markdownguide.org/basic-syntax, How to Commit Changes
 
 ## History
 
-## How to rollback wenn ich die seiter zerstört habe ?
+## How to rollback, wenn ich die seite zerstört habe ?
   
