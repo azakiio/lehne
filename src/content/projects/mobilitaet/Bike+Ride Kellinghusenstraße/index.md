@@ -1,5 +1,5 @@
 ---
-title: "Bike+Ride Kellinghusenstraße"
+title: "Bike+Ride Kellinghusen­straße"
 images:
   - "./cover.jpg"
   - "./slide1.jpg"
