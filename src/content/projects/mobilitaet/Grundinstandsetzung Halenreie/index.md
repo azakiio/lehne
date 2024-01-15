@@ -1,5 +1,5 @@
 ---
-title: "Grundinstandsetzung Halenreie"
+title: "Grundinstand­setzung Halenreie"
 images:
   - "./cover.jpg"
   - "./slide1.jpg"
