@@ -105,8 +105,8 @@ const lang = getLangFromUrl(Astro.url);
 </header>
 
 <style>
-  .hamburger {
-    @media (min-width: 1024px) {
+  @media (min-width: 1024px) {
+    .hamburger {
       display: none;
     }
   }
@@ -135,8 +135,10 @@ const lang = getLangFromUrl(Astro.url);
     background-color: var(--primary-color);
     align-items: center;
     gap: 4vmin;
+  }
 
-    @media (max-width: 1024px) {
+  @media (max-width: 1024px) {
+    .nav-desktop {
       display: none;
     }
   }
