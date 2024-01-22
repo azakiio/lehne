@@ -18,6 +18,7 @@ import HAldag from "./HAldag.jpg";
 import GNiemann from "./GNiemann.jpg";
 // import VSaini from "./VSaini.jpg";
 // import KBaginski from "./KBaginski.jpg";
+// import JUhlenkamp from "./JUhlenkamp.jpg";
 // import HAlsaoud from "./HAlsaoud.jpg";
 // import JWollatz from "./JWollatz.jpg";
 // import TOellrich from "./TOellrich.jpg";
@@ -25,7 +26,8 @@ import GNiemann from "./GNiemann.jpg";
 // import GLochte from "./GLochte.jpg";
 // import SAl-Salhi from "./SAl-Salhi.jpg";
 // import JBehlau from "./JBehlau.jpg";
-
+// import LPetznik from "./LPetznik.jpg";
+// import ZYousufy from "./ZYousufy.jpg";
 export const people = [
   { name: "S. Eikenroth", image: SEikenroth },
   { name: "M. Himmelreich", image: MHimmelreich },
@@ -47,6 +49,7 @@ export const people = [
   { name: "G. Niemann-Hiessl", image: GNiemann },
   { name: "V. Saini", image: undefined },
   { name: "K. Baginski", image: undefined },
+  { name: "J. Uhlenkamp", image: undefined },
   { name: "H. Alsaoud", image: undefined },
   { name: "J. Wollatz", image: undefined },
   { name: "T. Oellrich", image: undefined },
@@ -54,4 +57,6 @@ export const people = [
   { name: "G. Lochte", image: undefined },
   { name: "S. Al-Salhi", image: undefined },
   { name: "J. Behlau", image: undefined },
+  { name: "L. Petznik", image: undefined },
+  { name: "Z. Yousufy", image: undefined }, 
 ];
