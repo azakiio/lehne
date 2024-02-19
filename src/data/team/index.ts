@@ -49,10 +49,8 @@ export const people = [
   { name: "H. Aldag", image: HAldag },
   { name: "G. Niemann-Hiessl", image: GNiemann },
   { name: "V. Saini", image: undefined },
-  { name: "K. Baginski", image: undefined },
   { name: "J. Uhlenkamp", image: undefined },
   { name: "H. Alsaoud", image: undefined },
-  { name: "J. Wollatz", image: undefined },
   { name: "T. Oellrich", image: undefined },
   { name: "A. Pulido", image: undefined },
   { name: "G. Lochte", image: undefined },
@@ -60,5 +58,4 @@ export const people = [
   { name: "J. Behlau", image: undefined },
   { name: "L. Petznik", image: undefined },
   { name: "Z. Yousufy", image: undefined }, 
-  { name: "M. Wahring", image: undefined }, 
 ];
