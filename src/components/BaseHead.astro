@@ -17,6 +17,8 @@ const socialUrl = Astro.site?.href + "assets/social.jpg";
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width" />
 <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="sitemap" href="/sitemap-index.xml" />
+
 <!-- Primary Meta Tags -->
 <title>{title}</title>
 <meta name="title" content={title} />
@@ -35,6 +37,20 @@ const socialUrl = Astro.site?.href + "assets/social.jpg";
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={socialUrl} />
+
+<!-- Google tag (gtag.js) -->
+<script
+  async
+  type="text/partytown"
+  src="https://www.googletagmanager.com/gtag/js?id=G-Q7318CTCMZ"></script>
+<script type="text/partytown">
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+  gtag("config", "G-Q7318CTCMZ");
+</script>
 
 <ViewTransitions />
 

@@ -8,8 +8,9 @@ import rehypeExternalLinks from "rehype-external-links";
 import remarkGfm from "remark-gfm";
 import remarkSmartypants from "remark-smartypants";
 import UnoCSS from "unocss/astro";
-
 import sitemap from "@astrojs/sitemap";
+
+import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
 export default defineConfig({
@@ -28,6 +29,12 @@ export default defineConfig({
     }),
     react(),
     sitemap(),
+    partytown({
+      // Adds dataLayer.push as a forwarding-event.
+      config: {
+        forward: ["dataLayer.push"],
+      },
+    }),
   ],
   markdown: {
     shikiConfig: {
