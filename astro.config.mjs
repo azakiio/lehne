@@ -1,14 +1,15 @@
-import mdx from "@astrojs/mdx";
-import svelte from "@astrojs/svelte";
 import alpine from "@astrojs/alpinejs";
+import mdx from "@astrojs/mdx";
+import react from "@astrojs/react";
+import svelte from "@astrojs/svelte";
+import vercel from "@astrojs/vercel/serverless";
 import { defineConfig } from "astro/config";
 import rehypeExternalLinks from "rehype-external-links";
 import remarkGfm from "remark-gfm";
 import remarkSmartypants from "remark-smartypants";
 import UnoCSS from "unocss/astro";
-import vercel from "@astrojs/vercel/serverless";
 
-import react from "@astrojs/react";
+import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
@@ -17,7 +18,7 @@ export default defineConfig({
     locales: ["en", "de"],
   },
   output: "server",
-  site: "https://lehne-ing.vercel.app/",
+  site: "https://lehne-ing.de",
   integrations: [
     mdx(),
     svelte(),
@@ -26,6 +27,7 @@ export default defineConfig({
       injectReset: true, // or a path to the reset file
     }),
     react(),
+    sitemap(),
   ],
   markdown: {
     shikiConfig: {
