@@ -1,6 +1,7 @@
 import alpine from "@astrojs/alpinejs";
 import mdx from "@astrojs/mdx";
 import react from "@astrojs/react";
+import sitemap from "@astrojs/sitemap";
 import svelte from "@astrojs/svelte";
 import vercel from "@astrojs/vercel/serverless";
 import { defineConfig } from "astro/config";
@@ -8,7 +9,7 @@ import rehypeExternalLinks from "rehype-external-links";
 import remarkGfm from "remark-gfm";
 import remarkSmartypants from "remark-smartypants";
 import UnoCSS from "unocss/astro";
-import sitemap from "@astrojs/sitemap";
+import icon from 'astro-icon'
 
 import partytown from "@astrojs/partytown";
 
@@ -35,6 +36,7 @@ export default defineConfig({
         forward: ["dataLayer.push"],
       },
     }),
+    icon(),
   ],
   markdown: {
     shikiConfig: {

@@ -8,7 +8,7 @@ interface Props {
 const { id, images } = Astro.props;
 ---
 
-<script define:vars={{ id }}>
+<script is:inline define:vars={{ id }}>
   document.addEventListener("astro:page-load", () => {
     new Flickity(`#${id}`, { wrapAround: true });
   });
@@ -19,7 +19,11 @@ const { id, images } = Astro.props;
     {
       images?.map((image) => {
         return (
-          <Image src={image} alt="" class="h-60vh object-cover w-full object-center" />
+          <Image
+            src={image}
+            alt=""
+            class="h-60vh object-cover w-full object-center"
+          />
         );
       })
     }

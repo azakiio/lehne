@@ -10,7 +10,7 @@ export interface Props {
 }
 
 const { title, description, permalink } = Astro.props;
-const socialUrl = Astro.site?.href + "assets/social.jpg";
+const socialUrl = Astro.site?.href + "assets/Logo.png";
 ---
 
 <!-- Global Metadata -->
@@ -23,6 +23,10 @@ const socialUrl = Astro.site?.href + "assets/social.jpg";
 <title>{title}</title>
 <meta name="title" content={title} />
 <meta name="description" content={description} />
+<meta
+  name="keywords"
+  content={"Paul, Meyn, Ingenieurbüro Hamburg, Entwässerung, Sielbau, Straßenbau, Radwege, Beratende Ingenieure, Erschließung, Verkehr, Kabelbau, Wasserrechtliche Genehmigung, Abwasser, Wasserversorgung, Fernwärme, Glasfaser, Gewerbeerschließung, Wohnungsbau, Beweissicherung, Deichbau, Umwelttechnik, U-Bahn, Umweltplanung, Trassen, Leitungstrassenplanung, Bauwesen, Tiefbau, Planung, Mobilität, Verkehrsplanung, Rohrleitungsbau, Infrastruktur, Umwelttechnik, Stadtplanung, Infrastruktur, Beratung, Bauleitung, Digitalisierung, App, LI-Rechner, Drohneflug, Hydraulik, Drohnenaufnahme, Cloudmigration, Vermessung, Software"}
+/>
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
@@ -40,10 +44,10 @@ const socialUrl = Astro.site?.href + "assets/social.jpg";
 
 <!-- Google tag (gtag.js) -->
 <script
-  async
+  is:inline
   type="text/partytown"
   src="https://www.googletagmanager.com/gtag/js?id=G-Q7318CTCMZ"></script>
-<script type="text/partytown">
+<script is:inline type="text/partytown">
   window.dataLayer = window.dataLayer || [];
   function gtag() {
     dataLayer.push(arguments);
