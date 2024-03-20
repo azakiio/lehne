@@ -1,6 +1,5 @@
 ---
 import { Image } from "astro:assets";
-import { getRelativeLocaleUrl } from "astro:i18n";
 import Logo from "~/assets/Logo.png";
 import DropDown from "./DropDown.astro";
 import ThemeToggleButton from "./ThemeToggleButton.svelte";
@@ -14,7 +13,7 @@ const lang = getLangFromUrl(Astro.url);
   x-data="{showMenu: false}"
   class="flex items-center gap-4 z-10 bg-primary/20 justify-between h-12vmin px-4vmin sticky top-0"
 >
-  <a href={getRelativeLocaleUrl(Astro.currentLocale || "en", "")}>
+  <a href={Astro.currentLocale === "en" ? "/en" : "/"}>
     <Image src={Logo} alt="" class="w-15vmax rounded-none" />
   </a>
 

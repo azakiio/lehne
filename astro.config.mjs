@@ -1,17 +1,15 @@
 import alpine from "@astrojs/alpinejs";
 import mdx from "@astrojs/mdx";
-import react from "@astrojs/react";
+import partytown from "@astrojs/partytown";
 import sitemap from "@astrojs/sitemap";
 import svelte from "@astrojs/svelte";
 import vercel from "@astrojs/vercel/serverless";
+import icon from 'astro-icon';
 import { defineConfig } from "astro/config";
 import rehypeExternalLinks from "rehype-external-links";
 import remarkGfm from "remark-gfm";
 import remarkSmartypants from "remark-smartypants";
 import UnoCSS from "unocss/astro";
-import icon from 'astro-icon'
-
-import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
 export default defineConfig({
@@ -28,7 +26,6 @@ export default defineConfig({
     UnoCSS({
       injectReset: true, // or a path to the reset file
     }),
-    react(),
     sitemap(),
     partytown({
       // Adds dataLayer.push as a forwarding-event.
