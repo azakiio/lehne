@@ -4,7 +4,7 @@ import partytown from "@astrojs/partytown";
 import sitemap from "@astrojs/sitemap";
 import svelte from "@astrojs/svelte";
 import vercel from "@astrojs/vercel/serverless";
-import icon from 'astro-icon';
+import icon from "astro-icon";
 import { defineConfig } from "astro/config";
 import rehypeExternalLinks from "rehype-external-links";
 import remarkGfm from "remark-gfm";

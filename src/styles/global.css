@@ -214,6 +214,10 @@ details > summary::-webkit-details-marker {
   display: none;
 }
 
+[data-icon] {
+  font-size: 100%;
+}
+
 .container {
   margin: 0 auto;
   max-width: 42em;
