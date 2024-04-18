@@ -1,7 +1,7 @@
 ---
 title: "Abwassergrund­leitungen HAW Berliner Tor"
 images:
-  - "./covern.jpg"
+  - "./covernew.jpg"
   - "./slide2n.JPG"
   - "./slide2.jpg"
 ---
