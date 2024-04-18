@@ -6,19 +6,8 @@ images:
   - "./slide2.jpg"
 ---
 
-Im Rahmen der Baumaßnahme waren auf dem Campus Berliner Tor (HAW) sämtliche
-erdberührte Entwässerungsanlagen wie Sammel- und Anschlussleitungen
-sowie Schachtbauwerke zu sanieren. Die Gesamtlänge des
-sanierungsbedürftigen Entwässerungsnetzes auf dem rund 3 ha großen
-Campus beträgt rund 3,5 km und ist als Mischwassersystem ausgelegt.
+Auf dem rund 3 ha großen Campusgelände der Hochschule für Angewandte Wissenschaften (HAW) am Berliner Tor in Hamburg wurden umfangreiche Leitungsarbeiten zur Sanierung der Entwässerungsanlagen durchgeführt.
 
-Eine durchgeführte TV-Inspektion offenbarte Ablagerungen bis hin zu
-Rohrbrüchen, woraufhin die Schäden mittels Prioritätsklassen beurteilt
-und mit einer Handlungsempfehlung versehen wurden.
+Die Sanierung umfasste neben Sammel- und Anschlussleitungen ebenfalls die Erneuerung von Schachtbauwerken. Die Gesamtlänge des sanierungsbedürftigen Leitungsnetzes betrug rund. 3,5 km.
 
-Ein darauf abgestimmtes Sanierungskonzept sah es vor, stark beschädigte
-Leitungen und Schächte in offener Bauweise auszutauschen und durch neue
-Leitungen zu ersetzen. Leitungen mit geringem Schadbild konnten mittels
-Inliner in geschlossener Bauweise saniert werden, insbesondere auch
-dort, wo die Leitungen schwer zugänglich oder unterhalb den Gebäuden
-verliefen.
+Die vorgefundene Entwässerung wurde zunächst mittels TV-Inspektion begutachtet und hieraus der Sanierungsbedarf ermittelt. Die Leitungen und Schächte mit einem hohem Schadensbild wurden in offener Bauweise durch neue PP-Leitungen ersetzt. Im Bereich von überbauten Leitungsabschnitten sowie Leitungen mit geringem Schadensbild wurden mittels Inliner in geschlossener Bauweise saniert.
