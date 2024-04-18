@@ -6,7 +6,7 @@ images:
   - "./slide2.jpg"
 ---
 
-Auf dem rund 3 ha großen Campusgelände der **Hochschule für Angewandte Wissenschaften (HAW)** am Berliner Tor in Hamburg-Mitte wurden umfangreiche Leitungsarbeiten zur Sanierung der Entwässerungsanlagen durchgeführt.
+Auf dem rund 3 ha großen Campusgelände der Hochschule für Angewandte Wissenschaften (HAW) am Berliner Tor in Hamburg-Mitte wurden umfangreiche Leitungsarbeiten zur Sanierung der Entwässerungsanlagen durchgeführt.
 
 Die Sanierung umfasste neben Sammel- und Anschlussleitungen ebenfalls die Erneuerung zahlreicher Schachtbauwerke. Die Führung der Abwassergrundleitungen für gewerblich verunreinigtes Abwasser als Mischsystem wurde beibehalten.\
 Insgesamt wurde das Leitungsnetz auf einer Länge von rund 3,5 km erneuert.
