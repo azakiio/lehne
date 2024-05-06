@@ -17,7 +17,7 @@ import JSchmidt from "./JSchmidt.jpg";
 import HAldag from "./HAldag.jpg";
 import GNiemann from "./GNiemann.jpg";
 import VSaini from "./VSaini.jpg";
-// import JUhlenkamp from "./JUhlenkamp.jpg";
+import JUhlenkamp from "./JUhlenkamp.jpg";
 // import HAlsaoud from "./HAlsaoud.jpg";
 import TOellrich from "./TOellrich.jpg";
 import APulido from "./APulido.jpg";
