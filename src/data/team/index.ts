@@ -16,17 +16,16 @@ import SLehmann from "./SLehmann.jpg";
 import JSchmidt from "./JSchmidt.jpg";
 import HAldag from "./HAldag.jpg";
 import GNiemann from "./GNiemann.jpg";
-// import VSaini from "./VSaini.jpg";
-// import KBaginski from "./KBaginski.jpg";
+import VSaini from "./VSaini.jpg";
 // import JUhlenkamp from "./JUhlenkamp.jpg";
 // import HAlsaoud from "./HAlsaoud.jpg";
-// import TOellrich from "./TOellrich.jpg";
-// import APulido from "./APulido.jpg";
-// import GLochte from "./GLochte.jpg";
-// import SAl-Salhi from "./SAl-Salhi.jpg";
-// import JBehlau from "./JBehlau.jpg";
+import TOellrich from "./TOellrich.jpg";
+import APulido from "./APulido.jpg";
+import GLochte from "./GLochte.jpg";
+import SAlSalhi from "./SAlsalhi.jpg";
+import JBehlau from "./JBehlau.jpg";
 // import LPetznik from "./LPetznik.jpg";
-// import MWettstaedt from "./MWettstaedt.jpg";
+
 
 export const people = [
   { name: "S. Eikenroth", image: SEikenroth },
