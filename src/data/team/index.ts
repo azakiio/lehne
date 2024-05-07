@@ -20,9 +20,9 @@ import VSaini from "./VSaini.jpg";
 import JUhlenkamp from "./JUhlenkamp.jpg";
 import TOellrich from "./TOellrich.jpg";
 import APulido from "./APulido.jpg";
-import GLochte from "./GLochte.jpg";
-import SAlSalhi from "./SAlsalhi.jpg";
-import JBehlau from "./JBehlau.jpg";
+//import GLochte from "./GLochte.jpg";
+//import SAlSalhi from "./SAlsalhi.jpg";
+//import JBehlau from "./JBehlau.jpg";
 //import LPetznik from "./LPetznik.jpg";
 //import HAlsaoud from "./HAlsaoud.jpg";
 
