@@ -23,8 +23,8 @@ import APulido from "./APulido.jpg";
 import GLochte from "./GLochte.jpg";
 import SAlSalhi from "./SAlsalhi.jpg";
 import JBehlau from "./JBehlau.jpg";
-import LPetznik from "./LPetznik.jpg";
-import HAlsaoud from "./HAlsaoud.jpg";
+//import LPetznik from "./LPetznik.jpg";
+//import HAlsaoud from "./HAlsaoud.jpg";
 
 export const people = [
   { name: "S. Eikenroth", image: SEikenroth },
