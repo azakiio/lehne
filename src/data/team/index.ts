@@ -22,8 +22,8 @@ import TOellrich from "./TOellrich.jpg";
 import APulido from "./APulido.jpg";
 import GLochte from "./GLochte.jpg";
 import SAlsalhi from "./SAlsalhi.jpg";
-import JBehlau from "./JBehlau.jpg";
-import NHettche from "./NHettche.jpg";
+import JBehlau from "./JBehlau2.jpg";
+import NHettche from "./NHettche2.jpg";
 //import LPetznik from "./LPetznik.jpg";
 //import HAlsaoud from "./HAlsaoud.jpg";
 
