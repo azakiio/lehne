@@ -23,6 +23,7 @@ import APulido from "./APulido.jpg";
 import GLochte from "./GLochte.jpg";
 import SAlsalhi from "./SAlsalhi.jpg";
 import JBehlau from "./JBehlau.jpg";
+import NHettche from "./NHettche.jpg";
 //import LPetznik from "./LPetznik.jpg";
 //import HAlsaoud from "./HAlsaoud.jpg";
 
@@ -52,7 +53,7 @@ export const people = [
   { name: "G. Lochte", image: GLochte },
   { name: "S. Al-Salhi", image: SAlsalhi },
   { name: "J. Behlau", image: JBehlau },
-  { name: "N. Hettche", image: undefined },
+  { name: "N. Hettche", image: NHettche },
   { name: "H. Alsaoud", image: undefined },
   { name: "L. Petznik", image: undefined },
   { name: "J. Henke", image: undefined }, 
