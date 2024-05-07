@@ -19,7 +19,7 @@ import GNiemann from "./GNiemann.jpg";
 import VSaini from "./VSaini.jpg";
 import JUhlenkamp from "./JUhlenkamp.jpg";
 import TOellrich from "./TOellrich.jpg";
-//import APulido from "./APulido.jpg";
+import APulido from "./APulido.jpg";
 //import GLochte from "./GLochte.jpg";
 //import SAlsalhi from "./SAlsalhi.jpg";
 //import JBehlau from "./JBehlau.jpg";
@@ -48,7 +48,7 @@ export const people = [
   { name: "V. Saini", image: VSaini },
   { name: "J. Uhlenkamp", image: JUhlenkamp },
   { name: "T. Oellrich", image: TOellrich },
-  { name: "A. Pulido", image: undefined },
+  { name: "A. Pulido", image: APulido },
   { name: "G. Lochte", image: undefined },
   { name: "S. Al-Salhi", image: undefined },
   { name: "J. Behlau", image: undefined },
