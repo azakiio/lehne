@@ -9,8 +9,8 @@ import BRoemmer from "./BRoemmer.jpg";
 import JBehlau from "./JBehlau2.jpg";
 import NGoldberg from "./NGoldberg.jpg";
 import EKaemper from "./EKaemper.jpg";
-import LBentin from "./LBentin.jpg";
 import LSchneider from "./LSchneider.jpg";
+import LBentin from "./LBentin.jpg";
 import SMannes from "./SMannes.jpg";
 import TArmborst from "./TArmborst.jpg";
 import APulido from "./APulido.jpg";
@@ -41,8 +41,8 @@ export const people = [
   { name: "N. Goldberg", image: NGoldberg },
   { name: "S. Al-Salhi", image: SAlsalhi },
   { name: "E. Kämper", image: EKaemper },
-  { name: "L. Bentin", image: LBentin },
   { name: "L. Schneider", image: LSchneider },
+  { name: "L. Bentin", image: LBentin },
   { name: "S. Mannes", image: SMannes },
   { name: "A. Pulido", image: APulido },
   { name: "T. Armborst", image: TArmborst },
@@ -50,8 +50,8 @@ export const people = [
   { name: "N. Hettche", image: NHettche },
   { name: "V. Saini", image: VSaini },
   { name: "J. Uhlenkamp", image: JUhlenkamp },
-  { name: "T. Oellrich", image: TOellrich },
   { name: "G. Lochte", image: GLochte },
+  { name: "T. Oellrich", image: TOellrich },
   { name: "S. Lehmann", image: SLehmann },
   { name: "H. Aldag", image: HAldag },
   { name: "H. Alsaoud", image: undefined },
