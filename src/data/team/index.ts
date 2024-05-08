@@ -6,24 +6,24 @@ import ETimmermann from "./ETimmermann.jpg";
 import FHaensch from "./FHaensch.jpg";
 import VKolaska from "./VKolaska.jpg";
 import BRoemmer from "./BRoemmer.jpg";
+import JBehlau from "./JBehlau2.jpg";
 import NGoldberg from "./NGoldberg.jpg";
 import EKaemper from "./EKaemper.jpg";
 import LBentin from "./LBentin.jpg";
 import LSchneider from "./LSchneider.jpg";
 import SMannes from "./SMannes.jpg";
 import TArmborst from "./TArmborst.jpg";
-import SLehmann from "./SLehmann.jpg";
+import APulido from "./APulido.jpg";
 import JSchmidt from "./JSchmidt.jpg";
-import HAldag from "./HAldag.jpg";
+import NHettche from "./NHettche2.jpg";
 import GNiemann from "./GNiemann.jpg";
 import VSaini from "./VSaini2.jpg";
 import JUhlenkamp from "./JUhlenkamp2.jpg";
 import TOellrich from "./TOellrich2.jpg";
-import APulido from "./APulido.jpg";
 import GLochte from "./GLochte2.jpg";
+import SLehmann from "./SLehmann.jpg";
 import SAlsalhi from "./SAlsalhi2.jpg";
-import JBehlau from "./JBehlau2.jpg";
-import NHettche from "./NHettche2.jpg";
+import HAldag from "./HAldag.jpg";
 //import LPetznik from "./LPetznik.jpg";
 //import HAlsaoud from "./HAlsaoud.jpg";
 
@@ -36,24 +36,24 @@ export const people = [
   { name: "F. Hänsch", image: FHaensch },
   { name: "V. Kolaska", image: VKolaska },
   { name: "B. Römmer", image: BRoemmer },
+  { name: "J. Behlau", image: JBehlau },
   { name: "N. Goldberg", image: NGoldberg },
   { name: "E. Kämper", image: EKaemper },
   { name: "L. Bentin", image: LBentin },
   { name: "L. Schneider", image: LSchneider },
   { name: "S. Mannes", image: SMannes },
   { name: "T. Armborst", image: TArmborst },
-  { name: "S. Lehmann", image: SLehmann },
   { name: "J. Schmidt", image: JSchmidt },
-  { name: "H. Aldag", image: HAldag },
+  { name: "N. Hettche", image: NHettche },
   { name: "G. Niemann-Hiessl", image: GNiemann },
   { name: "V. Saini", image: VSaini },
   { name: "J. Uhlenkamp", image: JUhlenkamp },
   { name: "T. Oellrich", image: TOellrich },
   { name: "A. Pulido", image: APulido },
   { name: "G. Lochte", image: GLochte },
+  { name: "S. Lehmann", image: SLehmann },
   { name: "S. Al-Salhi", image: SAlsalhi },
-  { name: "J. Behlau", image: JBehlau },
-  { name: "N. Hettche", image: NHettche },
+  { name: "H. Aldag", image: HAldag },
   { name: "H. Alsaoud", image: undefined },
   { name: "L. Petznik", image: undefined },
   { name: "J. Henke", image: undefined }, 
