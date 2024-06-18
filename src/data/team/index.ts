@@ -17,7 +17,6 @@ import APulido from "./APulido.jpg";
 import JSchmidt from "./JSchmidt.jpg";
 import NHettche from "./NHettche2.jpg";
 import GNiemann from "./GNiemann.jpg";
-import VSaini from "./VSaini2.jpg";
 import JUhlenkamp from "./JUhlenkamp2.jpg";
 import TOellrich from "./TOellrich2.jpg";
 import GLochte from "./GLochte2.jpg";
@@ -45,7 +44,6 @@ export const people = [
   { name: "L. Bentin", image: LBentin },
   { name: "J. Schmidt", image: JSchmidt },
   { name: "S. Mannes", image: SMannes },
-  { name: "V. Saini", image: VSaini },
   { name: "N. Hettche", image: NHettche },
   { name: "A. Pulido", image: APulido },
   { name: "T. Armborst", image: TArmborst },
