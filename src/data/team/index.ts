@@ -25,6 +25,7 @@ import SAlsalhi from "./SAlsalhi2.jpg";
 import HAldag from "./HAldag.jpg";
 //import LPetznik from "./LPetznik.jpg";
 //import HAlsaoud from "./HAlsaoud.jpg";
+//import NZiemann from "./Nziemann.jpg";
 
 export const people = [
   { name: "S. Eikenroth", image: SEikenroth },
@@ -56,4 +57,5 @@ export const people = [
   { name: "L. Petznik", image: undefined },
   { name: "J. Henke", image: undefined }, 
   { name: "M. Wettstaedt", image: undefined }, 
+  { name: "N. Ziemann", image: undefined }, 
 ];
