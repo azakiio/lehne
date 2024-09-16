@@ -36,7 +36,7 @@ Bitte beachten Sie, dass Änderungen an anderen Dateien mit dem Projektteam koor
 
 Die Historie der Änderungen kann im GitHub-Repository eingesehen werden. Jede Änderung wird als Commit verfolgt, der die durchgeführten Änderungen beschreibt.
 
-## Wie mache ich einen Rollback, wenn eine Anderung probleme verursacht?
+## Wie mache ich einen Rollback, wenn eine änderung probleme verursacht?
 
 Wenn Sie versehentlich Änderungen gemacht haben und die Website beschädigt ist, können Sie einen Rollback durchführen, um zu einer früheren Version zurückzukehren. Dazu können Sie den Befehl `git revert` verwenden, um den betroffenen Commit rückgängig zu machen.
 
