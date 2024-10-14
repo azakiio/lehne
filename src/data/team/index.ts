@@ -23,11 +23,12 @@ import GLochte from "./GLochte2.jpg";
 import SLehmann from "./SLehmann.jpg";
 import SAlsalhi from "./SAlsalhi2.jpg";
 import HAldag from "./HAldag.jpg";
+//import ADräger from "./FHäußler.jpg";
 //import FHäußler from "./FHäußler.jpg";
 //import MBiskup from "./MBiskup.jpg";
 //import LPetznik from "./LPetznik.jpg";
-//import HAlsaoud from "./HAlsaoud.jpg";
-//import NZiemann from "./Nziemann.jpg";
+
+
 
 export const people = [
   { name: "S. Eikenroth", image: SEikenroth },
@@ -56,9 +57,9 @@ export const people = [
   { name: "S. Lehmann", image: SLehmann },
   { name: "H. Aldag", image: HAldag },
   { name: "F. Häußler", image: undefined },
+  { name: "A. Dräger", image: undefined },
   { name: "M. Biskup", image: undefined },
   { name: "L. Petznik", image: undefined },
   { name: "M. Wettstaedt", image: undefined }, 
-  { name: "N. Ziemann", image: undefined }, 
   { name: "L. Grymlas", image: undefined }, 
 ];
