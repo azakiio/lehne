@@ -61,5 +61,5 @@ export const people = [
   { name: "M. Biskup", image: undefined },
   { name: "L. Petznik", image: undefined },
   { name: "M. Wettstaedt", image: undefined }, 
-  { name: "L. Grymlas", image: undefined }, 
+  { name: "S. Grymlas", image: undefined }, 
 ];
