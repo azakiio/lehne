@@ -292,16 +292,16 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"infrastruktur/Erschließung Harburger Brücken/en.md": {
-	id: "infrastruktur/Erschließung Harburger Brücken/en.md";
+"infrastruktur/Erschließung Harburger Brücken/en.md": {
+	id: "infrastruktur/Erschließung Harburger Brücken/en.md";
   slug: "en/infrastructure/Development of Harburg Brücken";
   body: string;
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"infrastruktur/Erschließung Harburger Brücken/index.md": {
-	id: "infrastruktur/Erschließung Harburger Brücken/index.md";
-  slug: "infrastruktur/erschließung-harburger-brücken";
+"infrastruktur/Erschließung Harburger Brücken/index.md": {
+	id: "infrastruktur/Erschließung Harburger Brücken/index.md";
+  slug: "infrastruktur/erschließung-harburger-brücken";
   body: string;
   collection: "projects";
   data: InferEntrySchema<"projects">
@@ -334,16 +334,16 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"infrastruktur/Leitungen Neubau Waltershofer Brücken/en.md": {
-	id: "infrastruktur/Leitungen Neubau Waltershofer Brücken/en.md";
+"infrastruktur/Leitungen Neubau Waltershofer Brücken/en.md": {
+	id: "infrastruktur/Leitungen Neubau Waltershofer Brücken/en.md";
   slug: "en/infrastructure/New construction of Waltershofer bridges";
   body: string;
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"infrastruktur/Leitungen Neubau Waltershofer Brücken/index.md": {
-	id: "infrastruktur/Leitungen Neubau Waltershofer Brücken/index.md";
-  slug: "infrastruktur/leitungen-neubau-waltershofer-brücken";
+"infrastruktur/Leitungen Neubau Waltershofer Brücken/index.md": {
+	id: "infrastruktur/Leitungen Neubau Waltershofer Brücken/index.md";
+  slug: "infrastruktur/leitungen-neubau-waltershofer-brücken";
   body: string;
   collection: "projects";
   data: InferEntrySchema<"projects">
@@ -544,16 +544,16 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"umwelt/Sanierung Entwässerungsanlagen/en.md": {
-	id: "umwelt/Sanierung Entwässerungsanlagen/en.md";
+"umwelt/Sanierung Entwässerungsanlagen/en.md": {
+	id: "umwelt/Sanierung Entwässerungsanlagen/en.md";
   slug: "en/environment/Renovation of drainage facilities";
   body: string;
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"umwelt/Sanierung Entwässerungsanlagen/index.md": {
-	id: "umwelt/Sanierung Entwässerungsanlagen/index.md";
-  slug: "umwelt/sanierung-entwässerungsanlagen";
+"umwelt/Sanierung Entwässerungsanlagen/index.md": {
+	id: "umwelt/Sanierung Entwässerungsanlagen/index.md";
+  slug: "umwelt/sanierung-entwässerungsanlagen";
   body: string;
   collection: "projects";
   data: InferEntrySchema<"projects">
@@ -621,30 +621,30 @@ declare module 'astro:content' {
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"wasser/Stützmauer Bergedorfer Schlossgraben/en.md": {
-	id: "wasser/Stützmauer Bergedorfer Schlossgraben/en.md";
+"wasser/Stützmauer Bergedorfer Schlossgraben/en.md": {
+	id: "wasser/Stützmauer Bergedorfer Schlossgraben/en.md";
   slug: "en/water/Retaining wall Bergedorfer Schlossgraben";
   body: string;
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"wasser/Stützmauer Bergedorfer Schlossgraben/index.md": {
-	id: "wasser/Stützmauer Bergedorfer Schlossgraben/index.md";
-  slug: "wasser/stützmauer-bergedorfer-schlossgraben";
+"wasser/Stützmauer Bergedorfer Schlossgraben/index.md": {
+	id: "wasser/Stützmauer Bergedorfer Schlossgraben/index.md";
+  slug: "wasser/stützmauer-bergedorfer-schlossgraben";
   body: string;
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"wasser/Stützwand Horster Damm/en.md": {
-	id: "wasser/Stützwand Horster Damm/en.md";
+"wasser/Stützwand Horster Damm/en.md": {
+	id: "wasser/Stützwand Horster Damm/en.md";
   slug: "en/water/Retaining wall Horster Damm";
   body: string;
   collection: "projects";
   data: InferEntrySchema<"projects">
 } & { render(): Render[".md"] };
-"wasser/Stützwand Horster Damm/index.md": {
-	id: "wasser/Stützwand Horster Damm/index.md";
-  slug: "wasser/stützwand-horster-damm";
+"wasser/Stützwand Horster Damm/index.md": {
+	id: "wasser/Stützwand Horster Damm/index.md";
+  slug: "wasser/stützwand-horster-damm";
   body: string;
   collection: "projects";
   data: InferEntrySchema<"projects">
