@@ -65,6 +65,9 @@ importers:
       '@types/react-dom':
         specifier: ^18.2.22
         version: 18.2.22
+      '@vercel/analytics':
+        specifier: ^1.3.1
+        version: 1.3.1(react@18.2.0)
       '@vercel/speed-insights':
         specifier: ^1.0.12
         version: 1.0.12(react@18.2.0)(svelte@4.2.12)
@@ -1115,8 +1118,8 @@ packages:
     peerDependencies:
       vite: ^2.9.0 || ^3.0.0-0 || ^4.0.0 || ^5.0.0-0
 
-  '@vercel/analytics@1.2.2':
-    resolution: {integrity: sha512-X0rctVWkQV1e5Y300ehVNqpOfSOufo7ieA5PIdna8yX/U7Vjz0GFsGf4qvAhxV02uQ2CVt7GYcrFfddXXK2Y4A==}
+  '@vercel/analytics@1.3.1':
+    resolution: {integrity: sha512-xhSlYgAuJ6Q4WQGkzYTLmXwhYl39sWjoMA3nHxfkvG+WdBT25c563a7QhwwKivEOZtPJXifYHR1m2ihoisbWyA==}
     peerDependencies:
       next: '>= 13'
       react: ^18 || ^19
@@ -3627,7 +3630,7 @@ snapshots:
   '@astrojs/vercel@7.4.0(astro@4.5.8(@types/node@20.11.30)(typescript@5.4.2))(react@18.2.0)':
     dependencies:
       '@astrojs/internal-helpers': 0.3.0
-      '@vercel/analytics': 1.2.2(react@18.2.0)
+      '@vercel/analytics': 1.3.1(react@18.2.0)
       '@vercel/edge': 1.1.1
       '@vercel/nft': 0.26.4
       astro: 4.5.8(@types/node@20.11.30)(typescript@5.4.2)
@@ -4618,7 +4621,7 @@ snapshots:
     transitivePeerDependencies:
       - rollup
 
-  '@vercel/analytics@1.2.2(react@18.2.0)':
+  '@vercel/analytics@1.3.1(react@18.2.0)':
     dependencies:
       server-only: 0.0.1
     optionalDependencies:
