@@ -1,5 +1,5 @@
 ---
-title: "Erschließung In der Schlutch"
+title: "Erschließung In der Schlucht"
 images:
   - "./cover.jpg"
   - "./slide1.jpg"
