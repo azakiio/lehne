@@ -1,6 +1,6 @@
 ---
-title: "4K aerial shots with a drone"
-slug: "en/digitalisation/4K aerial shots with a drone"
+title: "Test"
+slug: "en/digitalisation/Test"
 images:
   - "./cover.jpg"
   - "./slide1.jpg"

@@ -1,5 +1,5 @@
 ---
-title: "4K-Luftaufnahmen mit Drohne"
+title: "Test"
 images:
   - "./cover.jpg"
   - "./slide1.jpg"
