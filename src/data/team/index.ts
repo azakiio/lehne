@@ -6,7 +6,6 @@ import ETimmermann from "./ETimmermann.jpg";
 import FHaensch from "./FHaensch.jpg";
 import VKolaska from "./VKolaska.jpg";
 import BRoemmer from "./BRoemmer.jpg";
-import JBehlau from "./JBehlau2.jpg";
 import NGoldberg from "./NGoldberg.jpg";
 import EKaemper from "./EKaemper.jpg";
 import LSchneider from "./LSchneider.jpg";
@@ -35,7 +34,6 @@ export const people = [
   { name: "S. Eikenroth", image: SEikenroth },
   { name: "M. Himmelreich", image: MHimmelreich },
   { name: "C. Lips", image: CLips },
-  { name: "J. Behlau", image: JBehlau },
   { name: "O. Paul", image: OPaul },
   { name: "F. Hänsch", image: FHaensch },
   { name: "E. Timmermann", image: ETimmermann },
