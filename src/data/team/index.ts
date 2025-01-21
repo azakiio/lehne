@@ -22,6 +22,7 @@ import GLochte from "./GLochte2.jpg";
 import SLehmann from "./SLehmann.jpg";
 import SAlsalhi from "./SAlsalhi2.jpg";
 import HAldag from "./HAldag.jpg";
+//import JJoritz from "./JJoritz.jpg";
 //import ADräger from "./ADräger.jpg";
 //import FHäußler from "./FHäußler.jpg";
 //import MBiskup from "./MBiskup.jpg";
@@ -62,4 +63,5 @@ export const people = [
   { name: "L. Petznik", image: undefined },
   { name: "M. Wettstaedt", image: undefined }, 
   { name: "L. Grymlas", image: undefined }, 
+  { name: "J. Joritz", image: undefined },
 ];
