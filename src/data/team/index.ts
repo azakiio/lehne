@@ -1,5 +1,4 @@
 import SEikenroth from "./SEikenroth.jpg";
-import MHimmelreich from "./MHimmelreich.jpg";
 import CLips from "./CLips.jpg";
 import OPaul from "./OPaul.jpg";
 import ETimmermann from "./ETimmermann.jpg";
@@ -23,7 +22,6 @@ import SLehmann from "./SLehmann.jpg";
 import SAlsalhi from "./SAlsalhi2.jpg";
 import HAldag from "./HAldag.jpg";
 //import JJoritz from "./JJoritz.jpg";
-//import ADräger from "./ADräger.jpg";
 //import FHäußler from "./FHäußler.jpg";
 //import MBiskup from "./MBiskup.jpg";
 //import LPetznik from "./LPetznik.jpg";
@@ -33,7 +31,6 @@ import HAldag from "./HAldag.jpg";
 
 export const people = [
   { name: "S. Eikenroth", image: SEikenroth },
-  { name: "M. Himmelreich", image: MHimmelreich },
   { name: "C. Lips", image: CLips },
   { name: "O. Paul", image: OPaul },
   { name: "F. Hänsch", image: FHaensch },
@@ -61,7 +58,6 @@ export const people = [
   { name: "M. Biskup", image: undefined },
   { name: "V. Dürr", image: undefined }, 
   { name: "L. Petznik", image: undefined },
-  { name: "M. Wettstaedt", image: undefined }, 
   { name: "L. Grymlas", image: undefined }, 
   { name: "J. Joritz", image: undefined },
 ];
