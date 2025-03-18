@@ -23,7 +23,6 @@ import SAlsalhi from "./SAlsalhi2.jpg";
 import HAldag from "./HAldag.jpg";
 //import JJoritz from "./JJoritz.jpg";
 //import FHäußler from "./FHäußler.jpg";
-//import MBiskup from "./MBiskup.jpg";
 //import LPetznik from "./LPetznik.jpg";
 //import VDürr from "./VDürr.jpg";
 
@@ -54,8 +53,6 @@ export const people = [
   { name: "S. Lehmann", image: SLehmann },
   { name: "H. Aldag", image: HAldag },
   { name: "F. Häußler", image: undefined },
-  { name: "A. Dräger", image: undefined },
-  { name: "M. Biskup", image: undefined },
   { name: "V. Dürr", image: undefined }, 
   { name: "L. Petznik", image: undefined },
   { name: "L. Grymlas", image: undefined }, 
