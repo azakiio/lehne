@@ -9,7 +9,7 @@ import Water from "../expertise/water.png";
 import Digitalisation from "../expertise/digitalisation.png";
 import HealthAndSafety from "../expertise/health-and-safety.png";
 
-import Management from "../about/management_new.jpg";
+import Management from "../about/management.jpg";
 import Services from "../about/services.jpg";
 import Team from "../about/team.jpg";
 
