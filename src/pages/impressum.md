@@ -11,9 +11,9 @@ title: "Impressum"
 
 ## Sitz der Gesellschaft
 
-Danziger Straße 35a
+Beim Strohhause 27
 
-D-20099 Hamburg
+D-20097 Hamburg
 
 Telefon: +49 40 2849916-0
 
@@ -27,7 +27,7 @@ Internet: [www.lehne-ing.de](http://www.lehne-ing.de/)
 
 ## Geschäftsführung
 
-ppa. Amelie Atassi, Michael Meyn, Jakob Paul, Stefan Paul
+ppa. Amelie Atassi, Michael Meyn, Jakob Paul, Stefan Paul, Oskar Paul
 
 ---
 
