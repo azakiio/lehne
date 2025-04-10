@@ -17,7 +17,6 @@ import NHettche from "./NHettche2.jpg";
 import GNiemann from "./GNiemann.jpg";
 import JUhlenkamp from "./JUhlenkamp2.jpg";
 import TOellrich from "./TOellrich2.jpg";
-import GLochte from "./GLochte2.jpg";
 import SLehmann from "./SLehmann.jpg";
 import SAlsalhi from "./SAlsalhi2.jpg";
 import HAldag from "./HAldag.jpg";
@@ -48,10 +47,8 @@ export const people = [
   { name: "A. Pulido", image: APulido },
   { name: "T. Armborst", image: TArmborst },
   { name: "J. Uhlenkamp", image: JUhlenkamp },
-  { name: "G. Lochte", image: GLochte },
   { name: "T. Oellrich", image: TOellrich },
   { name: "S. Lehmann", image: SLehmann },
-  { name: "H. Aldag", image: HAldag },
   { name: "F. Häußler", image: undefined },
   { name: "V. Dürr", image: undefined }, 
   { name: "J. Joritz", image: undefined },
