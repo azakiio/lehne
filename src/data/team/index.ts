@@ -1,5 +1,5 @@
 import SEikenroth from "./SEikenroth.jpg";
-import MHimmelreich from "./MHimmelreich.jpg";
+
 import CLips from "./CLips.jpg";
 //import OPaul from "./OPaul.jpg";
 import ETimmermann from "./ETimmermann.jpg";
@@ -19,10 +19,10 @@ import NHettche from "./NHettche2.jpg";
 import GNiemann from "./GNiemann.jpg";
 import JUhlenkamp from "./JUhlenkamp2.jpg";
 import TOellrich from "./TOellrich2.jpg";
-import GLochte from "./GLochte2.jpg";
+
 import SLehmann from "./SLehmann.jpg";
 import SAlsalhi from "./SAlsalhi2.jpg";
-import HAldag from "./HAldag.jpg";
+
 //import ADräger from "./FHäußler.jpg";
 //import FHäußler from "./FHäußler.jpg";
 //import MBiskup from "./MBiskup.jpg";
@@ -32,10 +32,10 @@ import HAldag from "./HAldag.jpg";
 
 export const people = [
   { name: "S. Eikenroth", image: SEikenroth },
-  { name: "M. Himmelreich", image: MHimmelreich },
+  
   { name: "C. Lips", image: CLips },
   { name: "J. Behlau", image: JBehlau },
-  { name: "O. Paul", image: undefined },
+  //{ name: "O. Paul", image: undefined },
   { name: "F. Hänsch", image: FHaensch },
   { name: "E. Timmermann", image: ETimmermann },
   { name: "V. Kolaska", image: VKolaska },
@@ -52,14 +52,14 @@ export const people = [
   { name: "A. Pulido", image: APulido },
   { name: "T. Armborst", image: TArmborst },
   { name: "J. Uhlenkamp", image: JUhlenkamp },
-  { name: "G. Lochte", image: GLochte },
+  
   { name: "T. Oellrich", image: TOellrich },
   { name: "S. Lehmann", image: SLehmann },
-  { name: "H. Aldag", image: HAldag },
+  
   { name: "F. Häußler", image: undefined },
-  { name: "A. Dräger", image: undefined },
+  
   { name: "M. Biskup", image: undefined },
   { name: "L. Petznik", image: undefined },
-  { name: "M. Wettstaedt", image: undefined }, 
-  { name: "L. Grymlas", image: undefined }, 
+  
+  
 ];
