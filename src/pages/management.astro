@@ -21,8 +21,8 @@ const people = await getCollection("people", ({ id }) => id.startsWith("de/"));
 
   <div class="grid sm:grid-cols-3 gap-4vmin">
     {
-      people.slice(0, 3).map(async ({ data, render }) => {
-        const { Content } = await render();
+      await Promise.all(row1.map(async ({ data, render }) => {
+    const { Content } = await render();
         return (
           <div style={`order: ${data.sortOrder};`}>
             <Image src={data.image} alt="" />
@@ -38,8 +38,8 @@ const people = await getCollection("people", ({ id }) => id.startsWith("de/"));
   {/* Zweite Zeile: 2 Spalten */}
   <div class="grid sm:grid-cols-2 gap-4vmin">
     {
-      people.slice(3, 5).map(async ({ data, render }) => {
-        const { Content } = await render();
+      await Promise.all(row2.map(async ({ data, render }) => {
+    const { Content } = await render();
         return (
           <div style={`order: ${data.sortOrder};`}>
             <Image src={data.image} alt="" />

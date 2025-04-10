@@ -10,6 +10,7 @@ const people = defineCollection({
       position: z.string(),
       image: image(),
       sortOrder: z.number(),
+      row: z.number(), 
     }),
 });
 
