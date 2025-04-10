@@ -4,14 +4,14 @@ import { getCollection } from "astro:content";
 import Layout from "~/layouts/MarkdownLayout.astro";
 
 const people = await getCollection("people", ({ id }) => id.startsWith("de/"));
-// Daten auflösen und Inhalte vorbereiten
+// Inhalte vorbereiten: row 1 & row 2
 async function preparePeopleByRow(rowNumber: number) {
   const filtered = people.filter((p) => p.data.row === rowNumber);
   return await Promise.all(
     filtered.map(async (person) => {
       const { data, render } = person;
       const { Content } = await render();
-      return { data, Content };
+      return { data, Content }; // <-- kein "render" mehr hier
     })
   );
 }
@@ -35,44 +35,33 @@ const row2 = await preparePeopleByRow(2);
 
    <div class="space-y-8">
 
-    <!-- Erste Zeile: 3 Spalten -->
+    <!-- Zeile 1: 3 Spalten -->
     <div class="grid sm:grid-cols-3 gap-4vmin">
       {
-        await Promise.all(
-          row1.map(async (person) => {
-            const { data, render } = person;
-            const { Content } = await render();
-            return (
-              <div style={`order: ${data.sortOrder};`}>
-                <Image src={data.image} alt="" />
-                <h2 class="text-center text-primary">{data.name}</h2>
-                <h3 class="text-center">{data.position}</h3>
-                <Content />
-              </div>
-            );
-          })
-        )
+        row1.map(({ data, Content }) => (
+          <div style={`order: ${data.sortOrder};`}>
+            <Image src={data.image} alt="" />
+            <h2 class="text-center text-primary">{data.name}</h2>
+            <h3 class="text-center">{data.position}</h3>
+            <Content />
+          </div>
+        ))
       }
     </div>
 
-  {/* Zweite Zeile: 2 Spalten */}
-  <div class="grid sm:grid-cols-2 gap-4vmin">
+    <!-- Zeile 2: 2 Spalten -->
+    <div class="grid sm:grid-cols-2 gap-4vmin">
       {
-        await Promise.all(
-          row2.map(async (person) => {
-            const { data, render } = person;
-            const { Content } = await render();
-            return (
-              <div style={`order: ${data.sortOrder};`}>
-                <Image src={data.image} alt="" />
-                <h2 class="text-center text-primary">{data.name}</h2>
-                <h3 class="text-center">{data.position}</h3>
-                <Content />
-              </div>
-            );
-          })
-        )
+        row2.map(({ data, Content }) => (
+          <div style={`order: ${data.sortOrder};`}>
+            <Image src={data.image} alt="" />
+            <h2 class="text-center text-primary">{data.name}</h2>
+            <h3 class="text-center">{data.position}</h3>
+            <Content />
+          </div>
+        ))
       }
     </div>
-</div>
+
+  </div>
 </Layout>
