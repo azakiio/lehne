@@ -4,8 +4,8 @@ import { getCollection } from "astro:content";
 import Layout from "~/layouts/MarkdownLayout.astro";
 
 const people = await getCollection("people", ({ id }) => id.startsWith("de/"));
-const row1 = people.filter(p => p.data.row === 1);
-const row2 = people.filter(p => p.data.row === 2);
+const row1 = people.filter((p) => p.data.row === 1);
+const row2 = people.filter((p) => p.data.row === 2);
 ---
 
 <Layout title="Führungsteam">
@@ -21,21 +21,27 @@ const row2 = people.filter(p => p.data.row === 2);
     erweitert.
   </p>
 
-  <div class="grid sm:grid-cols-3 gap-4vmin">
-    {
-      await Promise.all(row1.map(async ({ data, render }) => {
-    const { Content } = await render();
-        return (
-          <div style={`order: ${data.sortOrder};`}>
-            <Image src={data.image} alt="" />
-            <h2 class="text-center text-primary">{data.name}</h2>
-            <h3 class="text-center">{data.position}</h3>
-            <Content />
-          </div>
-        );
-      })
-    }
-  </div>
+   <div class="space-y-8">
+
+    <!-- Erste Zeile: 3 Spalten -->
+    <div class="grid sm:grid-cols-3 gap-4vmin">
+      {
+        await Promise.all(
+          row1.map(async (person) => {
+            const { data, render } = person;
+            const { Content } = await render();
+            return (
+              <div style={`order: ${data.sortOrder};`}>
+                <Image src={data.image} alt="" />
+                <h2 class="text-center text-primary">{data.name}</h2>
+                <h3 class="text-center">{data.position}</h3>
+                <Content />
+              </div>
+            );
+          })
+        )
+      }
+    </div>
 
   {/* Zweite Zeile: 2 Spalten */}
   <div class="grid sm:grid-cols-2 gap-4vmin">
