@@ -4,8 +4,20 @@ import { getCollection } from "astro:content";
 import Layout from "~/layouts/MarkdownLayout.astro";
 
 const people = await getCollection("people", ({ id }) => id.startsWith("de/"));
-const row1 = people.filter((p) => p.data.row === 1);
-const row2 = people.filter((p) => p.data.row === 2);
+// Daten auflösen und Inhalte vorbereiten
+async function preparePeopleByRow(rowNumber: number) {
+  const filtered = people.filter((p) => p.data.row === rowNumber);
+  return await Promise.all(
+    filtered.map(async (person) => {
+      const { data, render } = person;
+      const { Content } = await render();
+      return { data, Content };
+    })
+  );
+}
+
+const row1 = await preparePeopleByRow(1);
+const row2 = await preparePeopleByRow(2);
 ---
 
 <Layout title="Führungsteam">
