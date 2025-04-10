@@ -4,6 +4,8 @@ import { getCollection } from "astro:content";
 import Layout from "~/layouts/MarkdownLayout.astro";
 
 const people = await getCollection("people", ({ id }) => id.startsWith("de/"));
+const row1 = people.filter(p => p.data.row === 1);
+const row2 = people.filter(p => p.data.row === 2);
 ---
 
 <Layout title="Führungsteam">
