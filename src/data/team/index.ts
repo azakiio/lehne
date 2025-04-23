@@ -1,6 +1,5 @@
 import SEikenroth from "./SEikenroth.jpg";
 import CLips from "./CLips.jpg";
-import OPaul from "./OPaul.jpg";
 import ETimmermann from "./ETimmermann.jpg";
 import FHaensch from "./FHaensch.jpg";
 import VKolaska from "./VKolaska.jpg";
@@ -30,7 +29,6 @@ import HAldag from "./HAldag.jpg";
 export const people = [
   { name: "S. Eikenroth", image: SEikenroth },
   { name: "C. Lips", image: CLips },
-  { name: "O. Paul", image: OPaul },
   { name: "F. Hänsch", image: FHaensch },
   { name: "E. Timmermann", image: ETimmermann },
   { name: "V. Kolaska", image: VKolaska },
