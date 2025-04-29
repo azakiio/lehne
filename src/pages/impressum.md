@@ -17,8 +17,6 @@ D-20097 Hamburg
 
 Telefon: +49 40 2849916-0
 
-Telefax: +49 40 2849916-11
-
 E-Mail: [info@lehne-ing.de](mailto:info@lehne-ing.de)
 
 Internet: [www.lehne-ing.de](http://www.lehne-ing.de/)
@@ -27,7 +25,7 @@ Internet: [www.lehne-ing.de](http://www.lehne-ing.de/)
 
 ## Geschäftsführung
 
-ppa. Amelie Atassi, Michael Meyn, Jakob Paul, Stefan Paul, Oskar Paul
+ppa. Amelie Atassi, Stefan Paul, Jakob Paul, Oskar Paul, Michael Meyn
 
 ---
 
