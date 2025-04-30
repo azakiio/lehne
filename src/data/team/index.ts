@@ -18,13 +18,11 @@ import JUhlenkamp from "./JUhlenkamp2.jpg";
 import TOellrich from "./TOellrich2.jpg";
 import SLehmann from "./SLehmann.jpg";
 import SAlsalhi from "./SAlsalhi2.jpg";
-import HAldag from "./HAldag.jpg";
 import JJoritz from "./JJoritz.jpg";
 import FHäußler from "./FHäußler.jpg";
-//import LPetznik from "./LPetznik.jpg";
 import VDürr from "./VDürr.jpg";
 import SVoßschulte from "./SVoßschulte.jpg";
-
+//import LPetznik from "./LPetznik.jpg";
 
 
 export const people = [
