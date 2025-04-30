@@ -37,16 +37,16 @@ export const homeLinksEN = [
     thumbnail: social,
   },
   {
-    label: "Mobility",
-    subtitle: "connecting people.",
-    href: "/en/mobility",
-    thumbnail: Mobility,
-  },
-  {
     label: "Infrastructure",
     subtitle: "technology for urban life.",
     href: "/en/infrastructure",
     thumbnail: Infrastructure,
+  },
+  {
+    label: "Mobility",
+    subtitle: "connecting people.",
+    href: "/en/mobility",
+    thumbnail: Mobility,
   },
   {
     label: "Environment",
@@ -130,16 +130,16 @@ export const homeLinksDE = [
     thumbnail: social,
   },
   {
-    label: "Mobilität",
-    subtitle: "verbindet Menschen",
-    href: "/mobilitaet",
-    thumbnail: Mobility,
-  },
-  {
     label: "Infrastruktur",
     subtitle: "Technik die wir brauchen.",
     href: "/infrastruktur",
     thumbnail: Infrastructure,
+  },
+  {
+    label: "Mobilität",
+    subtitle: "verbindet Menschen",
+    href: "/mobilitaet",
+    thumbnail: Mobility,
   },
   {
     label: "Umwelt",
