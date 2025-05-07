@@ -22,6 +22,7 @@ import JJoritz from "./JJoritz.jpg";
 import FHäußler from "./FHäußler.jpg";
 import VDürr from "./VDürr.jpg";
 import SVoßschulte from "./SVoßschulte.jpg";
+//import DKieburg from "./DKieburg.jpg";
 //import LPetznik from "./LPetznik.jpg";
 //import NZiemann from "./NZiemann.jpg";
 
@@ -51,7 +52,7 @@ export const people = [
   { name: "V. Dürr", image: VDürr }, 
   { name: "J. Joritz", image: JJoritz },
   { name: "S. Voßschulte", image: SVoßschulte },
+  { name: "D. Kieburg", image: undefined },
   { name: "L. Petznik", image: undefined },
-  { name: "N. Ziemann", image: undefined },
-  
+  { name: "N. Ziemann", image: undefined }, 
 ];
