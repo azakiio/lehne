@@ -25,7 +25,7 @@ Internet: [www.lehne-ing.de](http://www.lehne-ing.de/)
 
 ## Geschäftsführung
 
-ppa. Amelie Atassi, Stefan Paul, Jakob Paul, Oskar Paul, Michael Meyn
+ppa. Amelie Atassi, Stefan Paul, Jakob Paul, Oskar Paul
 
 ---
 
