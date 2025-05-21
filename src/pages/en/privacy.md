@@ -9,11 +9,11 @@ The controller in the sense of data protection law is the:
 
 LEHNE Ingenieurgesellschaft mbH für Bauen und Umwelt
 
-Danziger Straße 35a
+Beim Strohhause 27
 
-D-20099 Hamburg
+D-20097 Hamburg
 
-Managing Directors: Michael Meyn; Stefan Paul
+Managing Directors: Amelie Atassi, Stefan Paul, Jakob Paul, Oskar Paul
 
 Hamburg Local Court HRB 103677
 
@@ -93,9 +93,9 @@ Telefax: +49 40 2849916-11
 
 LEHNE Ingenieurgesellschaft mbH für Bauen und Umwelt
 
-Danziger Straße 35a
+Beim Strohhause 27
 
-D-20099 Hamburg
+D-20097 Hamburg
 
 ---
 

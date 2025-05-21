@@ -11,7 +11,7 @@ Verantwortliche Stelle im Sinne der Datenschutzgesetze ist:
 
 - LEHNE Ingenieurgesellschaft mbH für Bauen und Umwelt
 
-- Danziger Straße 35a, D-20099 Hamburg
+- Beim Strohhause 27, D-20097 Hamburg
 
 - Telefon: **+49 40 284 99 16 0**
 
