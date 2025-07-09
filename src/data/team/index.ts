@@ -16,7 +16,6 @@ import NHettche from "./NHettche2.jpg";
 import GNiemann from "./GNiemann.jpg";
 import JUhlenkamp from "./JUhlenkamp2.jpg";
 import TOellrich from "./TOellrich2.jpg";
-import SLehmann from "./SLehmann.jpg";
 import SAlsalhi from "./SAlsalhi2.jpg";
 import JJoritz from "./JJoritz.jpg";
 import FHäußler from "./FHäußler.jpg";
@@ -47,12 +46,15 @@ export const people = [
   { name: "T. Armborst", image: TArmborst },
   { name: "J. Uhlenkamp", image: JUhlenkamp },
   { name: "T. Oellrich", image: TOellrich },
-  { name: "S. Lehmann", image: SLehmann },
-  { name: "F. Häußler", image: FHäußler },
+   { name: "F. Häußler", image: FHäußler },
   { name: "V. Dürr", image: VDürr }, 
   { name: "J. Joritz", image: JJoritz },
   { name: "S. Voßschulte", image: SVoßschulte },
   { name: "D. Kieburg", image: undefined },
-  { name: "L. Petznik", image: undefined },
+  { name: "A. Frank", image: undefined },
   { name: "N. Ziemann", image: undefined }, 
+  { name: "L. Petznik", image: undefined },
+  { name: "S. Husaini", image: undefined },
+  { name: "J. Küsel", image: undefined },
+  { name: "F. Schulz", image: undefined },
 ];
