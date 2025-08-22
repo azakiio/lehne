@@ -54,7 +54,6 @@ export const people = [
   { name: "A. Frank", image: undefined },
   { name: "N. Ziemann", image: undefined }, 
   { name: "L. Petznik", image: undefined },
-  { name: "S. Husaini", image: undefined },
   { name: "J. Küsel", image: undefined },
   { name: "F. Schulz", image: undefined },
 ];
