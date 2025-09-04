@@ -24,6 +24,12 @@ import SVoßschulte from "./SVoßschulte.jpg";
 //import DKieburg from "./DKieburg.jpg";
 //import LPetznik from "./LPetznik.jpg";
 //import NZiemann from "./NZiemann.jpg";
+//import HNowak from "./HNowak.jpg";
+//import EBatholome from "./EBartholome.jpg";
+//import FLorenz from "./FLorenz.jpg";
+//import LNibbe from "./LNibbe.jpg";
+//import JKüsel from "./JKüsel.jpg";
+
 
 
 export const people = [
@@ -52,8 +58,12 @@ export const people = [
   { name: "L. Bentin", image: LBentin },
   { name: "D. Kieburg", image: undefined },
   { name: "A. Frank", image: undefined },
-  { name: "N. Ziemann", image: undefined }, 
+  { name: "H. Nowak", image: undefined },
+  { name: "E. Bartholome", image: undefined },
+  { name: "F. Lorenz", image: undefined },
+  { name: "L. Nibbe", image: undefined },
   { name: "L. Petznik", image: undefined },
   { name: "J. Küsel", image: undefined },
   { name: "F. Schulz", image: undefined },
+
 ];
