@@ -7,7 +7,6 @@ import BRoemmer from "./BRoemmer.jpg";
 import NGoldberg from "./NGoldberg.jpg";
 import EKaemper from "./EKaemper.jpg";
 import LSchneider from "./LSchneider.jpg";
-import LBentin from "./LBentin.jpg";
 import SMannes from "./SMannes.jpg";
 import TArmborst from "./TArmborst.jpg";
 import APulido from "./APulido.jpg";
