@@ -21,12 +21,12 @@ import VDürr from "./VDürr.jpg";
 import SVoßschulte from "./SVoßschulte.jpg";
 //import DKieburg from "./DKieburg.jpg";
 //import LPetznik from "./LPetznik.jpg";
-import HNowak from "./HNowak.jpg";
-import EBatholome from "./EBartholome.jpg";
+//import HNowak from "./HNowak.jpg";
+//import EBatholome from "./EBartholome.jpg";
 //import FLorenz from "./FLorenz.jpg";
 //import LNibbe from "./LNibbe.jpg";
 //import JKüsel from "./JKüsel.jpg";
-import HRepschläger from "./HRepschläger.jpg";
+//import HRepschläger from "./HRepschläger.jpg";
 
 
 
@@ -52,9 +52,9 @@ export const people = [
   { name: "S. Voßschulte", image: SVoßschulte },
   { name: "V. Dürr", image: VDürr }, 
   { name: "J. Uhlenkamp", image: JUhlenkamp },
-  { name: "H. Nowak", image: HNowak },
-  { name: "E. Bartholome", image: EBatholome },
-  { name: "H. Repschläger", image: HRepschläger },
+  { name: "H. Nowak", image: undefined },
+  { name: "E. Bartholome", image: undefined },
+  { name: "H. Repschläger", image: undefined },
   { name: "F. Lorenz", image: undefined },
   { name: "D. Kieburg", image: undefined },
   { name: "A. Frank", image: undefined },
