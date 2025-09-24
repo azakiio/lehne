@@ -1,7 +1,6 @@
 import SEikenroth from "./SEikenroth.jpg";
 import CLips from "./CLips.jpg";
 import ETimmermann from "./ETimmermann.jpg";
-import FHaensch from "./FHaensch.jpg";
 import VKolaska from "./VKolaska.jpg";
 import BRoemmer from "./BRoemmer.jpg";
 import NGoldberg from "./NGoldberg.jpg";
@@ -24,7 +23,7 @@ import SVoßschulte from "./SVoßschulte.jpg";
 //import LPetznik from "./LPetznik.jpg";
 import HNowak from "./HNowak.jpg";
 import EBatholome from "./EBartholome.jpg";
-import FLorenz from "./FLorenz.jpg";
+//import FLorenz from "./FLorenz.jpg";
 //import LNibbe from "./LNibbe.jpg";
 //import JKüsel from "./JKüsel.jpg";
 import HRepschläger from "./HRepschläger.jpg";
@@ -50,14 +49,13 @@ export const people = [
   { name: "F. Häußler", image: FHäußler },
   { name: "L. Schneider", image: LSchneider },
   { name: "C. Lips", image: CLips },
-  { name: "F. Hänsch", image: FHaensch },
   { name: "S. Voßschulte", image: SVoßschulte },
   { name: "V. Dürr", image: VDürr }, 
   { name: "J. Uhlenkamp", image: JUhlenkamp },
   { name: "H. Nowak", image: HNowak },
   { name: "E. Bartholome", image: EBatholome },
   { name: "H. Repschläger", image: HRepschläger },
-  { name: "F. Lorenz", image: FLorenz },
+  { name: "F. Lorenz", image: undefined },
   { name: "D. Kieburg", image: undefined },
   { name: "A. Frank", image: undefined },
   { name: "L. Nibbe", image: undefined },
