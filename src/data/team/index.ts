@@ -1,11 +1,9 @@
 import SEikenroth from "./SEikenroth.jpg";
-import CLips from "./CLips.jpg";
 import ETimmermann from "./ETimmermann.jpg";
 import VKolaska from "./VKolaska.jpg";
 import BRoemmer from "./BRoemmer.jpg";
 import NGoldberg from "./NGoldberg.jpg";
 import EKaemper from "./EKaemper.jpg";
-import LSchneider from "./LSchneider.jpg";
 import SMannes from "./SMannes.jpg";
 import TArmborst from "./TArmborst.jpg";
 import APulido from "./APulido.jpg";
@@ -47,11 +45,8 @@ export const people = [
   { name: "J. Joritz", image: JJoritz },
   { name: "T. Armborst", image: TArmborst },
   { name: "F. Häußler", image: FHäußler },
-  { name: "L. Schneider", image: LSchneider },
-  { name: "C. Lips", image: CLips },
   { name: "S. Voßschulte", image: SVoßschulte },
   { name: "V. Dürr", image: VDürr }, 
-  { name: "J. Uhlenkamp", image: JUhlenkamp },
   { name: "H. Nowak", image: undefined },
   { name: "E. Bartholome", image: undefined },
   { name: "H. Repschläger", image: undefined },
