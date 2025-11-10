@@ -48,6 +48,7 @@ export const people = [
   { name: "V. Dürr", image: VDürr }, 
   { name: "H. Nowak", image: undefined },
   { name: "H. Repschläger", image: undefined },
+  { name: "J. Herrmann", image: undefined },
   { name: "F. Lorenz", image: undefined },
   { name: "D. Kieburg", image: undefined },
   { name: "A. Frank", image: undefined },
