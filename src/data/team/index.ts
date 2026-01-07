@@ -8,15 +8,16 @@ import APulido from "./APulido.jpg";
 import JSchmidt from "./JSchmidt.jpg";
 import NHettche from "./NHettche2.jpg";
 import GNiemann from "./GNiemann.jpg";
+//import GZinßer from "./GZinßer.jpg";
 import TOellrich from "./TOellrich2.jpg";
 import SAlsalhi from "./SAlsalhi2.jpg";
 import JJoritz from "./JJoritz.jpg";
 import FHäußler from "./FHäußler.jpg";
 import SVoßschulte from "./SVoßschulte.jpg";
-//import GZinßer from "./GZinßer.jpg";
 //import DKieburg from "./DKieburg.jpg";
 //import LPetznik from "./LPetznik.jpg";
 //import HNowak from "./HNowak.jpg";
+//import EBatholome from "./EBartholome.jpg";
 //import FLorenz from "./FLorenz.jpg";
 //import LNibbe from "./LNibbe.jpg";
 //import JKüsel from "./JKüsel.jpg";
@@ -40,9 +41,9 @@ export const people = [
   { name: "J. Joritz", image: JJoritz },
   { name: "F. Häußler", image: FHäußler },
   { name: "S. Voßschulte", image: SVoßschulte },
-  { name: "H. Nowak", image: undefined }, 
+  { name: "H. Nowak", image: undefined },
+  { name: "H. Nowak", image: undefined },
   { name: "G. Zinßer", image: undefined },
-  { name: "H. Repschläger", image: undefined },
   { name: "J. Herrmann", image: undefined },
   { name: "F. Lorenz", image: undefined },
   { name: "D. Kieburg", image: undefined },
@@ -53,3 +54,4 @@ export const people = [
   { name: "F. Schulz", image: undefined },
   
 
+];
